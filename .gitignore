@@ -1,0 +1,5 @@
+MANIFEST.bak
+Makefile
+Makefile.old
+local/
+.DS_Store
