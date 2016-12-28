@@ -1,7 +1,6 @@
 requires "Dancer2" => "0.204002";
 requires "Date::Lectionary" => "1.20161227";
 requires "Time::Piece" => "0";
-requires "Starman" => "0";
 
 recommends "YAML"             => "0";
 recommends "URL::Encode::XS"  => "0";
