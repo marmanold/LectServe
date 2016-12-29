@@ -1,5 +1,234 @@
+/* Elements Determining Page Layout & Appearance*/
+
 body {
-    font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
-    font-size: 13px;
-    color: #333;
+	font-size: 1.1em;
+	font-family: 'Courier New', Courier, monospace;
+	color: black;
+	background: white;
+	padding: 2%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.search-icon {
+	float: right;
+	width: 1em;
+	height: 1em;
+}
+
+.social-footer {
+	padding-left: 1em;
+}
+
+.social-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.error {
+	font-size: 2em;
+}
+
+.content {
+	text-align: justify;
+}
+
+.element h2 {
+	text-align: left;
+}
+
+.date {
+	font-size: .9em;
+}
+
+.title {
+	text-align: left;
+}
+
+.footer {
+	padding-top: 2em;
+	font-size: .8em;
+}
+
+.footer a:link {
+	text-decoration: none;
+	color: black;
+}
+
+.footer a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+.footer a:hover {
+	text-decoration: none;
+	color: red;
+}
+
+.footer a:active {
+	text-decoration: none;
+	color: red;
+}
+
+.page_number {
+	padding-top: 1em;
+}
+
+.pagination {
+	padding-top: 2em;
+}
+
+.banner {
+	font-size: 2.1em;
+	text-align: center;
+	color: black;
+}
+
+.banner a:link {
+	text-decoration: none;
+	color: black;
+}
+
+.banner a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+.banner a:hover {
+	text-decoration: none;
+	color: red;
+}
+
+.banner a:active {
+	text-decoration: none;
+	color: red;
+}
+
+/*Setting up the elements for the menu*/
+.menu {
+	text-align: center;
+}
+
+.menu a:link {
+	text-decoration: none;
+	color:black;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+.menu a:visited {
+	text-decoration: none;
+	color:black;
+}
+
+.menu a:hover {
+	text-decoration: none;
+	color:red;
+}
+
+.menu a:active {
+	text-decoration: none;
+	color:red;
+}
+
+/*Menu used for mobile and smaller screened devices*/
+.miniMenu {
+	display: none;
+}
+
+/*Settings for links*/
+a:link {
+	text-decoration: none;
+	color: red;
+}
+
+a:visited {
+	text-decoration: none;
+	color: red;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: red;
+}
+
+a:active {
+	text-decoration: underline;
+	color: red;
+}
+
+@media only screen and (max-width: 350px) {
+	.banner {
+		font-size: 1.8em;
+	}
+
+	.title {
+		font-size: 1.3em;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.miniMenu {
+		text-align: center;
+		font-size: 2em;
+		display: block;
+	}
+
+	.miniMenu a:link {
+		text-decoration: none;
+		color:black;
+		padding-left: 1%;
+		padding-right: 1%;
+	}
+
+	.miniMenu a:visited {
+		text-decoration: none;
+		color:black;
+	}
+
+	.miniMenu a:hover {
+		text-decoration: none;
+		color:red;
+	}
+
+	.miniMenu a:active {
+		text-decoration: none;
+		color:red;
+	}
+
+	.miniIcon {
+		width: 1em;
+		height: 1em;
+		vertical-align: bottom;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	body {
+		font-size: 1em;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	.content {
+		text-align: left;
+	}
+
+	.social-footer {
+		display: none;
+	}
+
+	.social-icon {
+		display: none;
+	}
+
+	.search-icon {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.menu {
+		display: none;
+	}
 }

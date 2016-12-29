@@ -1,0 +1,6 @@
+<h2>Technical Information</h2>
+<p>LectServe is hosted on an Amazon EC2 instance populated by Docker Cloud.  The engine driving this site and the API is the wonderful <a href="http://perldancer.org/">Dancer2</a> framework and the <a href="https://metacpan.org/pod/distribution/Starman/script/starman">Starman</a> high-performance web server.</p>
+<p>Behind the scenes all the hard work of finding our place in the lectionary is handled by the <a href="https://metacpan.org/pod/Date::Lectionary">Date::Lectionary</a> module and three helper modules <a href="https://metacpan.org/pod/Date::Advent">Date::Advent</a>, <a href="https://metacpan.org/pod/Date::Easter">Date::Easter</a>, and <a href="https://metacpan.org/pod/Date::Lectionary::Time">Date::Lectionary::Time</a>.</p>
+<p>This API and all the supporting infrastructure is supported and maintained by me in my free time.  More information about me can be found on my <a href="https://www.marmanold.com">website</a>, <a href="https://www.twitter.com/marmanold/">Twitter</a>, and on <a href ="https://www.github.com/marmanold/">GitHub</a>.</p>
+<p>A huge thanks and much gratitude to my lovely wife, Jennifer, and my beautiful daughter, Rosemary, for letting me spend some of my free time working on this project!</p>
+<p>Above all, <strong>Soli Deo Gloria!</strong></p>

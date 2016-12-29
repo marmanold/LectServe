@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="<% settings.charset %>">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>LectServe</title>
-  <link rel="stylesheet" href="<% request.uri_base %>/css/style.css">
+    <meta charset="<% settings.charset %>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LectServe &alpha;</title>
+    <link rel="stylesheet" href="<% request.uri_base %>/css/style.css">
 </head>
+
 <body>
-<% content %>
-<div>
-Powered by <a href="http://perldancer.org/">Dancer2</a> <% dancer_version %>
-</div>
+    <h1 class="banner"><a href="/" title="Return home...">LectServe &alpha;</a></h1>
+    <div class="menu">
+        <a href="/html/today">[Today's Readings]</a>
+        <a href="/html/sunday">[Sunday's Readings]</a>
+        <a href="/html/about">[About LectServe]</a>
+    </div>
+    <hr/>
+
+    <div class="content">
+        <% content %>
+    </div>
+
+    <div class="footer">
+        &copy;2016, <a href="https://www.marmanold.com/about/" title="Michael's Biography">Michael Wayne Arnold</a>
+        <span class="social-footer">
+                <a href="https://www.twitter.com/marmanold/" title="Follow Michael Arnold on Twitter!"><img class="social-icon" src="/images/social-twitter.svg" alt="Social Twitter Icon" /></a>
+                <a href="https://www.github.com/marmanold/" title="Check Michael Arnold out on GitHub!"><img class="social-icon" src="/images/social-github.svg" alt="Social GitHub Icon" /></a>
+            </span>
+    </div>
 </body>
+
 </html>

@@ -1,10 +1,11 @@
 package LectServe;
 use Dancer2;
 
-use Date::Lectionary;
 use Time::Piece;
+use Date::Lectionary;
+use Date::Lectionary::Time qw(nextSunday);
 
-our $VERSION = '0.1';
+our $VERSION = '1.20161229';
 
 set serializer => 'JSON';
 
@@ -21,7 +22,27 @@ get '/date/:day' => sub {
 
 get '/today' => sub {
     my $today = localtime;
+
     return getLectionary($today);
+};
+
+get '/sunday' => sub {
+    my $today      = localtime;
+    my $nextSunday = nextSunday($today);
+
+    return getLectionary($nextSunday);
+};
+
+get '/html/today' => sub {
+    send_as html => template 'today.tt';
+};
+
+get '/html/sunday' => sub {
+    send_as html => template 'sunday.tt';
+};
+
+get '/html/about' => sub {
+    send_as html => template 'about.tt';
 };
 
 sub getLectionary {
