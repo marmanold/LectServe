@@ -2,6 +2,8 @@ requires "Dancer2" => "0.204002";
 requires "Date::Lectionary" => "1.20161227";
 requires "Time::Piece" => "0";
 requires "Date::Lectionary::Time" => "0";
+requires "Template" => "2.26";
+requires "Dancer2::Plugin::Cache::CHI" => "2.0.0";
 
 recommends "YAML"             => "0";
 recommends "URL::Encode::XS"  => "0";

@@ -221,14 +221,4 @@ a:active {
 	.social-icon {
 		display: none;
 	}
-
-	.search-icon {
-		display: none;
-	}
-}
-
-@media only screen and (max-width: 800px) {
-	.menu {
-		display: none;
-	}
 }

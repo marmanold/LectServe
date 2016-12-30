@@ -1,12 +1,12 @@
 <h2>Welcome to LectServe &alpha;lpha!</h2>
 <p>LectServe is an early version of a tool I'm providing to the Church to quickly find lectionary readings for a given day.</p>
-<p>Though <a href="https://metacpan.org/pod/Date::Lectionary">the backend</a> supports both the Revised Common Lectionary and the ACNA lectionary, I'm presently only exposing the ACNA lectionary.</p>
+<p>The <a href="https://metacpan.org/pod/Date::Lectionary">backend</a> supports both the Revised Common Lectionary and the ACNA lectionary.  I'm defaulting to the ACNA lectionary because I'm Anglican, but you can use the RCL if you would like.</p>
 <p><strong>Nota bene:</strong> This software is shared in alpha quality.  That's <em>before</em> beta!  API endpoints and JSON payloads <em>will</em> change and things <em>will</em> shift around unexpectedly.</p>
 <h3>API Usage</h3>
-<p>All endpoints return JSON</p>
+<p>All endpoints return JSON.  Optionally, the argument <tt>?lect=acna</tt> or <tt>?lect=rcl</tt> can be given to each endpoint to specify the lectionary you wish to use.</p>
 <dl>
   <dt><a href="/today">/today</a></dt>
-  <dd>Returns the lectionary payload for today's date.  "Today" is relative to the server LectServe is running on.  Presently, the server in sitting in Virginia, but I'm not sure if it's running on EST or GMT.</dd>
+  <dd>Returns the lectionary payload for today's date.  "Today" is relative to the server LectServe is running on.  Presently, the server is sitting in Virginia, but I'm not sure if it's running on EST or GMT.</dd>
   <dt><a href="/sunday">/sunday</a></dt>
   <dd>Returns the lectionary payload for the upcoming Sunday relative to "today".</dd>
   <dt><a href="/date/2016-12-25">/date/yyyy-mm-dd</a></dt>

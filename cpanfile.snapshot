@@ -57,6 +57,20 @@ DISTRIBUTIONS
       perl 5.006
       strict 0
       warnings 0
+  AppConfig-1.71
+    pathname: N/NE/NEILB/AppConfig-1.71.tar.gz
+    provides:
+      AppConfig 1.71
+      AppConfig::Args 1.71
+      AppConfig::CGI 1.71
+      AppConfig::File 1.71
+      AppConfig::Getopt 1.71
+      AppConfig::State 1.71
+      AppConfig::Sys 1.71
+    requirements:
+      ExtUtils::MakeMaker 0
+      Test::More 0
+      perl 5.008008
   B-Hooks-EndOfScope-0.21
     pathname: E/ET/ETHER/B-Hooks-EndOfScope-0.21.tar.gz
     provides:
@@ -72,6 +86,47 @@ DISTRIBUTIONS
       perl 5.008001
       strict 0
       warnings 0
+  CHI-0.60
+    pathname: J/JS/JSWARTZ/CHI-0.60.tar.gz
+    provides:
+      CHI 0.60
+      CHI::CacheObject 0.60
+      CHI::Driver 0.60
+      CHI::Driver::Base::CacheContainer 0.60
+      CHI::Driver::CacheCache 0.60
+      CHI::Driver::FastMmap 0.60
+      CHI::Driver::File 0.60
+      CHI::Driver::Memory 0.60
+      CHI::Driver::Metacache 0.60
+      CHI::Driver::Null 0.60
+      CHI::Driver::RawMemory 0.60
+      CHI::Driver::Role::HasSubcaches 0.60
+      CHI::Driver::Role::IsSizeAware 0.60
+      CHI::Driver::Role::IsSubcache 0.60
+      CHI::Stats 0.60
+    requirements:
+      Carp::Assert 0.20
+      Class::Load 0
+      Data::UUID 0
+      Digest::JHash 0
+      Digest::MD5 0
+      ExtUtils::MakeMaker 0
+      File::Spec 0.80
+      Hash::MoreUtils 0
+      JSON::MaybeXS 1.003003
+      List::MoreUtils 0.13
+      Log::Any 0.08
+      Moo 1.003
+      MooX::Types::MooseLike 0.23
+      MooX::Types::MooseLike::Base 0
+      MooX::Types::MooseLike::Numeric 0
+      Storable 0
+      String::RewritePrefix 0
+      Task::Weaken 0
+      Time::Duration 1.06
+      Time::Duration::Parse 0.03
+      Time::HiRes 1.30
+      Try::Tiny 0.05
   Capture-Tiny-0.44
     pathname: D/DA/DAGOLDEN/Capture-Tiny-0.44.tar.gz
     provides:
@@ -100,6 +155,18 @@ DISTRIBUTIONS
       Test::More 0.47
       overload 0
       strict 0
+      warnings 0
+  Carp-Assert-0.21
+    pathname: N/NE/NEILB/Carp-Assert-0.21.tar.gz
+    provides:
+      Carp::Assert 0.21
+    requirements:
+      Carp 0
+      Exporter 0
+      ExtUtils::MakeMaker 0
+      perl 5.006
+      strict 0
+      vars 0
       warnings 0
   Class-Data-Inheritable-0.08
     pathname: T/TM/TMTM/Class-Data-Inheritable-0.08.tar.gz
@@ -299,6 +366,21 @@ DISTRIBUTIONS
       URI::Escape 0
       YAML 0.86
       parent 0
+  Dancer2-Plugin-Cache-CHI-2.0.0
+    pathname: Y/YA/YANICK/Dancer2-Plugin-Cache-CHI-2.0.0.tar.gz
+    provides:
+      Dancer2::Plugin::Cache::CHI v2.0.0
+    requirements:
+      CHI 0
+      Carp 0
+      Dancer2 0.200000
+      Dancer2::Plugin 0
+      ExtUtils::MakeMaker 0
+      List::MoreUtils 0
+      Moo 1.000007
+      perl 5.010000
+      strict 0
+      warnings 0
   Data-Munge-0.096
     pathname: M/MA/MAUKE/Data-Munge-0.096.tar.gz
     provides:
@@ -322,6 +404,13 @@ DISTRIBUTIONS
       Sub::Install 0.921
       strict 0
       warnings 0
+  Data-UUID-1.221
+    pathname: R/RJ/RJBS/Data-UUID-1.221.tar.gz
+    provides:
+      Data::UUID 1.221
+    requirements:
+      Digest::MD5 0
+      ExtUtils::MakeMaker 0
   Date-Advent-1.20161222
     pathname: M/MA/MARMANOLD/Date-Advent-1.20161222.tar.gz
     provides:
@@ -428,6 +517,18 @@ DISTRIBUTIONS
     requirements:
       Devel::StackTrace 0
       ExtUtils::MakeMaker 0
+  Digest-JHash-0.10
+    pathname: S/SH/SHLOMIF/Digest-JHash-0.10.tar.gz
+    provides:
+      Digest::JHash 0.10
+    requirements:
+      DynaLoader 0
+      Exporter 0
+      ExtUtils::MakeMaker 0
+      perl 5.008
+      strict 0
+      vars 0
+      warnings 0
   Dist-CheckConflicts-0.11
     pathname: D/DO/DOY/Dist-CheckConflicts-0.11.tar.gz
     provides:
@@ -488,6 +589,16 @@ DISTRIBUTIONS
       perl 5.006
       strict 0
       vars 0
+      warnings 0
+  Exporter-Lite-0.08
+    pathname: N/NE/NEILB/Exporter-Lite-0.08.tar.gz
+    provides:
+      Exporter::Lite 0.08
+    requirements:
+      Carp 0
+      ExtUtils::MakeMaker 6.3
+      perl 5.006
+      strict 0
       warnings 0
   Exporter-Tiny-0.042
     pathname: T/TO/TOBYINK/Exporter-Tiny-0.042.tar.gz
@@ -763,6 +874,12 @@ DISTRIBUTIONS
       ExtUtils::MakeMaker 6.31
       Storable 0
       Test::Most 0
+  Hash-MoreUtils-0.05
+    pathname: R/RE/REHSACK/Hash-MoreUtils-0.05.tar.gz
+    provides:
+      Hash::MoreUtils 0.05
+    requirements:
+      Test::More 0.90
   Hash-MultiValue-0.16
     pathname: A/AR/ARISTOTLE/Hash-MultiValue-0.16.tar.gz
     provides:
@@ -822,6 +939,52 @@ DISTRIBUTIONS
     requirements:
       ExtUtils::MakeMaker 0
       perl 5.006002
+  List-MoreUtils-0.416
+    pathname: R/RE/REHSACK/List-MoreUtils-0.416.tar.gz
+    provides:
+      List::MoreUtils 0.416
+      List::MoreUtils::PP 0.416
+      List::MoreUtils::XS 0.416
+    requirements:
+      Carp 0
+      Exporter::Tiny 0.038
+      ExtUtils::MakeMaker 0
+      File::Basename 0
+      File::Copy 0
+      File::Path 0
+      File::Spec 0
+      IPC::Cmd 0
+      XSLoader 0.22
+      base 0
+  Log-Any-1.045
+    pathname: P/PR/PREACTION/Log-Any-1.045.tar.gz
+    provides:
+      Log::Any 1.045
+      Log::Any::Adapter 1.045
+      Log::Any::Adapter::Base 1.045
+      Log::Any::Adapter::File 1.045
+      Log::Any::Adapter::Null 1.045
+      Log::Any::Adapter::Stderr 1.045
+      Log::Any::Adapter::Stdout 1.045
+      Log::Any::Adapter::Test 1.045
+      Log::Any::Adapter::Util 1.045
+      Log::Any::Manager 1.045
+      Log::Any::Proxy 1.045
+      Log::Any::Proxy::Null 1.045
+      Log::Any::Proxy::Test 1.045
+      Log::Any::Test 1.045
+    requirements:
+      B 0
+      Carp 0
+      Data::Dumper 0
+      Exporter 0
+      ExtUtils::MakeMaker 0
+      Fcntl 0
+      IO::File 0
+      Test::Builder 0
+      constant 0
+      strict 0
+      warnings 0
   MRO-Compat-0.12
     pathname: B/BO/BOBTFISH/MRO-Compat-0.12.tar.gz
     provides:
@@ -991,6 +1154,15 @@ DISTRIBUTIONS
     requirements:
       ExtUtils::MakeMaker 0
       Module::Runtime 0.014
+  MooX-Types-MooseLike-Numeric-1.02
+    pathname: M/MA/MATEU/MooX-Types-MooseLike-Numeric-1.02.tar.gz
+    provides:
+      MooX::Types::MooseLike::Numeric 1.02
+    requirements:
+      ExtUtils::MakeMaker 0
+      MooX::Types::MooseLike 0.23
+      Test::Fatal 0.003
+      Test::More 0.96
   Moose-2.1807
     pathname: E/ET/ETHER/Moose-2.1807.tar.gz
     provides:
@@ -1717,6 +1889,16 @@ DISTRIBUTIONS
       perl 5.006
       strict 0
       warnings 0
+  Task-Weaken-1.04
+    pathname: A/AD/ADAMK/Task-Weaken-1.04.tar.gz
+    provides:
+      Task::Weaken 1.04
+    requirements:
+      ExtUtils::MakeMaker 6.42
+      File::Spec 0.80
+      Scalar::Util 1.14
+      Test::More 0.42
+      perl 5.005
   Template-Tiny-1.12
     pathname: A/AD/ADAMK/Template-Tiny-1.12.tar.gz
     provides:
@@ -1725,6 +1907,67 @@ DISTRIBUTIONS
       ExtUtils::MakeMaker 0
       Test::More 0.47
       perl 5.00503
+  Template-Toolkit-2.26
+    pathname: A/AB/ABW/Template-Toolkit-2.26.tar.gz
+    provides:
+      Template 2.26
+      Template::Base 2.78
+      Template::Config 2.75
+      Template::Constants 2.75
+      Template::Context 2.98
+      Template::Directive 2.2
+      Template::Document 2.79
+      Template::Exception 2.7
+      Template::Filters 2.87
+      Template::Grammar 2.26
+      Template::Iterator 2.68
+      Template::Monad::Assert 1
+      Template::Monad::Scalar 1
+      Template::Namespace::Constants 1.27
+      Template::Parser 2.89
+      Template::Perl 2.2
+      Template::Plugin 2.7
+      Template::Plugin::Assert 1
+      Template::Plugin::CGI 2.7
+      Template::Plugin::Datafile 2.72
+      Template::Plugin::Date 2.78
+      Template::Plugin::Date::Calc 2.78
+      Template::Plugin::Date::Manip 2.78
+      Template::Plugin::Directory 2.7
+      Template::Plugin::Dumper 2.7
+      Template::Plugin::File 2.71
+      Template::Plugin::Filter 1.38
+      Template::Plugin::Format 2.7
+      Template::Plugin::HTML 2.62
+      Template::Plugin::Image 1.21
+      Template::Plugin::Iterator 2.68
+      Template::Plugin::Math 1.16
+      Template::Plugin::Pod 2.69
+      Template::Plugin::Procedural 1.17
+      Template::Plugin::Scalar 1
+      Template::Plugin::String 2.4
+      Template::Plugin::Table 2.71
+      Template::Plugin::URL 2.74
+      Template::Plugin::View 2.68
+      Template::Plugin::Wrap 2.68
+      Template::Plugins 2.77
+      Template::Provider 2.94
+      Template::Service 2.8
+      Template::Stash 2.91
+      Template::Stash::Context 1.63
+      Template::Stash::XS undef
+      Template::Test 2.75
+      Template::TieString 2.75
+      Template::VMethods 2.16
+      Template::View 2.91
+      bytes 2.94
+    requirements:
+      AppConfig 1.56
+      ExtUtils::MakeMaker 0
+      File::Spec 0.8
+      File::Temp 0.12
+      Scalar::Util 0
+      Test::LeakTrace 0
   Test-CheckManifest-1.29
     pathname: R/RE/RENEEB/Test-CheckManifest-1.29.tar.gz
     provides:
@@ -1821,6 +2064,28 @@ DISTRIBUTIONS
       perl 5.006001
       strict 0
       warnings 0
+  Test-Fatal-0.014
+    pathname: R/RJ/RJBS/Test-Fatal-0.014.tar.gz
+    provides:
+      Test::Fatal 0.014
+    requirements:
+      Carp 0
+      Exporter 5.57
+      ExtUtils::MakeMaker 0
+      Test::Builder 0
+      Try::Tiny 0.07
+      strict 0
+      warnings 0
+  Test-LeakTrace-0.15
+    pathname: G/GF/GFUJI/Test-LeakTrace-0.15.tar.gz
+    provides:
+      Test::LeakTrace 0.15
+      Test::LeakTrace::Script undef
+    requirements:
+      Exporter 5.57
+      ExtUtils::MakeMaker 6.59
+      Test::More 0.62
+      perl 5.008001
   Test-Most-0.35
     pathname: O/OV/OVID/Test-Most-0.35.tar.gz
     provides:
@@ -1949,6 +2214,28 @@ DISTRIBUTIONS
       Exporter 0
       ExtUtils::MakeMaker 0
       perl 5.006
+  Time-Duration-1.20
+    pathname: N/NE/NEILB/Time-Duration-1.20.tar.gz
+    provides:
+      Time::Duration 1.20
+    requirements:
+      Exporter 0
+      ExtUtils::MakeMaker 0
+      constant 0
+      perl 5.006
+      strict 0
+      warnings 0
+  Time-Duration-Parse-0.13
+    pathname: N/NE/NEILB/Time-Duration-Parse-0.13.tar.gz
+    provides:
+      Time::Duration::Parse 0.13
+    requirements:
+      Carp 0
+      Exporter::Lite 0
+      ExtUtils::MakeMaker 0
+      perl 5.006
+      strict 0
+      warnings 0
   Time-Piece-1.31
     pathname: E/ES/ESAYM/Time-Piece-1.31.tar.gz
     provides:
@@ -2148,6 +2435,13 @@ DISTRIBUTIONS
     requirements:
       ExtUtils::MakeMaker 6.31
       Test::More 0.88
+  XSLoader-0.24
+    pathname: S/SA/SAPER/XSLoader-0.24.tar.gz
+    provides:
+      XSLoader 0.24
+    requirements:
+      ExtUtils::MakeMaker 0
+      Test::More 0.47
   YAML-1.21
     pathname: I/IN/INGY/YAML-1.21.tar.gz
     provides:

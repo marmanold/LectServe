@@ -1,18 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>Error 500</title>
-  <link rel="stylesheet" href="/css/error.css">
+    <meta charset="<% settings.charset %>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LectServe &alpha;</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
 </head>
+
 <body>
-<h1>Error 500</h1>
-<div>
-<h2>Internal Server Error</h2><p>Wooops, something went wrong</p>
-</div>
-<div>
-Powered by <a href="http://perldancer.org/">Dancer2</a>.
-</div>
+    <h1 class="banner"><a href="/" title="Return home...">LectServe &alpha;</a></h1>
+    <div class="menu">
+        <a href="/html/today">[Today's Readings]</a>
+        <a href="/html/sunday">[Sunday's Readings]</a>
+        <a href="/html/about">[About LectServe]</a>
+    </div>
+    <div class="miniMenu">
+        <a href="/html/today" title="Today's Readings"><img class="miniIcon" src="/img/ios-calendar-outline.svg" alt="Calendar"/></a>
+        <a href="/html/sunday" title="Sunday's Readings"><img class="miniIcon" src="/img/ios-bookmarks.svg" alt="Open Book"/></a>
+        <a href="/html/about" title="About LectServe"><img class="miniIcon" src="/img/ios-help.svg" alt="Question Mark"/></a>
+    </div>
+    <hr/>
+
+    <div class="content">
+        <p class="error">Error 500: Something horrible happened on the server. &alpha;lpha quality software, remember?</p>
+        <p>Please log issues for the lectionary content or day determination logic to the <a href="https://github.com/marmanold/Date-Lectionary/issues">Date::Lectionary project on GitHub<a/>.  Issues for this API and website can be logged to the <a href="https://github.com/marmanold/LectServe/issues">LectServe project</a>, also on GitHub.</p>
+    </div>
+
+    <div class="footer">
+        &copy;2016, <a href="https://www.marmanold.com/about/" title="Michael's Biography">Michael Wayne Arnold</a>
+        <span class="social-footer">
+                <a href="https://www.twitter.com/marmanold/" title="Follow Michael Arnold on Twitter!"><img class="social-icon" src="/images/social-twitter.svg" alt="Social Twitter Icon" /></a>
+                <a href="https://www.github.com/marmanold/" title="Check Michael Arnold out on GitHub!"><img class="social-icon" src="/images/social-github.svg" alt="Social GitHub Icon" /></a>
+            </span>
+    </div>
 </body>
+
 </html>

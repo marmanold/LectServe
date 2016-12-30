@@ -1,0 +1,15 @@
+<h2>Readings for <% date %></h2>
+<h3>Year <% year %>, <% lectionary FILTER upper %> Lectionary</h3>
+<% IF services.first.readings.size > 0 %>
+  <% FOREACH service IN services %>
+      <h4>Service: <% service.name %><% IF service.alt %>, <em><% service.alt %></em><% END %></h4>
+      <ol>
+      <% FOREACH reading IN service.readings %>
+          <li><% reading %></li>
+      <% END %>
+      </ol>
+  <% END %>
+<% ELSE %>
+  <p>Sadly, today is just a normal day in the lectionary and there are no special readings.</p>
+  <p>Check out <a href="/html/sunday?lect=<% lectionary %>">[Sunday's Readings]</a> to prepare for Sunday worship.</p>
+<% END %>

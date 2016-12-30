@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LectServe &alpha;</title>
     <link rel="stylesheet" href="<% request.uri_base %>/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
 </head>
 
 <body>
@@ -14,6 +15,11 @@
         <a href="/html/today">[Today's Readings]</a>
         <a href="/html/sunday">[Sunday's Readings]</a>
         <a href="/html/about">[About LectServe]</a>
+    </div>
+    <div class="miniMenu">
+        <a href="/html/today" title="Today's Readings"><img class="miniIcon" src="/img/ios-calendar-outline.svg" alt="Calendar"/></a>
+        <a href="/html/sunday" title="Sunday's Readings"><img class="miniIcon" src="/img/ios-bookmarks.svg" alt="Open Book"/></a>
+        <a href="/html/about" title="About LectServe"><img class="miniIcon" src="/img/ios-help.svg" alt="Question Mark"/></a>
     </div>
     <hr/>
 
