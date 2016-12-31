@@ -17,9 +17,9 @@
         <a href="/html/about">[About LectServe]</a>
     </div>
     <div class="miniMenu">
-        <a href="/html/today" title="Today's Readings"><img class="miniIcon" src="/img/ios-calendar-outline.svg" alt="Calendar"/></a>
-        <a href="/html/sunday" title="Sunday's Readings"><img class="miniIcon" src="/img/ios-bookmarks.svg" alt="Open Book"/></a>
-        <a href="/html/about" title="About LectServe"><img class="miniIcon" src="/img/ios-help.svg" alt="Question Mark"/></a>
+        <a href="/html/today" title="Today's Readings"><img class="miniIcon" src="<% request.uri_base %>/images/ios-calendar-outline.svg" alt="Calendar"/></a>
+        <a href="/html/sunday" title="Sunday's Readings"><img class="miniIcon" src="<% request.uri_base %>/images/ios-bookmarks.svg" alt="Open Book"/></a>
+        <a href="/html/about" title="About LectServe"><img class="miniIcon" src="<% request.uri_base %>/images/ios-help.svg" alt="Question Mark"/></a>
     </div>
     <hr/>
 
