@@ -2,56 +2,46 @@ package LectServe;
 
 use v5.22;
 use Dancer2;
-use Dancer2::Plugin::Cache::CHI;
 
 use Time::Piece;
 use Date::Lectionary;
 use Date::Lectionary::Time qw(nextSunday);
 
-our $VERSION = '1.20161230';
-
-check_page_cache;
+our $VERSION = '1.20170101';
 
 get '/' => sub {
-    cache_page send_as html => template 'index.tt';
+    send_as html => template 'index.tt';
 };
 
 get '/date/:day' => sub {
     my $day = route_parameters->get('day');
     my $date = Time::Piece->strptime( "$day", "%Y-%m-%d" );
 
-    cache_page send_as JSON =>
-      getLectionary( $date, query_parameters->get('lect') );
+    send_as JSON => getLectionary( $date, query_parameters->get('lect') );
 };
 
 get '/today' => sub {
-    my $today = localtime;
-
-    cache_page send_as JSON =>
-      getLectionary( $today, query_parameters->get('lect') );
+    send_as JSON =>
+      getLectionary( cleanToday(), query_parameters->get('lect') );
 };
 
 get '/sunday' => sub {
-    my $today      = localtime;
-    my $nextSunday = nextSunday($today);
+    my $nextSunday = nextSunday( cleanToday() );
 
-    cache_page send_as JSON =>
-      getLectionary( $nextSunday, query_parameters->get('lect') );
+    send_as JSON => getLectionary( $nextSunday, query_parameters->get('lect') );
 };
 
 get '/html/today' => sub {
-    my $today = localtime;
-    my $lectHash = getLectionary( $today, query_parameters->get('lect') );
+    my $lectHash = getLectionary( cleanToday(), query_parameters->get('lect') );
 
-    cache_page send_as html => template 'readings.tt', $lectHash;
+    send_as html => template 'readings.tt', $lectHash;
 };
 
 get '/html/sunday' => sub {
-    my $today      = localtime;
-    my $nextSunday = nextSunday($today);
+    my $nextSunday = nextSunday( cleanToday() );
     my $lectHash = getLectionary( $nextSunday, query_parameters->get('lect') );
 
-    cache_page send_as html => template 'readings.tt', $lectHash;
+    send_as html => template 'readings.tt', $lectHash;
 };
 
 get '/html/date/:day' => sub {
@@ -59,11 +49,11 @@ get '/html/date/:day' => sub {
     my $date     = Time::Piece->strptime( "$day", "%Y-%m-%d" );
     my $lectHash = getLectionary( $date, query_parameters->get('lect') );
 
-    cache_page send_as html => template 'readings.tt', $lectHash;
+    send_as html => template 'readings.tt', $lectHash;
 };
 
 get '/html/about' => sub {
-    cache_page send_as html => template 'about.tt';
+    send_as html => template 'about.tt';
 };
 
 sub getLectionary {
@@ -104,6 +94,12 @@ sub getLectionary {
         year       => $lectionary->year->name,
         services   => [@services],
     };
+}
+
+sub cleanToday {
+    my $localTime = localtime;
+    my $today     = $localTime->ymd;
+    return Time::Piece->strptime( "$today", "%Y-%m-%d" );
 }
 
 true;

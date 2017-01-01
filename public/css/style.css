@@ -163,7 +163,7 @@ a:active {
 	color: red;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 700px) {
 	.miniMenu {
 		text-align: center;
 		font-size: 2em;
@@ -197,9 +197,7 @@ a:active {
 		height: 1em;
 		vertical-align: bottom;
 	}
-}
 
-@media only screen and (max-width: 500px) {
 	body {
 		font-size: 1em;
 		margin-left: 5%;
@@ -221,9 +219,7 @@ a:active {
 	.search-icon {
 		display: none;
 	}
-}
 
-@media only screen and (max-width: 600px) {
 	.menu {
 		display: none;
 	}
