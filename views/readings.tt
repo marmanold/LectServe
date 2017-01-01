@@ -9,6 +9,7 @@
       <% END %>
       </ol>
   <% END %>
+<p>Change Lectionary: <a href="<% request.uri.remove('\?lect=acna|\?lect=rcl') %>?lect=acna">ACNA</a> or <a href="<% request.uri.remove('\?lect=acna|\?lect=rcl') %>?lect=rcl">RCL</a></p>
 <% ELSE %>
   <p>Sadly, today is just a normal day in the lectionary and there are no special readings.</p>
   <p>Check out <a href="/html/sunday?lect=<% lectionary %>">[Sunday's Readings]</a> to prepare for Sunday worship.</p>

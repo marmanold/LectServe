@@ -2,7 +2,7 @@
 
 body {
 	font-size: 1.1em;
-	font-family: 'Courier New', Courier, monospace;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	color: black;
 	background: white;
 	padding: 2%;
@@ -23,6 +23,12 @@ body {
 .social-icon {
 	width: 1em;
 	height: 1em;
+}
+
+.menu-icon {
+	width: 2em;
+	height: 2em;
+	vertical-align: middle;
 }
 
 .error {
