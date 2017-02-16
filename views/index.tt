@@ -10,7 +10,7 @@
   <dt><a href="/sunday">/sunday</a></dt>
   <dd>Returns the lectionary payload for the upcoming Sunday relative to "today".</dd>
   <dt><a href="/date/2016-12-25">/date/yyyy-mm-dd</a></dt>
-  <dd>Returns the lectionary payload for the given date.  Date in given in four-digit year [yyyy], two-digit month [mm], and two digit day [dd] annotation with dashes between units.  Christmas Day in 2016 would be given as <tt>/date/2016-12-25</tt>, for example.</dd>
+  <dd>Returns the lectionary payload for the given date.  Date is given in four-digit year [yyyy], two-digit month [mm], and two digit day [dd] annotation with dashes between units.  Christmas Day in 2016 would be given as <tt>/date/2016-12-25</tt>, for example.</dd>
 </dl>
 <h3>Issues</h3>
 <p>Please log issues for the lectionary content or day determination logic to the <a href="https://github.com/marmanold/Date-Lectionary/issues">Date::Lectionary project on GitHub</a>.  Issues for this API and website can be logged to the <a href="https://github.com/marmanold/LectServe/issues">LectServe project</a>, also on GitHub.</p>
