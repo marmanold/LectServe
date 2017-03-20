@@ -1,0 +1,43 @@
+{
+   "abstract" : "YOUR APPLICATION ABSTRACT",
+   "author" : [
+      "Michael Arnold <michael@rnold.info>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "ExtUtils::MakeMaker version 7.24, CPAN::Meta::Converter version 2.150001",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "LectServe",
+   "no_index" : {
+      "directory" : [
+         "t",
+         "inc"
+      ]
+   },
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "0"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "0"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Dancer2" : "0.205",
+            "Test::More" : "1.302078",
+            "YAML" : "1.23"
+         }
+      }
+   },
+   "release_status" : "stable",
+   "version" : "1.20170101"
+}

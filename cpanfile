@@ -1,7 +1,7 @@
-requires "Dancer2" => "0.204002";
+requires "Dancer2" => "0.205";
 requires "Date::Lectionary" => "1.20161227";
-requires "Time::Piece" => "0";
-requires "Date::Lectionary::Time" => "0";
+requires "Time::Piece" => "1.31";
+requires "Date::Lectionary::Time" => "1.20160809";
 requires "Template" => "2.26";
 
 recommends "YAML"             => "0";

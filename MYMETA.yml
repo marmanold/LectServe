@@ -1,0 +1,24 @@
+---
+abstract: 'YOUR APPLICATION ABSTRACT'
+author:
+  - 'Michael Arnold <michael@rnold.info>'
+build_requires:
+  ExtUtils::MakeMaker: '0'
+configure_requires:
+  ExtUtils::MakeMaker: '0'
+dynamic_config: 0
+generated_by: 'ExtUtils::MakeMaker version 7.24, CPAN::Meta::Converter version 2.150001'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: '1.4'
+name: LectServe
+no_index:
+  directory:
+    - t
+    - inc
+requires:
+  Dancer2: '0.205'
+  Test::More: '1.302078'
+  YAML: '1.23'
+version: '1.20170101'

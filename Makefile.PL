@@ -19,9 +19,9 @@ WriteMakefile(
     ),
     PL_FILES  => {},
     PREREQ_PM => {
-        'Test::More' => 0,
-        'YAML'       => 0,
-        'Dancer2'    => 0.204002,
+        'Test::More' => 1.302078,
+        'YAML'       => 1.23,
+        'Dancer2'    => 0.205000,
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean => { FILES    => 'LectServe-*' },
