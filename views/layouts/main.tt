@@ -16,7 +16,7 @@
     <meta name="msapplication-TileColor" content="#00a300">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <script src="/javascripts/stats-lite-client.bundle.js"></script>
+    <script src="<% request.uri_base %>/javascripts/stats-lite-client.bundle.js"></script>
 </head>
 
 <body>
