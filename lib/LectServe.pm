@@ -7,7 +7,7 @@ use Time::Piece;
 use Date::Lectionary;
 use Date::Lectionary::Time qw(nextSunday);
 
-our $VERSION = '1.20170101';
+our $VERSION = '1.20170417';
 
 get '/' => sub {
     send_as html => template 'index.tt';
@@ -17,18 +17,18 @@ get '/date/:day' => sub {
     my $day = route_parameters->get('day');
     my $date = Time::Piece->strptime( "$day", "%Y-%m-%d" );
 
-    send_as JSON => getLectionary( $date, query_parameters->get('lect') );
+    send_as JSON => getLectionary( $date, query_parameters->get('lect') ), {content_type=>'application/json; charset=UTF-8'};
 };
 
 get '/today' => sub {
     send_as JSON =>
-      getLectionary( cleanToday(), query_parameters->get('lect') );
+      getLectionary( cleanToday(), query_parameters->get('lect') ), {content_type=>'application/json; charset=UTF-8'};
 };
 
 get '/sunday' => sub {
     my $nextSunday = nextSunday( cleanToday() );
 
-    send_as JSON => getLectionary( $nextSunday, query_parameters->get('lect') );
+    send_as JSON => getLectionary( $nextSunday, query_parameters->get('lect') ), {content_type=>'application/json; charset=UTF-8'};
 };
 
 get '/html/today' => sub {

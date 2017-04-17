@@ -5,5 +5,12 @@ use warnings;
 use FindBin;
 use lib "$FindBin::Bin/../lib";
 
+use Dancer2;
 use LectServe;
-LectServe->to_app;
+use Plack::Builder;
+
+builder {
+	enable 'Deflater';
+	enable 'CrossOrigin', origins => '*';
+	dance;
+}

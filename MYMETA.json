@@ -4,7 +4,7 @@
       "Michael Arnold <michael@rnold.info>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "ExtUtils::MakeMaker version 7.24, CPAN::Meta::Converter version 2.150001",
+   "generated_by" : "ExtUtils::MakeMaker version 7.24, CPAN::Meta::Converter version 2.150010",
    "license" : [
       "perl_5"
    ],
@@ -33,11 +33,15 @@
       "runtime" : {
          "requires" : {
             "Dancer2" : "0.205",
+            "Plack" : "1.0043",
+            "Plack::Middleware::CrossOrigin" : "0.012",
+            "Plack::Middleware::Deflater" : "0.12",
             "Test::More" : "1.302078",
             "YAML" : "1.23"
          }
       }
    },
    "release_status" : "stable",
-   "version" : "1.20170101"
+   "version" : "1.20170417",
+   "x_serialization_backend" : "JSON::PP version 2.27400"
 }
