@@ -2,7 +2,7 @@ FROM perl:5.22.3
 MAINTAINER Michael Arnold michael@rnold.info
 
 RUN curl -L http://cpanmin.us | perl - App::cpanminus
-RUN cpanm Carton Starman
+RUN cpanm Carton Starman Plack JSON::XS HTTP::Entity::Parser
 
 RUN git clone https://github.com/marmanold/statsLiteClient.git
 RUN git clone https://github.com/marmanold/LectServe.git
