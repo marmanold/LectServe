@@ -202,6 +202,13 @@ DISTRIBUTIONS
       Module::Build 0.38
       URI::Escape 0
       perl 5.008001
+  Cpanel-JSON-XS-3.0233
+    pathname: R/RU/RURBAN/Cpanel-JSON-XS-3.0233.tar.gz
+    provides:
+      Cpanel::JSON::XS 3.0233
+    requirements:
+      ExtUtils::MakeMaker 0
+      Pod::Text 2.08
   Dancer2-0.205000
     pathname: C/CR/CROMEDOME/Dancer2-0.205000.tar.gz
     provides:
@@ -380,10 +387,35 @@ DISTRIBUTIONS
       XML::LibXML 2.0128
       namespace::autoclean 0.28
       perl 5.022
-  Date-Lectionary-Time-1.20161222
-    pathname: M/MA/MARMANOLD/Date-Lectionary-Time-1.20161222.tar.gz
+  Date-Lectionary-Daily-1.20170703
+    pathname: M/MA/MARMANOLD/Date-Lectionary-Daily-1.20170703.tar.gz
     provides:
-      Date::Lectionary::Time 1.20161222
+      Date::Lectionary::Daily 1.20170311
+    requirements:
+      Carp 1.38
+      Date::Advent 1.20160727
+      Date::Easter 1.22
+      Date::Lectionary 1.20161227
+      Date::Lectionary::Time 1.20170311
+      ExtUtils::MakeMaker 0
+      File::Share 0.25
+      File::ShareDir::Install 0.11
+      Moose 2.1804
+      Moose::Util::TypeConstraints 2.1804
+      MooseX::Aliases 0.11
+      Test::CheckManifest 0.9
+      Test::Exception 0.43
+      Test::More 1.302040
+      Time::Piece 1.31
+      Time::Seconds 1.31
+      Try::Tiny 0.24
+      XML::LibXML 2.0128
+      namespace::autoclean 0.28
+      perl 5.022
+  Date-Lectionary-Time-1.20170311
+    pathname: M/MA/MARMANOLD/Date-Lectionary-Time-1.20170311.tar.gz
+    provides:
+      Date::Lectionary::Time 1.20170311
     requirements:
       Carp 1.38
       Exporter::Easy 0.18
@@ -817,6 +849,7 @@ DISTRIBUTIONS
       JSON::MaybeXS 1.003009
     requirements:
       Carp 0
+      Cpanel::JSON::XS 2.3310
       ExtUtils::CBuilder 0.27
       ExtUtils::MakeMaker 0
       File::Spec 0

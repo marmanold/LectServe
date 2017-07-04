@@ -1,0 +1,14 @@
+<h2>Readings for <% date %></h2>
+<h3>Week of: <% week %></h3>
+<p><em><% lectionary FILTER upper %> Lectionary</em></p>
+<h4>Morning Prayer</h4>
+<ul>
+  <li><% readings.morning.1 %></li>
+  <li><% readings.morning.2 %></li>
+</ul>
+
+<h4>Evening Prayer</h4>
+<ul>
+  <li><% readings.evening.1 %></li>
+  <li><% readings.evening.2 %></li>
+</ul>

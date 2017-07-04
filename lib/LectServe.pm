@@ -6,8 +6,9 @@ use Dancer2;
 use Time::Piece;
 use Date::Lectionary;
 use Date::Lectionary::Time qw(nextSunday);
+use Date::Lectionary::Daily;
 
-our $VERSION = '1.20170417';
+our $VERSION = '1.20170703';
 
 get '/' => sub {
     send_as html => template 'index.tt';
@@ -32,9 +33,18 @@ get '/sunday' => sub {
 };
 
 get '/html/today' => sub {
-    my $lectHash = getLectionary( cleanToday(), query_parameters->get('lect') );
+    my $today = cleanToday();
 
-    send_as html => template 'readings.tt', $lectHash;
+    if ($today->fullday ne "Sunday") {
+        my $dailyReadings = getDailyLectionary( $today, 'acna');
+
+        send_as html => template 'daily_readings.tt', $dailyReadings;
+    }
+    else {
+        my $lectHash = getLectionary( $today, query_parameters->get('lect') );
+
+        send_as html => template 'readings.tt', $lectHash;
+    }
 };
 
 get '/html/sunday' => sub {
@@ -93,6 +103,20 @@ sub getLectionary {
         lectionary => $lectionary->lectionary,
         year       => $lectionary->year->name,
         services   => [@services],
+    };
+}
+
+sub getDailyLectionary {
+    my $day  = shift;
+    my $lect = shift;
+
+    my $lectionary = Date::Lectionary::Daily->new('date' => $day);
+
+    return {
+        date => $day->date, 
+        lectionary => $lectionary->lectionary, 
+        week => $lectionary->week, 
+        readings => $lectionary->readings
     };
 }
 
