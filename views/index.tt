@@ -11,7 +11,7 @@
 </div>
 <div class="flex-column-container">
 	<div class="flex-column left-column">
-		<h3><a href="/html/daily/<% daily.date %>">Today's Readings</a></h3>
+		<h3><a href="/html/daily/<% daily.date %>">Daily Readings</a></h3>
 		<p><em><% daily.lectionary FILTER upper %> Lectionary</em></p>
 		<h4>Morning Prayer</h4>
 		<ul>
@@ -26,7 +26,7 @@
 		</ul>
 	</div>
 	<div class="flex-column right-column">
-		<h3><a href="/html/sunday/<% sunday.date %>">Sunday's Readings</a></h3>
+		<h3><a href="/html/sunday/<% sunday.date %>">Lectionary Readings</a></h3>
 		<p><em>Year <% sunday.year %>, <% sunday.lectionary FILTER upper %> Lectionary</em></p>
 		  <% FOREACH service IN sunday.services %>
 		      <h4><% service.name %><% IF service.alt %>, <em><% service.alt %></em><% END %></h4>
