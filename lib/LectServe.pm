@@ -14,6 +14,7 @@ use Date::Lectionary::Daily;
 
 our $VERSION = '1.20170713';
 
+#Root HTML Endpoints
 get '/' => sub {
     my $today = cleanToday();
     my $lectionary = getAllLectionary( $today, 'acna');
@@ -29,6 +30,7 @@ get '/:day' => sub {
     send_as html => template 'index.tt', $lectionary;
 };
 
+#JSON Endpoints
 get '/date/:day' => sub {
     my $day = route_parameters->get('day');
     my $date = Time::Piece->strptime( "$day", "%Y-%m-%d" );
@@ -47,10 +49,7 @@ get '/sunday' => sub {
     send_as JSON => getSundayLectionary( $nextSunday, query_parameters->get('lect') ), {content_type=>'application/json; charset=UTF-8'};
 };
 
-get '/api' => sub {
-    send_as html => template 'api.tt';
-};
-
+#Daily Lectionary HTML Endpoints
 get '/html/today' => sub {
     my $today = cleanToday();
     my $dailyReadings = getDailyLectionary( $today, 'acna');
@@ -58,6 +57,15 @@ get '/html/today' => sub {
     send_as html => template 'daily_readings.tt', $dailyReadings;
 };
 
+get '/html/daily/:day' => sub {
+    my $day = route_parameters->get('day');
+    my $date = Time::Piece->strptime( "$day", "%Y-%m-%d" );
+    my $lectionary = getDailyLectionary( $date, 'acna');
+
+    send_as html => template 'daily_readings.tt', $lectionary;
+};
+
+#Sunday Lectionary HTLM Endpoints
 get '/html/sunday' => sub {
     my $nextSunday = nextSunday( cleanToday() );
     my $lectHash = getSundayLectionary( $nextSunday, query_parameters->get('lect') );
@@ -65,18 +73,24 @@ get '/html/sunday' => sub {
     send_as html => template 'sunday_readings.tt', $lectHash;
 };
 
-get '/html/date/:day' => sub {
-    my $day      = route_parameters->get('day');
-    my $date     = Time::Piece->strptime( "$day", "%Y-%m-%d" );
-    my $lectHash = getLectionary( $date, query_parameters->get('lect') );
+get '/html/sunday/:day' => sub {
+    my $day = route_parameters->get('day');
+    my $date = Time::Piece->strptime( "$day", "%Y-%m-%d" );
+    my $lectionary = getSundayLectionary( $date, query_parameters->get('lect'));
 
-    send_as html => template 'readings.tt', $lectHash;
+    send_as html => template 'sunday_readings.tt', $lectionary;
 };
 
+#Additional HTML Endpoints
 get '/html/about' => sub {
     send_as html => template 'about.tt';
 };
 
+get '/api' => sub {
+    send_as html => template 'api.tt';
+};
+
+#Helpter Methods used in resolving routes
 sub getAllLectionary {
     my $day = shift;
     my $lect = shift;
