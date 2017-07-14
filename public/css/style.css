@@ -217,7 +217,6 @@ a:active {
 
 @media only screen and (max-width: 870px) {
 	.flex-column {
-		background-color: cornflowerblue;
 	    width: 100%;
 	    height: 100%;
 	    margin-left: auto;
