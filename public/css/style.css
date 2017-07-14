@@ -10,6 +10,10 @@ body {
 	margin-right: 10%;
 }
 
+.hidden-lit {
+	display: none;
+}
+
 .search-icon {
 	float: right;
 	width: 1em;
@@ -81,7 +85,28 @@ body {
 }
 
 .pagination {
-	padding-top: 2em;
+	
+}
+
+.pagination a:link {
+	text-decoration: none;
+	color: black;
+	font-size: .7em;
+}
+
+.pagination a:visited {
+	text-decoration: none;
+	color:black;
+}
+
+.pagination a:hover {
+	text-decoration: none;
+	color:red;
+}
+
+.pagination a:active {
+	text-decoration: none;
+	color:red;
 }
 
 .banner {
@@ -108,6 +133,37 @@ body {
 .banner a:active {
 	text-decoration: none;
 	color: red;
+}
+
+/*Flex Columns and Flex Column Containers*/
+.flex-column-container {
+	display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.flex-column {
+    width: 320px;
+    height: 100%;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+
+.left-column {
+    -webkit-align-self: flex-start;
+    align-self: flex-start;
+}
+
+.right-column {
+    -webkit-align-self: flex-end;
+    align-self: flex-end;
+    border-left: thin solid black;
+    padding-left: 1em;
 }
 
 /*Setting up the elements for the menu*/
@@ -163,7 +219,27 @@ a:active {
 	color: red;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 870px) {
+	.flex-column {
+	    width: 100%;
+	    height: 100%;
+	    margin-left: auto;
+	}
+
+	.left-column {
+	    -webkit-align-self: flex-start;
+	    align-self: flex-start;
+	}
+
+	.right-column {
+	    -webkit-align-self: flex-start;
+	    align-self: flex-start;
+	    border-left: none;
+    	padding-left: 0px;
+	}
+}
+
+@media only screen and (max-width: 730px) {
 	.miniMenu {
 		text-align: center;
 		font-size: 2em;
