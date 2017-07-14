@@ -1,5 +1,5 @@
 MANIFEST.bak
 Makefile
 Makefile.old
-local/
+local/*
 .DS_Store

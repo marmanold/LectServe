@@ -3,55 +3,66 @@ package LectServe;
 use v5.22;
 use Dancer2;
 
+use Carp;
+use Try::Tiny;
+
 use Time::Piece;
+use Time::Seconds;
 use Date::Lectionary;
-use Date::Lectionary::Time qw(nextSunday);
+use Date::Lectionary::Time qw(nextSunday prevSunday);
 use Date::Lectionary::Daily;
 
-our $VERSION = '1.20170703';
+our $VERSION = '1.20170713';
 
 get '/' => sub {
-    send_as html => template 'index.tt';
+    my $today = cleanToday();
+    my $lectionary = getAllLectionary( $today, 'acna');
+
+    send_as html => template 'index.tt', $lectionary;
+};
+
+get '/:day' => sub {
+    my $day = route_parameters->get('day');
+    my $date = Time::Piece->strptime( "$day", "%Y-%m-%d" );
+    my $lectionary = getAllLectionary( $date, 'acna');
+
+    send_as html => template 'index.tt', $lectionary;
 };
 
 get '/date/:day' => sub {
     my $day = route_parameters->get('day');
     my $date = Time::Piece->strptime( "$day", "%Y-%m-%d" );
 
-    send_as JSON => getLectionary( $date, query_parameters->get('lect') ), {content_type=>'application/json; charset=UTF-8'};
+    send_as JSON => getAllLectionary( $date, query_parameters->get('lect') ), {content_type=>'application/json; charset=UTF-8'};
 };
 
 get '/today' => sub {
     send_as JSON =>
-      getLectionary( cleanToday(), query_parameters->get('lect') ), {content_type=>'application/json; charset=UTF-8'};
+      getAllLectionary( cleanToday(), query_parameters->get('lect') ), {content_type=>'application/json; charset=UTF-8'};
 };
 
 get '/sunday' => sub {
     my $nextSunday = nextSunday( cleanToday() );
 
-    send_as JSON => getLectionary( $nextSunday, query_parameters->get('lect') ), {content_type=>'application/json; charset=UTF-8'};
+    send_as JSON => getSundayLectionary( $nextSunday, query_parameters->get('lect') ), {content_type=>'application/json; charset=UTF-8'};
+};
+
+get '/api' => sub {
+    send_as html => template 'api.tt';
 };
 
 get '/html/today' => sub {
     my $today = cleanToday();
+    my $dailyReadings = getDailyLectionary( $today, 'acna');
 
-    if ($today->fullday ne "Sunday") {
-        my $dailyReadings = getDailyLectionary( $today, 'acna');
-
-        send_as html => template 'daily_readings.tt', $dailyReadings;
-    }
-    else {
-        my $lectHash = getLectionary( $today, query_parameters->get('lect') );
-
-        send_as html => template 'readings.tt', $lectHash;
-    }
+    send_as html => template 'daily_readings.tt', $dailyReadings;
 };
 
 get '/html/sunday' => sub {
     my $nextSunday = nextSunday( cleanToday() );
-    my $lectHash = getLectionary( $nextSunday, query_parameters->get('lect') );
+    my $lectHash = getSundayLectionary( $nextSunday, query_parameters->get('lect') );
 
-    send_as html => template 'readings.tt', $lectHash;
+    send_as html => template 'sunday_readings.tt', $lectHash;
 };
 
 get '/html/date/:day' => sub {
@@ -66,7 +77,19 @@ get '/html/about' => sub {
     send_as html => template 'about.tt';
 };
 
-sub getLectionary {
+sub getAllLectionary {
+    my $day = shift;
+    my $lect = shift;
+
+    my $nextSunday = nextSunday($day);
+
+    return {
+        sunday => getSundayLectionary($nextSunday, $lect), 
+        daily => getDailyLectionary($day, $lect)
+    };
+}
+
+sub getSundayLectionary {
     my $day  = shift;
     my $lect = shift;
 
@@ -103,6 +126,8 @@ sub getLectionary {
         lectionary => $lectionary->lectionary,
         year       => $lectionary->year->name,
         services   => [@services],
+        nextSunday => nextSunday($day)->date,
+        prevSunday => prevSunday($day)->date
     };
 }
 
@@ -114,9 +139,13 @@ sub getDailyLectionary {
 
     return {
         date => $day->date, 
+        day => $day->fullday, 
+        date_pretty => $day->day_of_month . '. ' . $day->fullmonth . ' ' . $day->year, 
         lectionary => $lectionary->lectionary, 
         week => $lectionary->week, 
-        readings => $lectionary->readings
+        readings => $lectionary->readings, 
+        tomorrow => nextDay($day), 
+        yesterday => prevDay($day)
     };
 }
 
@@ -124,6 +153,58 @@ sub cleanToday {
     my $localTime = localtime;
     my $today     = $localTime->ymd;
     return Time::Piece->strptime( "$today", "%Y-%m-%d" );
+}
+
+sub nextDay {
+    my ( $class, @params ) = @_;
+    my $date = $params[0] // $class;
+    my $tomorrow = undef;
+
+    if ( !length $date ) {
+        croak
+"Method [nextDay] expects an input argument of type Time::Piece.  The given type could not be determined.";
+    }
+
+    if ( $date->isa('Time::Piece') ) {
+        try {
+            $tomorrow = $date + ONE_DAY;
+        }
+        catch {
+            croak "Could not calculate the next day after $date.";
+        };
+    }
+    else {
+        croak
+          "Method [nextDay] expects an input argument of type Time::Piece.";
+    }
+
+    return $tomorrow->date;
+}
+
+sub prevDay {
+    my ( $class, @params ) = @_;
+    my $date = $params[0] // $class;
+    my $yesterday = undef;
+
+    if ( !length $date ) {
+        croak
+"Method [prevDay] expects an input argument of type Time::Piece.  The given type could not be determined.";
+    }
+
+    if ( $date->isa('Time::Piece') ) {
+        try {
+            $yesterday = $date - ONE_DAY;
+        }
+        catch {
+            croak "Could not calculate the next day before $date.";
+        };
+    }
+    else {
+        croak
+          "Method [prevDay] expects an input argument of type Time::Piece.";
+    }
+
+    return $yesterday->date;
 }
 
 true;

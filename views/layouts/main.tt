@@ -22,9 +22,9 @@
 <body>
     <h1 class="banner"><a href="/" title="Return home...">LectServe &alpha;</a></h1>
     <div class="menu">
-        <a href="/html/today"><img class="menu-icon" src="<% request.uri_base %>/images/ios-calendar-outline.svg" alt="Calendar"/> Today's Readings</a>
-        <a href="/html/sunday"><img class="menu-icon" src="<% request.uri_base %>/images/ios-bookmarks.svg" alt="Open Book"/> Sunday's Readings</a>
-        <a href="/html/about"><img class="menu-icon" src="<% request.uri_base %>/images/ios-help.svg" alt="Question Mark"/> About LectServe</a>
+        <a href="/html/today"><img class="menu-icon" src="<% request.uri_base %>/images/ios-calendar-outline.svg" alt="Calendar"/>Daily Lectionary</a>
+        <a href="/html/sunday"><img class="menu-icon" src="<% request.uri_base %>/images/ios-bookmarks.svg" alt="Open Book"/>Sunday Lectionary</a>
+        <a href="/html/about"><img class="menu-icon" src="<% request.uri_base %>/images/ios-help.svg" alt="Question Mark"/>About LectServe</a>
     </div>
     <div class="miniMenu">
         <a href="/html/today" title="Today's Readings"><img class="miniIcon" src="<% request.uri_base %>/images/ios-calendar-outline.svg" alt="Calendar"/></a>

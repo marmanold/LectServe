@@ -1,0 +1,18 @@
+<h2>Welcome to LectServe &alpha;lpha!</h2>
+<p>LectServe is an early version of a tool I'm providing to the Church to quickly find lectionary readings for a given day.</p>
+<p>The <a href="https://metacpan.org/pod/Date::Lectionary">backend</a> supports both the Revised Common Lectionary and the ACNA lectionary for Sundays and Red-Letter days.  I'm defaulting to the ACNA lectionary because I'm Anglican, but you can use the RCL if you would like.</p>
+<p>The daily lectionary <a href="https://metacpan.org/pod/Date::Lectionary::Daily">backend</a> currently only supports the ACNA lectionary, but more are planned.</p>
+<p><strong>Nota bene:</strong> This software is shared in alpha quality.  That's <em>before</em> beta!  API endpoints and JSON payloads <em>will</em> change and things <em>will</em> shift around unexpectedly.</p>
+<h3>API Usage</h3>
+<p>All endpoints return JSON.  Optionally, the argument <tt>?lect=acna</tt> or <tt>?lect=rcl</tt> can be given to each endpoint to specify the lectionary you wish to use for Sundays and Red-Letter days.  The default lectionary is the ACNA.</p>
+<dl>
+  <dt><a href="/today">/today</a></dt>
+  <dd>Returns the lectionary payload for today's date.  "Today" is relative to the server LectServe is running on.  Presently, the server is sitting in Virginia, but I'm not sure if it's running on EST or GMT.</dd>
+  <dt><a href="/sunday">/sunday</a></dt>
+  <dd>Returns the Sunday-only lectionary payload for the upcoming Sunday relative to "today".</dd>
+  <dt><a href="/date/2016-12-25">/date/yyyy-mm-dd</a></dt>
+  <dd>Returns the lectionary payload for the given date.  Date is given in four-digit year [yyyy], two-digit month [mm], and two digit day [dd] annotation with dashes between units.  Christmas Day in 2016 would be given as <tt>/date/2016-12-25</tt>, for example.</dd>
+</dl>
+<h3>Issues</h3>
+<p>Please log issues for the lectionary content or day determination logic to the <a href="https://github.com/marmanold/Date-Lectionary/issues">Date::Lectionary</a> or <a href="https://github.com/marmanold/Date-Lectionary-Daily/issues">Date::Lectionary::Daily</a> projects on GitHub</a>.  Issues for this API and website can be logged to the <a href="https://github.com/marmanold/LectServe/issues">LectServe project</a>, also on GitHub.</p>
+<p>Updates about issues, downtime, new features, etc. will be shared on our <a href="https://www.twitter.com/lectserve/">Twitter account</a>.</p>

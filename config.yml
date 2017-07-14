@@ -24,6 +24,7 @@ engines:
     template_toolkit:
       start_tag: '<%'
       end_tag:   '%>'
+      include_path: views/
 
 plugins:
     'Cache::CHI':
