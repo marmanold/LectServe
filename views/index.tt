@@ -4,8 +4,8 @@
 	</div>
 	<div class="flex-colum">
 		<div class="pagination">
-			<a class="previous" href="/<% daily.yesterday %>" title="View yesterday's readings...">&lt;--Yesterday</a>
-			<a class="next" href="/<% daily.tomorrow %>" title="View tomorrow's readings...">Tomorrow--&gt;</a>
+			<a class="previous" href="/home/<% daily.yesterday %>" title="View yesterday's readings...">&lt;--Yesterday</a>
+			<a class="next" href="/home/<% daily.tomorrow %>" title="View tomorrow's readings...">Tomorrow--&gt;</a>
 		</div>
 	</div>
 </div>

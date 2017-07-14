@@ -22,7 +22,7 @@ get '/' => sub {
     send_as html => template 'index.tt', $lectionary;
 };
 
-get '/:day' => sub {
+get '/home/:day' => sub {
     my $day = route_parameters->get('day');
     my $date = Time::Piece->strptime( "$day", "%Y-%m-%d" );
     my $lectionary = getAllLectionary( $date, 'acna');
