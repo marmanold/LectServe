@@ -95,7 +95,14 @@ sub getAllLectionary {
     my $day = shift;
     my $lect = shift;
 
-    my $nextSunday = nextSunday($day);
+    my $nextSunday = undef;
+
+    if ($day->day_of_week == 0) {
+        $nextSunday = $day;
+    }
+    else {
+        $nextSunday = nextSunday($day);
+    }
 
     return {
         sunday => getSundayLectionary($nextSunday, $lect), 
