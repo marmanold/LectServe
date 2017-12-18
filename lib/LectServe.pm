@@ -12,7 +12,7 @@ use Date::Lectionary;
 use Date::Lectionary::Time qw(nextSunday prevSunday);
 use Date::Lectionary::Daily;
 
-our $VERSION = '1.20170713';
+our $VERSION = '1.20171218';
 
 #Root HTML Endpoints
 get '/' => sub {
@@ -66,6 +66,13 @@ get '/html/daily/:day' => sub {
 };
 
 #Sunday Lectionary HTLM Endpoints
+get '/html/lastSunday' => sub {
+    my $prevSunday = prevSunday( cleanToday() );
+    my $lectHash = getSundayLectionary( $prevSunday, query_parameters->get('lect') );
+
+    send_as html => template 'sunday_readings.tt', $lectHash;
+};
+
 get '/html/sunday' => sub {
     my $nextSunday = nextSunday( cleanToday() );
     my $lectHash = getSundayLectionary( $nextSunday, query_parameters->get('lect') );
@@ -90,7 +97,7 @@ get '/api' => sub {
     send_as html => template 'api.tt';
 };
 
-#Helpter Methods used in resolving routes
+#Helper Methods used in resolving routes
 sub getAllLectionary {
     my $day = shift;
     my $lect = shift;
