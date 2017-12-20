@@ -12,3 +12,7 @@
   <li><% readings.evening.1 %></li>
   <li><% readings.evening.2 %></li>
 </ul>
+<div class="pagination">
+  <a class="previous" href="/html/daily/<% yesterday %>" title="View tomorrow's readings...">&lt;--Yesterday</a>
+  <a class="next" href="/html/daily/<% tomorrow %>" title="View yesterday's readings...">Tomorrow--&gt;</a>
+</div>

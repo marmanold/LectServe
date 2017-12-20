@@ -14,3 +14,7 @@
   <p>Sadly, today is just a normal day in the lectionary and there are no special readings.</p>
   <p>Check out <a href="/html/sunday?lect=<% lectionary %>">[Sunday's Readings]</a> to prepare for Sunday worship.</p>
 <% END %>
+<div class="pagination">
+  <a class="previous" href="/html/sunday/<% prevSunday %>" title="View last Sunday's readings...">&lt;--Previous</a>
+  <a class="next" href="/html/sunday/<% nextSunday %>" title="View next Sunday's readings...">Next--&gt;</a>
+</div>

@@ -16,7 +16,8 @@
     <meta name="msapplication-TileColor" content="#00a300">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <script async type="application/javascript" src="<% request.uri_base %>/javascripts/stats-lite-client.bundle.js"></script>
+    <script async type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script async type="application/javascript" src="<% request.uri_base %>/javascripts/lectserve-stats-query.bundle.js"></script>
 </head>
 
 <body>

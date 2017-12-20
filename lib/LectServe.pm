@@ -66,7 +66,7 @@ get '/html/daily/:day' => sub {
 };
 
 #Sunday Lectionary HTLM Endpoints
-get '/html/lastSunday' => sub {
+get '/html/last_sunday' => sub {
     my $prevSunday = prevSunday( cleanToday() );
     my $lectHash = getSundayLectionary( $prevSunday, query_parameters->get('lect') );
 
@@ -91,6 +91,10 @@ get '/html/sunday/:day' => sub {
 #Additional HTML Endpoints
 get '/html/about' => sub {
     send_as html => template 'about.tt';
+};
+
+get '/stats' => sub {
+    send_as html => template 'stats_results.tt', {}, { layout => 'stats.tt' };
 };
 
 get '/api' => sub {
