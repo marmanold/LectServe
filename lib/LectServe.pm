@@ -58,6 +58,7 @@ get '/sunday' => sub {
 get '/html/today' => sub {
     my $today = cleanToday();
     my $dailyReadings = getDailyLectionary( $today, 'acna' );
+    $dailyReadings->{title} = "Daily Readings";
 
     send_as html => template 'daily_readings.tt', $dailyReadings;
 };
@@ -66,6 +67,7 @@ get '/html/daily/:day' => sub {
     my $day        = route_parameters->get('day');
     my $date       = Time::Piece->strptime( "$day", "%Y-%m-%d" );
     my $lectionary = getDailyLectionary( $date, 'acna' );
+    $lectionary->{title} = "Daily Readings";
 
     send_as html => template 'daily_readings.tt', $lectionary;
 };
@@ -74,6 +76,7 @@ get '/html/daily/:day' => sub {
 get '/html/last_sunday' => sub {
     my $prevSunday = prevSunday( cleanToday() );
     my $lectHash = getSundayLectionary( $prevSunday, query_parameters->get('lect') );
+    $lectHash->{title} = "Last Sunday Readings";
 
     send_as html => template 'sunday_readings.tt', $lectHash;
 };
@@ -81,27 +84,49 @@ get '/html/last_sunday' => sub {
 get '/html/sunday' => sub {
     my $nextSunday = nextSunday( cleanToday() );
     my $lectHash = getSundayLectionary( $nextSunday, query_parameters->get('lect') );
+    $lectHash->{title} = "Sunday Readings";
 
     send_as html => template 'sunday_readings.tt', $lectHash;
 };
 
 get '/html/sunday/:day' => sub {
+    my $day      = route_parameters->get('day');
+    my $date     = Time::Piece->strptime( "$day", "%Y-%m-%d" );
+    my $lectHash = getSundayLectionary( $date, query_parameters->get('lect') );
+    $lectHash->{title} = "Sunday Readings";
+
+    send_as html => template 'sunday_readings.tt', $lectHash;
+};
+
+#Daily Prayer HTML Endpoints
+get '/html/morning_prayer' => sub {
+    my $today = cleanToday();
+    my $dailyReadings = getDailyLectionary( $today, 'acna' );
+    $dailyReadings->{title} = "Morning Prayer";
+
+    send_as html => template 'morning_prayer.tt', $dailyReadings;
+};
+
+get '/html/morning_prayer/:day' => sub {
     my $day        = route_parameters->get('day');
     my $date       = Time::Piece->strptime( "$day", "%Y-%m-%d" );
-    my $lectionary = getSundayLectionary( $date, query_parameters->get('lect') );
+    my $lectionary = getDailyLectionary( $date, 'acna' );
+    $lectionary->{title} = "Morning Prayer";
 
-    send_as html => template 'sunday_readings.tt', $lectionary;
+    send_as html => template 'morning_prayer.tt', $lectionary;
 };
 
 #Additional HTML Endpoints
 get '/html/about' => sub {
-    send_as html => template 'about.tt';
+    send_as
+        html => template 'about.tt',
+        { title => 'About & Documentation' };
 };
 
 get '/stats' => sub {
     send_as
         html => template 'stats_results.tt',
-        {}, { layout => 'stats.tt' };
+        { title => 'Statistics' }, { layout => 'stats.tt' };
 };
 
 get '/api' => sub {
@@ -123,8 +148,9 @@ sub getAllLectionary {
     }
 
     return {
-        sunday => getSundayLectionary( $nextSunday, $lect ),
-        daily  => getDailyLectionary( $day,         $lect )
+        sunday     => getSundayLectionary( $nextSunday, $lect ),
+        daily      => getDailyLectionary( $day,         $lect ),
+        red_letter => getSundayLectionary( $day,        $lect )
     };
 }
 
@@ -160,12 +186,15 @@ sub getSundayLectionary {
     }
 
     return {
-        date       => $day->date,
-        lectionary => $lectionary->lectionary,
-        year       => $lectionary->year->name,
-        services   => [@services],
-        nextSunday => nextSunday($day)->date,
-        prevSunday => prevSunday($day)->date
+        date        => $day->date,
+        day         => $day->fullday,
+        date_pretty => $day->day_of_month . '. ' . $day->fullmonth . ' ' . $day->year,
+        lectionary  => $lectionary->lectionary,
+        year        => $lectionary->year->name,
+        services    => [@services],
+        nextSunday  => nextSunday($day)->date,
+        prevSunday  => prevSunday($day)->date,
+        type        => $lectionary->day->type,
     };
 }
 

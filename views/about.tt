@@ -6,12 +6,12 @@
 <h3>API Usage</h3>
 <p>All endpoints return JSON.  Optionally, the argument <tt>?lect=acna</tt> or <tt>?lect=rcl</tt> can be given to each endpoint to specify the lectionary you wish to use for Sundays and Red-Letter days.  The default lectionary is the ACNA.</p>
 <dl>
-  <dt><a href="/today">/today</a></dt>
-  <dd>Returns the lectionary payload for today's date.  "Today" is relative to the server LectServe is running on.  Presently, the server is sitting in Virginia, but I'm not sure if it's running on EST or GMT.</dd>
-  <dt><a href="/sunday">/sunday</a></dt>
-  <dd>Returns the Sunday-only lectionary payload for the upcoming Sunday relative to "today".</dd>
-  <dt><a href="/date/2016-12-25">/date/yyyy-mm-dd</a></dt>
-  <dd>Returns the lectionary payload for the given date.  Date is given in four-digit year [yyyy], two-digit month [mm], and two digit day [dd] annotation with dashes between units.  Christmas Day in 2016 would be given as <tt>/date/2016-12-25</tt>, for example.</dd>
+    <dt><a href="/today">/today</a></dt>
+    <dd>Returns the lectionary payload for today's date.  "Today" is relative to the server LectServe is running on.  Presently, the server is sitting in Virginia, but I'm not sure if it's running on EST or GMT.</dd>
+    <dt><a href="/sunday">/sunday</a></dt>
+    <dd>Returns the Sunday-only lectionary payload for the upcoming Sunday relative to "today".</dd>
+    <dt><a href="/date/2016-12-25">/date/yyyy-mm-dd</a></dt>
+    <dd>Returns the lectionary payload for the given date.  Date is given in four-digit year [yyyy], two-digit month [mm], and two digit day [dd] annotation with dashes between units.  Christmas Day in 2016 would be given as <tt>/date/2016-12-25</tt>, for example.</dd>
 </dl>
 <h3>Technical Information</h3>
 <p>LectServe is hosted on an Amazon EC2 instance and driven by Perl.  The engine driving this site and the API is the wonderful <a href="http://perldancer.org/">Dancer2</a> framework and the <a href="https://metacpan.org/pod/distribution/Starman/script/starman">Starman</a> high-performance web server.</p>

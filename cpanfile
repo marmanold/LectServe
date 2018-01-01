@@ -7,6 +7,7 @@ requires "Time::Seconds" => "1.3201";
 requires "Date::Lectionary::Time" => "1.20170311";
 requires "Date::Lectionary::Daily" => "1.20171127";
 requires "Template" => "2.26";
+requires "Template::Plugin::Date" => "2.78";
 requires "Plack" => "1.0043";
 requires "Plack::Middleware::Deflater" => "0.12";
 requires "Plack::Middleware::CrossOrigin" => "0.012";

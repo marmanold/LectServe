@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+<% USE date %>
 
 <head>
     <meta charset="<% settings.charset %>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LectServe &alpha;</title>
+    <% IF title %>
+        <title><% title %> - LectServe &alpha;</title>
+    <% ELSE %>
+        <title>LectServe &alpha;</title>
+    <% END %>
     <link rel="stylesheet" href="<% request.uri_base %>/css/style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
@@ -38,7 +43,7 @@
     </div>
 
     <div class="footer">
-        &copy;2016-2018, <a href="https://www.marmanold.com/about/" title="Michael's Biography">Michael Wayne Arnold</a>
+        &copy;2016-<% date.format(date.now, '%Y') %>, <a href="https://www.marmanold.com/about/" title="Michael's Biography">Michael Wayne Arnold</a>
         <span class="social-footer">
                 <a href="https://www.twitter.com/lectserve/" title="Follow LectServe on Twitter!"><img class="social-icon" src="/images/social-twitter.svg" alt="Social Twitter Icon" /></a>
                 <a href="https://www.github.com/marmanold/" title="Check Michael Arnold out on GitHub!"><img class="social-icon" src="/images/social-github.svg" alt="Social GitHub Icon" /></a>

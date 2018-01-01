@@ -135,6 +135,67 @@ body {
 	color: red;
 }
 
+/*Morning and Evening Prayer*/
+.instruction {
+	color: red;
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.prayer {
+	text-align: left;
+}
+
+.poetic {
+	text-align: left;
+	white-space: nowrap;
+	padding-bottom: 1em;
+}
+
+.reference {
+	font-size: 0.9em;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.line {
+	margin: 0;
+}
+
+.indented_line {
+	margin: 0;
+	text-indent: 2em;
+}
+
+.dialog {
+
+}
+
+.dialog_line {
+	display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0.5em;
+}
+
+.person {
+    -webkit-align-self: flex-start;
+    align-self: flex-start;
+    width: 15%;
+    font-style: italic;
+}
+
+.utterance {
+	margin-left: 1em;
+	width: 75%;
+	padding-left: 0.2em;
+}
+
 /*Flex Columns and Flex Column Containers*/
 .flex-column-container {
 	display: -webkit-flex;
@@ -164,6 +225,26 @@ body {
     align-self: flex-end;
     border-left: thin solid black;
     padding-left: 1em;
+}
+
+.day-column {
+	-webkit-align-self: flex-start;
+    align-self: flex-start;
+	height: 100%;
+    margin-bottom: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.page-column {
+	-webkit-align-self: flex-start;
+    align-self: flex-end;
+	height: 100%;
+    margin-bottom: auto;
+    margin-left: auto;
+    text-align: right;
+    width: 30%;
+    float: right;
 }
 
 /*Setting up the elements for the menu*/

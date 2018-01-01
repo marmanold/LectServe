@@ -1,8 +1,8 @@
 <div class="flex-column-container">
-	<div class="flex-column">
+	<div class="day-column">
 		<h2><% daily.day %>, <% daily.date_pretty %></h2>
 	</div>
-	<div class="flex-colum">
+	<div class="page-column">
 		<div class="pagination">
 			<a class="previous" href="/home/<% daily.yesterday %>" title="View yesterday's readings...">&lt;--Yesterday</a>
 			<a class="next" href="/home/<% daily.tomorrow %>" title="View tomorrow's readings...">Tomorrow--&gt;</a>
@@ -13,7 +13,7 @@
 	<div class="flex-column left-column">
 		<h3><a href="/html/daily/<% daily.date %>">Daily Readings</a></h3>
 		<p><em><% daily.lectionary FILTER upper %> Lectionary</em></p>
-		<h4>Morning Prayer</h4>
+		<h4><a href="/html/morning_prayer/<% daily.date %>">Morning Prayer</a></h4>
 		<ul>
 		  <li><% daily.readings.morning.1 %></li>
 		  <li><% daily.readings.morning.2 %></li>
@@ -26,15 +26,28 @@
 		</ul>
 	</div>
 	<div class="flex-column right-column">
-		<h3><a href="/html/sunday/<% sunday.date %>">Lectionary Readings</a></h3>
-		<p><em>Year <% sunday.year %>, <% sunday.lectionary FILTER upper %> Lectionary</em></p>
-		  <% FOREACH service IN sunday.services %>
-		      <h4><% service.name %><% IF service.alt %>, <em><% service.alt %></em><% END %></h4>
-		      <ul>
-		      <% FOREACH reading IN service.readings %>
-		          <li><% reading %></li>
-		      <% END %>
-		      </ul>
-		  <% END %>
+		<% IF red_letter.services.first.readings.size > 0  && (red_letter.type == 'fixedFeast' || red_letter.type == 'moveableFeast')%>
+			<h3><a href="/html/sunday/<% red_letter.date %>">Red-Letter Readings</a></h3>
+			<p><em>Year <% red_letter.year %>, <% red_letter.lectionary FILTER upper %> Lectionary</em></p>
+			  <% FOREACH service IN red_letter.services %>
+			      <h4><% service.name %><% IF service.alt %>, <em><% service.alt %></em><% END %></h4>
+			      <ul>
+			      <% FOREACH reading IN service.readings %>
+			          <li><% reading %></li>
+			      <% END %>
+			      </ul>
+			  <% END %>
+		<% END %>
+			<h3><a href="/html/sunday/<% sunday.date %>">Sunday Readings</a></h3>
+			<p><em>Year <% sunday.year %>, <% sunday.lectionary FILTER upper %> Lectionary</em></p>
+			  <% FOREACH service IN sunday.services %>
+			      <h4><% service.name %><% IF service.alt %>, <em><% service.alt %></em><% END %></h4>
+			      <ul>
+			      <% FOREACH reading IN service.readings %>
+			          <li><% reading %></li>
+			      <% END %>
+			      </ul>
+			  <% END %>
+
 	</div>
 </div>

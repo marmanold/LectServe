@@ -1,6 +1,6 @@
 <h1>Query Results</h1>
 <div>
-    Site: <input type="text" id="site" value="www.lectserve.com"/><br/>
+    <input type="hidden" id="site" value="www.lectserve.com"/><br/>
     Start Date: <input type="date" id="start-date"/><br/>
     End Date: <input type="date" id="end-date"/><br/>
     <button id="query">Query</button>
