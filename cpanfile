@@ -1,7 +1,7 @@
 requires 'perl', '5.22.0';
 
 requires "Dancer2" => "0.205";
-requires "Date::Lectionary" => "1.20170809";
+requires "Date::Lectionary" => "1.20180108";
 requires "Time::Piece" => "1.31";
 requires "Time::Seconds" => "1.3201";
 requires "Date::Lectionary::Time" => "1.20170311";
