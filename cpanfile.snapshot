@@ -11,12 +11,12 @@ DISTRIBUTIONS
       perl 5.006
       strict 0
       warnings 0
-  Date-Lectionary-1.20170809
-    pathname: M/MA/MARMANOLD/Date-Lectionary-1.20170809.tar.gz
+  Date-Lectionary-1.20180109
+    pathname: M/MA/MARMANOLD/Date-Lectionary-1.20180109.tar.gz
     provides:
-      Date::Lectionary 1.20170809
-      Date::Lectionary::Day 1.20170809
-      Date::Lectionary::Year 1.20161227
+      Date::Lectionary 1.20180109
+      Date::Lectionary::Day 1.20180109
+      Date::Lectionary::Year 1.20180109
     requirements:
       Carp 1.38
       Date::Advent 1.20160727
@@ -28,6 +28,7 @@ DISTRIBUTIONS
       Moose 2.1804
       Moose::Util::TypeConstraints 2.1804
       MooseX::Aliases 0.11
+      MooseX::StrictConstructor 0.21
       Test::CheckManifest 0.9
       Test::Exception 0.43
       Test::More 1.302040
@@ -37,16 +38,16 @@ DISTRIBUTIONS
       XML::LibXML 2.0128
       namespace::autoclean 0.28
       perl 5.022
-  Date-Lectionary-Daily-1.20171127
-    pathname: M/MA/MARMANOLD/Date-Lectionary-Daily-1.20171127.tar.gz
+  Date-Lectionary-Daily-1.20180114
+    pathname: M/MA/MARMANOLD/Date-Lectionary-Daily-1.20180114.tar.gz
     provides:
-      Date::Lectionary::Daily 1.20171127
+      Date::Lectionary::Daily 1.20180114
     requirements:
       Carp 1.38
       Date::Advent 1.20160727
       Date::Easter 1.22
-      Date::Lectionary 1.20170809
-      Date::Lectionary::Day 1.20170809
+      Date::Lectionary 1.20180109
+      Date::Lectionary::Day 1.20180109
       Date::Lectionary::Time 1.20170311
       ExtUtils::MakeMaker 0
       File::Share 0.25
@@ -54,6 +55,7 @@ DISTRIBUTIONS
       Moose 2.1804
       Moose::Util::TypeConstraints 2.1804
       MooseX::Aliases 0.11
+      MooseX::StrictConstructor 0.21
       Pod::Markdown 3.005
       Test::CheckManifest 0.9
       Test::Exception 0.43
@@ -442,6 +444,22 @@ DISTRIBUTIONS
       parent 0.223
       strict 1.03
       warnings 1.03
+  MooseX-StrictConstructor-0.21
+    pathname: D/DR/DROLSKY/MooseX-StrictConstructor-0.21.tar.gz
+    provides:
+      MooseX::StrictConstructor 0.21
+      MooseX::StrictConstructor::Trait::Class 0.21
+      MooseX::StrictConstructor::Trait::Method::Constructor 0.21
+    requirements:
+      B 0
+      ExtUtils::MakeMaker 0
+      Moose 0.94
+      Moose::Exporter 0
+      Moose::Role 0
+      Moose::Util::MetaRole 0
+      namespace::autoclean 0
+      strict 0
+      warnings 0
   Package-Stash-XS-0.28
     pathname: D/DO/DOY/Package-Stash-XS-0.28.tar.gz
     provides:
