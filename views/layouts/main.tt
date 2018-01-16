@@ -2,11 +2,11 @@
 <html lang="en">
 <% USE date %>
 
-<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
-    <meta charset="<% settings.charset %>">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"/>
+    <meta charset="<% settings.charset %>"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <% IF title %>k
+    <% IF title %>
         <title><% title %> - LectServe &alpha;</title>
         <meta property="og:title" content="<% title %> - LectServe &alpha;" />
         <meta name="twitter:title" content="<% title %> - LectServe &alpha;" />
@@ -15,17 +15,17 @@
         <meta property="og:title" content="LectServe &alpha;" />
         <meta name="twitter:title" content="LectServe &alpha;" />
     <% END %>
-    <link rel="stylesheet" href="<% request.uri_base %>/css/style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="apple-mobile-web-app-title" content="LectServe">
-    <meta name="application-name" content="LectServe">
-    <meta name="msapplication-TileColor" content="#00a300">
-    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="<% request.uri_base %>/css/style.css"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16"/>
+    <link rel="manifest" href="/manifest.json"/>
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"/>
+    <meta name="apple-mobile-web-app-title" content="LectServe"/>
+    <meta name="application-name" content="LectServe"/>
+    <meta name="msapplication-TileColor" content="#00a300"/>
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png"/>
+    <meta name="theme-color" content="#ffffff"/>
     <meta name="keywords" content="lectionary,acna,rcl,advent,lent,christmas,easter,church,anglican"/>
     <meta name="author" content="Michael Wayne Arnold"/>
     <meta name="description" content="LectServe is a tool to provide the Church a way to quickly find lectionary readings for a given day.  It supports both the new ACNA Lectionary and the Revised Common Lectionary."/>
