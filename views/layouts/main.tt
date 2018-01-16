@@ -2,7 +2,7 @@
 <html lang="en">
 <% USE date %>
 
-<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"/>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
     <meta charset="<% settings.charset %>"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
