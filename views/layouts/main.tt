@@ -15,7 +15,7 @@
         <meta property="og:title" content="LectServe &alpha;" />
         <meta name="twitter:title" content="LectServe &alpha;" />
     <% END %>
-    <link rel="stylesheet" href="<% request.uri_base %>/css/style.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32"/>
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16"/>
@@ -35,31 +35,31 @@
     <meta property="og:type" content="website" />
     <meta property="og:description" content="Your daily lectionary readings…" />
     <meta property="og:site_name" content="LectServe &alpha;" />
-    <meta property="og:url" content="<% request.uri_base %><% request.uri %>" />
-    <meta property="og:image" content="<% request.uri_base %>/images/lectserve_og_image.jpg" />
-    <meta property="og:image:url" content="<% request.uri_base %>/images/lectserve_og_image.jpg" />
+    <meta property="og:url" content="http://www.lectserve.com<% request.uri %>" />
+    <meta property="og:image" content="/images/lectserve_og_image.jpg" />
+    <meta property="og:image:url" content="/images/lectserve_og_image.jpg" />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="fb:app_id" content="822793224590132" />
 
     <!-- Twitter Card Metadata-->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:description" content="Your daily lectionary readings…" />
-    <meta name="twitter:url" content="<% request.uri_base %><% request.uri %>" />
-    <meta name="twitter:image" content="<% request.uri_base %>/images/lectserve_og_image.jpg" />
+    <meta name="twitter:url" content="http://www.lectserve.com<% request.uri %>" />
+    <meta name="twitter:image" content="/images/lectserve_og_image.jpg" />
     <meta name="twitter:creator" content="@lectserve" />
 </head>
 
 <body>
     <h1 class="banner"><a href="/" title="Return home...">LectServe &alpha;</a></h1>
     <div class="menu">
-        <a href="/html/today"><img class="menu-icon" src="<% request.uri_base %>/images/ios-calendar-outline.svg" alt="Calendar"/>Daily Lectionary</a>
-        <a href="/html/sunday"><img class="menu-icon" src="<% request.uri_base %>/images/ios-bookmarks.svg" alt="Open Book"/>Sunday Lectionary</a>
-        <a href="/html/about"><img class="menu-icon" src="<% request.uri_base %>/images/ios-help.svg" alt="Question Mark"/>About LectServe</a>
+        <a href="/html/today"><img class="menu-icon" src="/images/ios-calendar-outline.svg" alt="Calendar"/>Daily Lectionary</a>
+        <a href="/html/sunday"><img class="menu-icon" src="/images/ios-bookmarks.svg" alt="Open Book"/>Sunday Lectionary</a>
+        <a href="/html/about"><img class="menu-icon" src="/images/ios-help.svg" alt="Question Mark"/>About LectServe</a>
     </div>
     <div class="miniMenu">
-        <a href="/html/today" title="Today's Readings"><img class="miniIcon" src="<% request.uri_base %>/images/ios-calendar-outline.svg" alt="Calendar"/></a>
-        <a href="/html/sunday" title="Sunday's Readings"><img class="miniIcon" src="<% request.uri_base %>/images/ios-bookmarks.svg" alt="Open Book"/></a>
-        <a href="/html/about" title="About LectServe"><img class="miniIcon" src="<% request.uri_base %>/images/ios-help.svg" alt="Question Mark"/></a>
+        <a href="/html/today" title="Today's Readings"><img class="miniIcon" src="/images/ios-calendar-outline.svg" alt="Calendar"/></a>
+        <a href="/html/sunday" title="Sunday's Readings"><img class="miniIcon" src="/images/ios-bookmarks.svg" alt="Open Book"/></a>
+        <a href="/html/about" title="About LectServe"><img class="miniIcon" src="/images/ios-help.svg" alt="Question Mark"/></a>
     </div>
     <hr/>
 
