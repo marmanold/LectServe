@@ -16,6 +16,13 @@
 <h3>Technical Information</h3>
 <p>LectServe is hosted on an Amazon EC2 instance and driven by Perl.  The engine driving this site and the API is the wonderful <a href="http://perldancer.org/">Dancer2</a> framework and the <a href="https://metacpan.org/pod/distribution/Starman/script/starman">Starman</a> high-performance web server.</p>
 <p>Behind the scenes all the hard work of finding our place in the lectionary is handled by the <a href="https://metacpan.org/pod/Date::Lectionary">Date::Lectionary</a> &amp; <a href="https://metacpan.org/pod/Date::Lectionary::Daily">Date::Lectionary::Daily</a> modules and three helper modules <a href="https://metacpan.org/pod/Date::Advent">Date::Advent</a>, <a href="https://metacpan.org/pod/Date::Easter">Date::Easter</a>, and <a href="https://metacpan.org/pod/Date::Lectionary::Time">Date::Lectionary::Time</a>.</p>
+<h4>Verison Information</h4>
+<ul>
+    <li>LectServe v<% vars.app_version %></li>
+    <li>Date::Lectionary v<% vars.sun_version %></li>
+    <li>Date::Lectionary::Daily v<% vars.daily_version %></li>
+    <li>Date::Lectionary::Time v<%vars.time_version %></li>
+</ul>
 <h3>Issues</h3>
 <p>This API and all the supporting infrastructure is supported and maintained by me in my free time.  Please log issues for the lectionary content or day determination logic to the <a href="https://github.com/marmanold/Date-Lectionary/issues">Date::Lectionary</a> or <a href="https://github.com/marmanold/Date-Lectionary-Daily/issues">Date::Lectionary::Daily</a> projects on GitHub</a>.  Issues for this API and website can be logged to the <a href="https://github.com/marmanold/LectServe/issues">LectServe project</a>, also on GitHub.</p>
 <p>Updates about issues, downtime, new features, etc. will be shared on our <a href="https://www.twitter.com/lectserve/">Twitter account</a>.</p>

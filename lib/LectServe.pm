@@ -12,7 +12,9 @@ use Date::Lectionary;
 use Date::Lectionary::Time qw(nextSunday prevSunday);
 use Date::Lectionary::Daily;
 
-our $VERSION = '1.20171218';
+use Module::Version qw(get_version);
+
+our $VERSION = '1.20180206';
 
 #Root HTML Endpoints
 get '/' => sub {
@@ -118,6 +120,11 @@ get '/html/morning_prayer/:day' => sub {
 
 #Additional HTML Endpoints
 get '/html/about' => sub {
+    var daily_version => get_version('Date::Lectionary::Daily');
+    var sun_version => get_version('Date::Lectionary');
+    var time_version => get_version('Date::Lectionary::Time');
+    var app_version => $VERSION;
+
     send_as
         html => template 'about.tt',
         { title => 'About & Documentation' };

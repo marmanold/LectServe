@@ -38,10 +38,10 @@ DISTRIBUTIONS
       XML::LibXML 2.0128
       namespace::autoclean 0.28
       perl 5.022
-  Date-Lectionary-Daily-1.20180114
-    pathname: M/MA/MARMANOLD/Date-Lectionary-Daily-1.20180114.tar.gz
+  Date-Lectionary-Daily-1.20180205
+    pathname: M/MA/MARMANOLD/Date-Lectionary-Daily-1.20180205.tar.gz
     provides:
-      Date::Lectionary::Daily 1.20180114
+      Date::Lectionary::Daily 1.20180205
     requirements:
       Carp 1.38
       Date::Advent 1.20160727
@@ -66,6 +66,18 @@ DISTRIBUTIONS
       XML::LibXML 2.0128
       namespace::autoclean 0.28
       perl 5.022
+  Module-Version-0.12
+    pathname: X/XS/XSAWYERX/Module-Version-0.12.tar.gz
+    provides:
+      Module::Version 0.12
+      Module::Version::App 0.05
+    requirements:
+      Carp 0
+      Exporter 0
+      ExtUtils::MakeMaker 6.56
+      Getopt::Long 0
+      Test::More 0
+      autodie 0
   Moose-2.2004
     pathname: E/ET/ETHER/Moose-2.2004.tar.gz
     provides:

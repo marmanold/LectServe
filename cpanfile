@@ -1,6 +1,6 @@
 requires 'perl', '5.22.0';
 
-requires "Dancer2" => "0.205";
+requires "Dancer2" => "0.205002";
 requires "Date::Lectionary" => "1.20180109";
 requires "Time::Piece" => "1.31";
 requires "Time::Seconds" => "1.3201";
@@ -13,6 +13,7 @@ requires "Plack::Middleware::Deflater" => "0.12";
 requires "Plack::Middleware::CrossOrigin" => "0.012";
 requires "Carp" => "1.38";
 requires "Try::Tiny" => "0.24";
+requires "Module::Version" => "0.12";
 
 recommends "YAML"             => "0";
 recommends "URL::Encode::XS"  => "0";
