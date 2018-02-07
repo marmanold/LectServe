@@ -2,6 +2,7 @@ package LectServe;
 
 use v5.22;
 use Dancer2;
+use Dancer2::Plugin::HTTP::Caching;
 
 use Carp;
 use Try::Tiny;
@@ -14,10 +15,11 @@ use Date::Lectionary::Daily;
 
 use Module::Version qw(get_version);
 
-our $VERSION = '1.20180207';
+our $VERSION = '1.20180207b';
 
 hook before => sub {
-    header 'max-age' => '600';
+    http_cache_max_age 3600;
+    http_cache_public;
 };
 
 #Root HTML Endpoints

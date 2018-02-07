@@ -26,10 +26,10 @@ engines:
       end_tag:   '%>'
       include_path: views/
 
-plugins:
-    'Cache::CHI':
-        driver: Memory
-        global: 1
+#plugins:
+#    'Cache::CHI':
+#        driver: Memory
+#        global: 1
 
 # session engine
 #
