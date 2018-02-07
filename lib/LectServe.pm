@@ -14,7 +14,11 @@ use Date::Lectionary::Daily;
 
 use Module::Version qw(get_version);
 
-our $VERSION = '1.20180206';
+our $VERSION = '1.20180207';
+
+hook before => sub {
+    header 'max-age' => '600';
+};
 
 #Root HTML Endpoints
 get '/' => sub {
@@ -121,9 +125,9 @@ get '/html/morning_prayer/:day' => sub {
 #Additional HTML Endpoints
 get '/html/about' => sub {
     var daily_version => get_version('Date::Lectionary::Daily');
-    var sun_version => get_version('Date::Lectionary');
-    var time_version => get_version('Date::Lectionary::Time');
-    var app_version => $VERSION;
+    var sun_version   => get_version('Date::Lectionary');
+    var time_version  => get_version('Date::Lectionary::Time');
+    var app_version   => $VERSION;
 
     send_as
         html => template 'about.tt',
