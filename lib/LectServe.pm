@@ -15,7 +15,7 @@ use Date::Lectionary::Daily;
 
 use Module::Version qw(get_version);
 
-our $VERSION = '1.20180207b';
+our $VERSION = '1.20180209';
 
 hook before => sub {
     http_cache_max_age 3600;
@@ -122,6 +122,23 @@ get '/html/morning_prayer/:day' => sub {
     $lectionary->{title} = "Morning Prayer";
 
     send_as html => template 'morning_prayer.tt', $lectionary;
+};
+
+get '/html/evening_prayer' => sub {
+    my $today = cleanToday();
+    my $dailyReadings = getDailyLectionary( $today, 'acna' );
+    $dailyReadings->{title} = "Evening Prayer";
+
+    send_as html => template 'evening_prayer.tt', $dailyReadings;
+};
+
+get '/html/evening_prayer/:day' => sub {
+    my $day        = route_parameters->get('day');
+    my $date       = Time::Piece->strptime( "$day", "%Y-%m-%d" );
+    my $lectionary = getDailyLectionary( $date, 'acna' );
+    $lectionary->{title} = "Evening Prayer";
+
+    send_as html => template 'evening_prayer.tt', $lectionary;
 };
 
 #Additional HTML Endpoints

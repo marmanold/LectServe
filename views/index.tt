@@ -19,7 +19,7 @@
 		  <li><% daily.readings.morning.2 %></li>
 		</ul>
 
-		<h4>Evening Prayer</h4>
+		<h4><a href="/html/evening_prayer/<% daily.date %>">Evening Prayer</a></h4>
 		<ul>
 		  <li><% daily.readings.evening.1 %></li>
 		  <li><% daily.readings.evening.2 %></li>

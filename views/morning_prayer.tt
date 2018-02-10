@@ -1,9 +1,16 @@
 <h1>Daily Morning Prayer</h1>
-<h2><em>Approved for Provincial Use</em></h2>
 <h2>The Anglican Church in North America</h2>
-<h2><em>Petertide, A.D. 2013</em></h2>
-<p class="instruction">The Confession and Apostles’ Creed may be omitted, provided they have been said once during the course of the day.</p>
-<p class="instruction">The Officiant may begin Morning Prayer by reading an <a href="#opening_sentences">opening sentence of Scripture</a> or another appropriate Scripture. The Confession of Sin may be said, or the Office may continue with “O Lord, open our lips.”</p>
+<p class="instruction">The Officiant may begin Morning Prayer by reading an <a href="#opening_sentences">opening sentence of Scripture</a>. One of the following, or a sentence from among those provided at the end of the Office is customary.</p>
+
+<p class="prayer">Grace to you and peace from God our Father and the Lord Jesus Christ.
+Philippians 1:2</p>
+<p class="instruction">or this</p>
+<p class="prayer">I was glad when they said to me, “Let us go to the house of the Lord!”</p>
+<p class="reference">Psalm 122:1</p>
+<p class="instruction">or this</p>
+<p class="prayer">Let the words of my mouth and the meditation of my heart be acceptable in your sight, O Lord, my rock and my redeemer.</p>
+<p class="reference">Psalm 19:14</p>
+
 <h3>Confession of Sin</h3>
 <p class="instruction">The Officiant says to the People</p>
 <p class="prayer">Dearly beloved, the Scriptures teach us to acknowledge our many sins and offenses, not concealing them from our heavenly Father, but confessing them with humble and obedient hearts that we may obtain forgiveness by his infinite goodness and mercy. We ought at all times humbly to acknowledge our sins before Almighty God, but especially when we come together in his presence to give thanks for the great benefits we have received at his hands, to declare his most worthy praise, to hear his holy Word, and to ask, for ourselves and others, those things necessary for our life and our salvation. Therefore, come with me to the throne of heavenly grace.</p>
@@ -50,7 +57,7 @@
         <div class="person">People</div><div class="utterance">O Lord, make haste to help us.</div>
     </div>
     <div class="dialog_line">
-        <div class="person">Officiant</div><div class="utterance">Glory to the Father, and to the Son, and to the Holy Spirit;</div>
+        <div class="person">Officiant</div><div class="utterance">Glory be to the Father, and to the Son, and to the Holy Spirit;</div>
     </div>
     <div class="dialog_line">
         <div class="person">People</div><div class="utterance">As it was in the beginning, is now, and ever shall be, world without end. Amen.</div>
@@ -62,8 +69,9 @@
         <div class="person">People</div><div class="utterance">The Lord’s name be praised.</div>
     </div>
 </div>
+<p class="instruction">Alternative forms of the “Glory be” and “Praise the Lord” are found in <a href="#add_dir">Additional Directions</a>.</p>
 <p class="instruction">Then follows the Venite. Alternatively, the Jubilate may be used.</p>
-<p class="instruction">These seasonal antiphons may be sung or said before and after the Invitatory Psalm.</p>
+<p class="instruction">These antiphons may be sung or said before and after the Invitatory Psalm.</p>
 <h4>Advent</h4>
 <p class="prayer">Our King and Savior now draws near: O come, let us adore him.</p>
 <h4>Christmas</h4>
@@ -76,12 +84,10 @@
 <p class="prayer">Alleluia. The Lord is risen indeed: O come, let us adore him. Alleluia.</p>
 <h4>Ascension until Pentecost</h4>
 <p class="prayer">Alleluia. Christ the Lord has ascended into heaven: O come, let us adore him. Alleluia.</p>
-<h4>Pentecost and the week following</h4>
+<h4>Day of Pentecost</h4>
 <p class="prayer">Alleluia. The Spirit of the Lord renews the face of the earth: O come, let us adore him. Alleluia.</p>
 <h4>Trinity Sunday</h4>
-<p class="prayer">Father, Son and Holy Spirit, one God: O come, let us adore him.</p>
-<h4>On feasts of the Incarnation</h4>
-<p class="prayer">The Word was made flesh and dwelt among us: O come, let us adore him.</p>
+<p class="prayer">Father, Son, and Holy Spirit, one God: O come, let us adore him.</p>
 <h4>On All Saints and other major saints’ days</h4>
 <p class="prayer">The Lord is glorious in his saints: O come, let us adore him.</p>
 <h4>For use at any time</h4>
@@ -93,50 +99,47 @@
 <h3>Venite <em>O Come</em></h3>
 <div class="poetic">
     <p class="reference">Psalm 95:1-7; 8-11</p>
-    <p class="line">O come, let us sing to the Lord;</p>
-    <p class="line">Let us make a joyful noise to the rock of our salvation!</p>
-    <p class="line">Let us come into his presence with thanksgiving;</p>
-    <p class="line">Let us make a joyful noise to him with songs of praise!</p>
-    <p class="line">For the Lord is a great God, and a great King above all gods.</p>
-    <p class="line">In his hand are the depths of the earth;</p>
-    <p class="indented_line">the heights of the mountains are his also.</p>
-    <p class="line">The sea is his, for he made it,</p>
-    <p class="indented_line">and his hands formed the dry land.</p>
-    <p class="line">O come, let us worship and bow down;</p>
-    <p class="indented_line">Let us kneel before the Lord, our Maker!</p>
-    <p class="line">For he is our God, and we are the people of his pasture,</p>
-    <p class="indented_line">and the sheep of his hand.</p>
-    <p class="line">O, that today you would hearken to his voice!</p>
-    <p class="instruction">In Lent, and on other penitential occasions, the following verses are added.</p>
-    <p class="line">Do not harden your hearts, as at Meribah,</p>
-    <p class="indented_line">as on the day at Massah in the wilderness,</p>
-    <p class="indented_line">when your fathers put me to the test</p>
-    <p class="indented_line">and put me to the proof, though they had seen my work.</p>
-    <p class="line">For forty years I loathed that generation</p>
-    <p class="indented_line">and said, “They are a people who go astray in their heart,</p>
-    <p class="indented_line">and they have not known my ways.”</p>
-    <p class="line">Therefore I swore in my wrath,</p>
-    <p class="indented_line">“They shall not enter my rest.”</p>
+    <p class="line">O come, let us sing unto the Lord;</p>
+        <p class="indented_line">let us heartily rejoice in the strength of our salvation.</p>
+    <p class="line">Let us come before his presence with thanksgiving</p>
+        <p class="indented_line">and show ourselves glad in him with psalms.</p>
+    <p class="line">For the Lord is a great God</p>
+        <p class="indented_line">and a great King above all gods.</p>
+    <p class="line">In his hand are all the depths of the earth</p>
+        <p class="indented_line">and the heights of the hills are his also.</p>
+    <p class="line">The sea is his, and he made it,</p>
+        <p class="indented_line">and his hands prepared the dry land.</p>
+    <p class="line">O come, let us worship and fall down,</p>
+        <p class="indented_line">and kneel before the Lord our Maker.</p>
+    <p class="line">For he is our God,</p>
+        <p class="indented_line">and we are the people of his pasture, and the sheep of his hand.</p>
+</div>
+<p class="instruction">In Lent, and on other penitential occasions, the following verses are added.</p>
+<div class="poetic">
+    <p class="line">Today, if you will hear his voice, harden not your hearts</p>
+        <p class="indented_line">as in the provocation, and as in the day of temptation in the wilderness.</p>
+    <p class="line">When your fathers tested me,</p>
+        <p class="indented_line">proved me, and saw my works.</p>
+    <p class="line">Forty years long was I grieved with this generation, and said,</p>
+        <p class="indented_line">“It is a people that do err in their hearts, for they have not known my ways.”</p>
+    <p class="line">Of whom I swore in my wrath</p>
+        <p class="indented_line">that they should not enter into my rest.</p>
 </div>
 <p class="instruction">or this</p>
 
 <h3>Jubilate <em>Be Joyful</em></h3>
 <div class="poetic">
     <p class="reference">Psalm 100</p>
-    <p class="line">Be joyful in the Lord, all you lands;</p>
-    <p class="indented_line">serve the Lord with gladness</p>
-    <p class="indented_line">and come before his presence with a song.</p>
-    <p class="line">Know this: the Lord himself is God;</p>
-    <p class="indented_line">he himself has made us, and we are his;</p>
-    <p class="indented_line">we are his people and the sheep of his pasture.</p>
-    <p class="line">Enter his gates with thanksgiving;</p>
-    <p class="indented_line">go into his courts with praise;</p>
-    <p class="indented_line">give thanks to him and call upon his Name.</p>
-    <p class="line">For the Lord is good;</p>
-    <p class="indented_line">his mercy is everlasting;</p>
-    <p class="indented_line">and his faithfulness endures from age to age.</p>
+    <p class="line">O be joyful in the LORD, all you lands;</p>
+        <p class="indented_line">serve the LORD with gladness, and come before his presence with a song.</p>
+    <p class="line">Be assured that the LORD he is God;</p>
+        <p class="indented_line">it is he who has made us, and not we ourselves; we are his people, and the sheep of his pasture.</p>
+    <p class="line">O go your way into his gates with thanksgiving, and into his courts with praise;</p>
+        <p class="indented_line">be thankful unto him, and speak good of his Name.</p>
+    <p class="line">For the Lord is gracious, his mercy is everlasting,</p>
+        <p class="indented_line">and his truth endures from generation to generation.</p>
 </div>
-<p class="instruction">During the first week of Easter, the Pascha Nostrum will be used in place of the Invitatory Psalm. It is appropriate to use this canticle throughout Eastertide.</p>
+<p class="instruction">During the first week of Easter, the Pascha Nostrum is used in place of the Invitatory Psalm and may be used throughout Eastertide.</p>
 
 <h3>Pascha Nostrum <em>Christ our Passover</em></h3>
 <div class="poetic">
@@ -332,7 +335,6 @@
 </div>
 
 <h3>The Prayers</h3>
-<p class="instruction">The People kneel or stand.</p>
 <div class="dialog">
     <div class="dialog_line">
         <div class="person">Officiant</div><div class="utterance">The Lord be with you.</div>
@@ -343,6 +345,9 @@
     <div class="dialog_line">
         <div class="person">Officiant</div><div class="utterance">Let us pray.</div>
     </div>
+</div>
+<p class="instruction">The People kneel or stand.</p>
+<div class="dialog">
     <div class="dialog_line">
         <div class="person">Officiant</div><div class="utterance">Lord, have mercy [upon us].</div>
     </div>
@@ -377,22 +382,22 @@
 
 <div class="dialog">
     <div class="dialog_line">
-        <div class="person">Officiant</div><div class="utterance">O Lord, show us your mercy;</div>
+        <div class="person">Officiant</div><div class="utterance">O Lord, show your mercy upon us;</div>
     </div>
     <div class="dialog_line">
         <div class="person">People</div><div class="utterance">And grant us your salvation.</div>
     </div>
     <div class="dialog_line">
-        <div class="person">Officiant</div><div class="utterance">O Lord, save our nations;</div>
+        <div class="person">Officiant</div><div class="utterance">O Lord, guide those who govern us;</div>
     </div>
     <div class="dialog_line">
-        <div class="person">People</div><div class="utterance">And guide us in the way of justice and truth.</div>
+        <div class="person">People</div><div class="utterance">And lead us in the way of justice and truth.</div>
     </div>
     <div class="dialog_line">
         <div class="person">Officiant</div><div class="utterance">Clothe your ministers with righteousness;</div>
     </div>
     <div class="dialog_line">
-        <div class="person">People</div><div class="utterance">And make your chosen people joyful.</div>
+        <div class="person">People</div><div class="utterance">And let your people sing with joy.</div>
     </div>
     <div class="dialog_line">
         <div class="person">Officiant</div><div class="utterance">O Lord, save your people;</div>
@@ -404,7 +409,7 @@
         <div class="person">Officiant</div><div class="utterance">Give peace in our time, O Lord;</div>
     </div>
     <div class="dialog_line">
-        <div class="person">People</div><div class="utterance">For only in you can we live in safety.</div>
+        <div class="person">People</div><div class="utterance">And defend us by your mighty power.</div>
     </div>
     <div class="dialog_line">
         <div class="person">Officiant</div><div class="utterance">Let not the needy, O Lord, be forgotten;</div>
@@ -420,7 +425,7 @@
     </div>
 </div>
 
-<p class="instruction">The Officiant then prays one or more of the following collects. It is traditional to pray the Collects for Peace and Grace daily. Alternatively, one may pray the collects on a weekly rotation, using the suggestions in parentheses.</p>
+<p class="instruction">The Officiant then prays one or more of the following collects, always beginning with the Collect of the Day (the prayer of the previous Sunday or of the Holy Day being observed). It is traditional to pray the Collects for Peace and Grace daily. Alternatively, one may pray the collects on a weekly rotation, using the suggestions in parentheses.</p>
 
 <h3>The Collect of the Day</h3>
 <h4>A Collect for Strength to Await Christ’s Return (Sunday)</h4>
@@ -442,8 +447,8 @@
 <p class="prayer">Almighty and everlasting God, who alone works great marvels: Send down upon our clergy and the congregations committed to their charge the life-giving Spirit of your grace, shower them with the continual dew of your blessing, and ignite in them a zealous love of your Gospel, through Jesus Christ our Lord. Amen.</p>
 <p class="prayer">O God, you have made of one blood all the peoples of the earth, and sent your blessed Son to preach peace to those who are far off and to those who are near: Grant that people everywhere may seek after you and find you; bring the nations into your fold; pour out your Spirit upon all flesh; and hasten the coming of your kingdom; through Jesus Christ our Lord. Amen.</p>
 <p class="prayer">Lord Jesus Christ, you stretched out your arms of love on the hard wood of the cross that everyone might come within the reach of your saving embrace: So clothe us in your Spirit that we, reaching forth our hands in love, may bring those who do not know you to the knowledge and love of you; for the honor of your Name. Amen.</p>
-<p class="instruction">Here may be sung a hymn or anthem.</p>
 <p class="instruction">The Officiant may invite the People to offer intercessions and thanksgivings.</p>
+<p class="instruction">A hymn or anthem may be sung.</p>
 <p class="instruction">Before the close of the Office one or both of the following may be used.</p>
 
 <h3>The General Thanksgiving</h3>
@@ -508,16 +513,22 @@
 <p class="prayer">For from the rising of the sun to its setting my name will be great among the nations, and in every place incense will be offered to my name, and a pure offering. For my name will be great among the nations, says the Lord of hosts.</p>
 <p class="reference">Malachi 1:11</p>
 
-<h4>Lent</h4>
+<h4>Lent and other Penitential Occasions</h4>
 <p class="prayer">Repent, for the kingdom of heaven is at hand.</p>
 <p class="reference">Matthew 3:2</p>
+<p class="prayer">Hide your face from my sins, and blot out all my iniquities.</p>
+<p class="reference">Psalm 51:9</p>
+<p class="prayer">If anyone would come after me, let him deny himself and take up his cross and follow me.</p>
+<p class="reference">Mark 8:34</p>
 
-<h4>Good Friday</h4>
+<h4>Holy Week</h4>
 <p class="prayer">Is it nothing to you, all you who pass by? Look and see if there is any sorrow like my sorrow, which was brought upon me, which the Lord inflicted on the day of his fierce anger.</p>
 <p class="reference">Lamentations 1:12</p>
 
 <h4>Easter</h4>
-<p class="prayer">Christ is risen! The Lord is risen indeed!</p>
+<p class="prayer">If then you have been raised with Christ, seek the things that are above, where Christ is, seated at the right hand of God.</p>
+<p class="reference">Colossians 3:1</p>
+<p class="prayer">Alleluia. Christ is risen. The Lord is risen indeed. Alleluia.</p>
 <p class="reference">Mark 16:6 and Luke 24:34</p>
 
 <h4>Ascension</h4>
@@ -539,21 +550,23 @@
 <h4>At any time</h4>
 <p class="prayer">The Lord is in his holy temple; let all the earth keep silence before him.</p>
 <p class="reference">Habakkuk 2:20</p>
-
-<p class="prayer">I was glad when they said to me, “Let us go to the house of the Lord!”</p>
-<p class="reference">Psalm 122:1</p>
-
-<p class="prayer">Let the words of my mouth and the meditation of my heart be acceptable in your sight, O Lord, my rock and my redeemer.</p>
-<p class="reference">Psalm 19:14</p>
-
 <p class="prayer">Send out your light and your truth; let them lead me; let them bring me to your holy hill and to your dwelling!</p>
 <p class="reference">Psalm 43:3</p>
-
-<p class="prayer">For thus says the One who is high and lifted up, who inhabits eternity, whose name is Holy: “I dwell in the high and holy place, and also with him who is of a contrite and lowly spirit, to revive the spirit of the lowly, and to revive the heart of the contrite.”</p>
+<p class="prayer">Thus says the One who is high and lifted up, who inhabits eternity, whose name is Holy: “I dwell in the high and holy place, and also with him who is of a contrite and lowly spirit, to revive the spirit of the lowly, and to revive the heart of the contrite.”</p>
 <p class="reference">Isaiah 57:15</p>
-
 <p class="prayer">The hour is coming, and is now here, when the true worshipers will worship the Father in spirit and truth, for the Father is seeking such people to worship him.</p>
 <p class="reference">John 4:23</p>
 
-<p class="prayer">Grace to you and peace from God our Father and the Lord Jesus Christ.</p>
-<p class="reference">Philippians 1:2</p>
+<hr/>
+
+<a name="add_dir"></a>
+<h3>Additional Directions: Morning and Evening Prayer</h3>
+<p class="instruction">The Confession and Apostles’ Creed may be omitted, provided each is said at least once during the course of the day.</p>
+<p class="instruction">The Gloria Patri in the opening versicles may be said in unison. The following form of the Gloria Patri may alternately be used:</p>
+<div class="poetic">
+    <p class="line">Glory to the Father, and to the Son, and to the Holy Spirit:</p>
+    <p class="indented_line">As it was in the beginning, is now, and will be forever. Amen.</p>
+</div>
+<p class="instruction">The Officiant and People may join in saying “Alleluia” (except in Lent) as an alternative to the versicles “Praise the Lord. The Lord’s name be praised.”</p>
+<p class="instruction">If an offering is to be received, it is appropriate to do so during the hymn or anthem following the collects.</p>
+<p class="instruction">A sermon may be preached after the lessons, after the hymn or anthem following the collects, or after the conclusion of the Office.</p>
