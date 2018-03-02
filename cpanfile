@@ -2,7 +2,7 @@ requires 'perl', '5.26.0';
 
 requires "Dancer2" => "0.205002";
 requires "Dancer2::Plugin::HTTP::Caching" => "0.01";
-requires "Date::Lectionary" => "1.20180109";
+requires "Date::Lectionary" => "1.20180302";
 requires "Time::Piece" => "1.31";
 requires "Time::Seconds" => "1.3201";
 requires "Date::Lectionary::Time" => "1.20170311";
