@@ -253,49 +253,46 @@
 
 <div class="dialog">
     <div class="dialog_line">
-        <div class="person"></div><div class="utterance">O Lord, show your mercy upon us;</div>
+        <div class="person">Officiant</div><div class="utterance">O Lord, show your mercy upon us;</div>
     </div>
     <div class="dialog_line">
-        <div class="person"></div><div class="utterance">And grant us your salvation.</div>
+        <div class="person">People</div><div class="utterance">And grant us your salvation.</div>
     </div>
     <div class="dialog_line">
-        <div class="person"></div><div class="utterance">O Lord, guide those who govern us;</div>
+        <div class="person">Officiant</div><div class="utterance">O Lord, guide those who govern us;</div>
     </div>
     <div class="dialog_line">
-        <div class="person"></div><div class="utterance">And lead us in the way of justice and truth.</div>
+        <div class="person">People</div><div class="utterance">And lead us in the way of justice and truth.</div>
     </div>
     <div class="dialog_line">
-        <div class="person"></div><div class="utterance">Clothe your ministers with righteousness;</div>
+        <div class="person">Officiant</div><div class="utterance">Clothe your ministers with righteousness;</div>
     </div>
     <div class="dialog_line">
-        <div class="person"></div><div class="utterance">And make your chosen people joyful.</div>
+        <div class="person">People</div><div class="utterance">And make your chosen people joyful.</div>
     </div>
     <div class="dialog_line">
-        <div class="person"></div><div class="utterance">And make your chosen people joyful.</div>
+        <div class="person">Officiant</div><div class="utterance">O Lord, save your people;</div>
     </div>
     <div class="dialog_line">
-        <div class="person"></div><div class="utterance">O Lord, save your people;</div>
+        <div class="person">People</div><div class="utterance">And bless your inheritance.</div>
     </div>
     <div class="dialog_line">
-        <div class="person"></div><div class="utterance">And bless your inheritance.</div>
+        <div class="person">Officiant</div><div class="utterance">Give peace in our time, O Lord;</div>
     </div>
     <div class="dialog_line">
-        <div class="person"></div><div class="utterance">Give peace in our time, O Lord;</div>
+        <div class="person">People</div><div class="utterance">And defend us by your mighty power.</div>
     </div>
     <div class="dialog_line">
-        <div class="person"></div><div class="utterance">And defend us by your mighty power.</div>
+        <div class="person">Officiant</div><div class="utterance">Let not the needy, O Lord, be forgotten;</div>
     </div>
     <div class="dialog_line">
-        <div class="person"></div><div class="utterance">Let not the needy, O Lord, be forgotten;</div>
+        <div class="person">People</div><div class="utterance">Nor the hope of the poor be taken away.</div>
     </div>
     <div class="dialog_line">
-        <div class="person"></div><div class="utterance">Nor the hope of the poor be taken away.</div>
+        <div class="person">Officiant</div><div class="utterance">Create in us clean hearts, O God;</div>
     </div>
     <div class="dialog_line">
-        <div class="person"></div><div class="utterance">Create in us clean hearts, O God;</div>
-    </div>
-    <div class="dialog_line">
-        <div class="person"></div><div class="utterance">And take not your Holy Spirit from us.</div>
+        <div class="person">People</div><div class="utterance">And take not your Holy Spirit from us.</div>
     </div>
 </div>
 <p class="instruction">or this</p>
