@@ -6,7 +6,7 @@ export PERL5OPT=-MTry::Tiny::Tiny
 cd $HOME/LectServe && git reset --hard HEAD && git clean -f -d && git pull
 cd $HOME/statsLiteClient && git reset --hard HEAD && get clean -f -d && git pull
 cd $HOME && cp statsLiteClient/build/stats-lite-client.bundle.js LectServe/public/javascripts
-cd $HOMELectServe && cp nginx.conf /etc/nginx
+cd $HOME/LectServe && cp nginx.conf /etc/nginx
 sudo service nginx reload 
 cd $HOME/LectServe && carton install
 echo "Stopping old version..."
