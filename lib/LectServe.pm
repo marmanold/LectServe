@@ -1,11 +1,12 @@
 package LectServe;
 
 use v5.22;
+
 use Dancer2;
 use Dancer2::Plugin::HTTP::Caching;
 
 use Carp;
-use Try::Tiny;
+use Try::Catch;
 
 use Time::Piece;
 use Time::Seconds;
@@ -15,7 +16,7 @@ use Date::Lectionary::Daily;
 
 use Module::Version qw(get_version);
 
-our $VERSION = '1.20180209';
+our $VERSION = '1.20180319';
 
 hook before => sub {
     http_cache_max_age 3600;
@@ -25,7 +26,7 @@ hook before => sub {
 #Root HTML Endpoints
 get '/' => sub {
     my $today = cleanToday();
-    my $lectionary = getAllLectionary( $today, 'acna' );
+    my $lectionary = getAllLectionary( $today, 'acna', 'acna-sec' );
 
     send_as html => template 'index.tt', $lectionary;
 };
@@ -33,7 +34,7 @@ get '/' => sub {
 get '/home/:day' => sub {
     my $day        = route_parameters->get('day');
     my $date       = Time::Piece->strptime( "$day", "%Y-%m-%d" );
-    my $lectionary = getAllLectionary( $date, 'acna' );
+    my $lectionary = getAllLectionary( $date, 'acna', 'acna-sec' );
 
     send_as html => template 'index.tt', $lectionary;
 };
@@ -44,13 +45,13 @@ get '/date/:day' => sub {
     my $date = Time::Piece->strptime( "$day", "%Y-%m-%d" );
 
     send_as
-        JSON => getAllLectionary( $date, query_parameters->get('lect') ),
+        JSON => getAllLectionary( $date, query_parameters->get('lect'), query_parameters->get('dailyLect') ),
         { content_type => 'application/json; charset=UTF-8' };
 };
 
 get '/today' => sub {
     send_as
-        JSON => getAllLectionary( cleanToday(), query_parameters->get('lect') ),
+        JSON => getAllLectionary( cleanToday(), query_parameters->get('lect'), query_parameters->get('dailyLect') ),
         { content_type => 'application/json; charset=UTF-8' };
 };
 
@@ -65,7 +66,7 @@ get '/sunday' => sub {
 #Daily Lectionary HTML Endpoints
 get '/html/today' => sub {
     my $today = cleanToday();
-    my $dailyReadings = getDailyLectionary( $today, 'acna' );
+    my $dailyReadings = getDailyLectionary( $today, query_parameters->get('dailyLect') );
     $dailyReadings->{title} = "Daily Readings";
 
     send_as html => template 'daily_readings.tt', $dailyReadings;
@@ -74,7 +75,7 @@ get '/html/today' => sub {
 get '/html/daily/:day' => sub {
     my $day        = route_parameters->get('day');
     my $date       = Time::Piece->strptime( "$day", "%Y-%m-%d" );
-    my $lectionary = getDailyLectionary( $date, 'acna' );
+    my $lectionary = getDailyLectionary( $date, query_parameters->get('dailyLect') );
     $lectionary->{title} = "Daily Readings";
 
     send_as html => template 'daily_readings.tt', $lectionary;
@@ -109,7 +110,7 @@ get '/html/sunday/:day' => sub {
 #Daily Prayer HTML Endpoints
 get '/html/morning_prayer' => sub {
     my $today = cleanToday();
-    my $dailyReadings = getDailyLectionary( $today, 'acna' );
+    my $dailyReadings = getDailyLectionary( $today, query_parameters->get('dailyLect') );
     $dailyReadings->{title} = "Morning Prayer";
 
     send_as html => template 'morning_prayer.tt', $dailyReadings;
@@ -118,7 +119,7 @@ get '/html/morning_prayer' => sub {
 get '/html/morning_prayer/:day' => sub {
     my $day        = route_parameters->get('day');
     my $date       = Time::Piece->strptime( "$day", "%Y-%m-%d" );
-    my $lectionary = getDailyLectionary( $date, 'acna' );
+    my $lectionary = getDailyLectionary( $date, query_parameters->get('dailyLect') );
     $lectionary->{title} = "Morning Prayer";
 
     send_as html => template 'morning_prayer.tt', $lectionary;
@@ -126,7 +127,7 @@ get '/html/morning_prayer/:day' => sub {
 
 get '/html/evening_prayer' => sub {
     my $today = cleanToday();
-    my $dailyReadings = getDailyLectionary( $today, 'acna' );
+    my $dailyReadings = getDailyLectionary( $today, query_parameters->get('dailyLect') );
     $dailyReadings->{title} = "Evening Prayer";
 
     send_as html => template 'evening_prayer.tt', $dailyReadings;
@@ -135,7 +136,7 @@ get '/html/evening_prayer' => sub {
 get '/html/evening_prayer/:day' => sub {
     my $day        = route_parameters->get('day');
     my $date       = Time::Piece->strptime( "$day", "%Y-%m-%d" );
-    my $lectionary = getDailyLectionary( $date, 'acna' );
+    my $lectionary = getDailyLectionary( $date, query_parameters->get('dailyLect') );
     $lectionary->{title} = "Evening Prayer";
 
     send_as html => template 'evening_prayer.tt', $lectionary;
@@ -165,8 +166,9 @@ get '/api' => sub {
 
 #Helper Methods used in resolving routes
 sub getAllLectionary {
-    my $day  = shift;
-    my $lect = shift;
+    my $day       = shift;
+    my $lect      = shift;
+    my $dailyLect = shift;
 
     my $nextSunday = undef;
 
@@ -179,8 +181,8 @@ sub getAllLectionary {
 
     return {
         sunday     => getSundayLectionary( $nextSunday, $lect ),
-        daily      => getDailyLectionary( $day,         $lect ),
-        red_letter => getSundayLectionary( $day,        $lect )
+        daily      => getDailyLectionary( $day, $dailyLect ),
+        red_letter => getSundayLectionary( $day, $lect )
     };
 }
 
@@ -229,10 +231,16 @@ sub getSundayLectionary {
 }
 
 sub getDailyLectionary {
-    my $day  = shift;
-    my $lect = shift;
+    my $day       = shift;
+    my $dailyLect = shift;
 
-    my $lectionary = Date::Lectionary::Daily->new( 'date' => $day );
+    my $lectionary;
+    if ($dailyLect) {
+        $lectionary = Date::Lectionary::Daily->new( 'date' => $day, 'lectionary' => $dailyLect );
+    }
+    else {
+        $lectionary = Date::Lectionary::Daily->new( 'date' => $day );
+    }
 
     return {
         date        => $day->date,

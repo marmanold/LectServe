@@ -12,7 +12,13 @@
 <div class="flex-column-container">
 	<div class="flex-column left-column">
 		<h3><a href="/html/daily/<% daily.date %>">Daily Readings</a></h3>
-		<p><em><% daily.lectionary FILTER upper %> Lectionary</em></p>
+
+		<% IF daily.lectionary == 'acna-sec' %>
+			<p><em>ACNA Daily Lectionary</em></p>
+		<% ELSIF daily.lectionary == 'acna-xian' %>
+			<p><em><% daily.lectionary FILTER upper %> Lectionary</em></p>
+		<% END %>
+	
 		<h4><a href="/html/morning_prayer/<% daily.date %>">Morning Prayer</a></h4>
 		<ul>
 		  <li><% daily.readings.morning.1 %></li>

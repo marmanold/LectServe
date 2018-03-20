@@ -4,7 +4,7 @@
 <p>The daily lectionary <a href="https://metacpan.org/pod/Date::Lectionary::Daily">backend</a> currently only supports the ACNA lectionary, but more are planned.</p>
 <p><strong>Nota bene:</strong> This software is shared in alpha quality.  That's <em>before</em> beta!  API endpoints and JSON payloads <em>will</em> change and things <em>will</em> shift around unexpectedly.</p>
 <h3>API Usage</h3>
-<p>All endpoints return JSON.  Optionally, the argument <tt>?lect=acna</tt> or <tt>?lect=rcl</tt> can be given to each endpoint to specify the lectionary you wish to use for Sundays and Red-Letter days.  The default lectionary is the ACNA.</p>
+<p>All endpoints return JSON.  Optionally, the argument <tt>?lect=acna</tt> or <tt>?lect=rcl</tt> can be given to each endpoint to specify the lectionary you wish to use for Sundays and Red-Letter days.  <tt>/today</tt> and <tt>/date</tt> can take the argument <tt>dailyLect=?</tt> with the values <tt>acna-sec</tt> or <tt>acna-xian</tt> respectively for the current ACNA daily lectionary based on the civil calendar or the previous daily lectionary based on the liturgical calendar.  The default lectionaries are the ACNA Sunday and Daily (Civil-based).</p>
 <dl>
     <dt><a href="/today">/today</a></dt>
     <dd>Returns the lectionary payload for today's date.  "Today" is relative to the server LectServe is running on.  Presently, the server is sitting in Virginia, but I'm not sure if it's running on EST or GMT.</dd>

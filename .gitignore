@@ -3,3 +3,4 @@ Makefile
 Makefile.old
 local/*
 .DS_Store
+.carton
