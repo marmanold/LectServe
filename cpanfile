@@ -2,11 +2,11 @@ requires 'perl', '5.26.0';
 
 requires "Dancer2" => "0.205002";
 requires "Dancer2::Plugin::HTTP::Caching" => "0.01";
-requires "Date::Lectionary" => "1.20180416";
+requires "Date::Lectionary" => "1.20180417";
 requires "Time::Piece" => "1.3204";
 requires "Time::Seconds" => "1.3204";
 requires "Date::Lectionary::Time" => "1.20170311";
-requires "Date::Lectionary::Daily" => "1.20180410";
+requires "Date::Lectionary::Daily" => "1.20180417";
 requires "Template" => "2.26";
 requires "Template::Plugin::Date" => "2.78";
 requires "Plack" => "1.0045";
