@@ -1,6 +1,6 @@
 requires 'perl', '5.26.0';
 
-requires "Dancer2" => "0.205002";
+requires "Dancer2" => "0.206000";
 requires "Dancer2::Plugin::HTTP::Caching" => "0.01";
 requires "Date::Lectionary" => "1.20180417";
 requires "Time::Piece" => "1.3204";
