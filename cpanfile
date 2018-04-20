@@ -2,11 +2,11 @@ requires 'perl', '5.26.0';
 
 requires "Dancer2" => "0.206000";
 requires "Dancer2::Plugin::HTTP::Caching" => "0.01";
-requires "Date::Lectionary" => "1.20180417";
+requires "Date::Lectionary" => "1.20180418";
 requires "Time::Piece" => "1.3204";
 requires "Time::Seconds" => "1.3204";
-requires "Date::Lectionary::Time" => "1.20170311";
-requires "Date::Lectionary::Daily" => "1.20180417";
+requires "Date::Lectionary::Time" => "1.20180418";
+requires "Date::Lectionary::Daily" => "1.20180418";
 requires "Template" => "2.26";
 requires "Template::Plugin::Date" => "2.78";
 requires "Plack" => "1.0045";
@@ -22,6 +22,9 @@ recommends "YAML"             => "0";
 recommends "URL::Encode::XS"  => "0";
 recommends "CGI::Deurl::XS"   => "0";
 recommends "HTTP::Parser::XS" => "0.17";
+recommends "HTTP::XSCookies"  => "0";
+recommends "Scope::Upper"     => "0";
+recommends "Type::Tiny::XS"   => "0";
 
 on "test" => sub {
     requires "Test::More"            => "0";
