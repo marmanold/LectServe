@@ -16,7 +16,7 @@ use Date::Lectionary::Daily;
 
 use Module::Version qw(get_version);
 
-our $VERSION = '1.20180319';
+our $VERSION = '1.20180422';
 
 hook before => sub {
     http_cache_max_age 3600;
