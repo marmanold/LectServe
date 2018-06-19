@@ -30,6 +30,7 @@
     <meta name="author" content="Michael Wayne Arnold"/>
     <meta name="description" content="LectServe is a tool to provide the Church a way to quickly find lectionary readings for a given day.  It supports both the new ACNA Lectionary and the Revised Common Lectionary."/>
     <script async type="application/javascript" src="/javascripts/stats-lite-client.bundle.js"></script>
+    <script type="application/javascript" src="/javascripts/jquery-3.3.1.min.js"></script>
 
     <!--Open Graph Metadata-->
     <meta property="og:type" content="website" />

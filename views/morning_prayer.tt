@@ -1,9 +1,37 @@
+<script type="text/javascript">
+    $(document).ready(function() {
+        $.ajax({
+            "crossDomain":true, 
+            "url": "/reading", 
+            "method": "POST", 
+            "data": {"query":"<% readings.morning.1 %>"}
+        }).done(function(data, status) {
+            $(data.passages).each(function(index, item) {
+                $("#otReading").append(item);
+            });
+            $("#otReading").show();
+        });
+
+        $.ajax({
+            "crossDomain":true, 
+            "url": "/reading", 
+            "method": "POST", 
+            "data": {"query":"<% readings.morning.2 %>"}
+        }).done(function(data, status) {
+            $(data.passages).each(function(index, item) {
+                $("#ntReading").append(item);
+            });
+            $("#ntReading").show();
+        });
+    });
+</script>
+
 <h1>Daily Morning Prayer</h1>
 <h2>The Anglican Church in North America</h2>
 <p class="instruction">The Officiant may begin Morning Prayer by reading an <a href="#opening_sentences">opening sentence of Scripture</a>. One of the following, or a sentence from among those provided at the end of the Office is customary.</p>
 
-<p class="prayer">Grace to you and peace from God our Father and the Lord Jesus Christ.
-Philippians 1:2</p>
+<p class="prayer">Grace to you and peace from God our Father and the Lord Jesus Christ.</p>
+<p class="reference">Philippians 1:2</p>
 <p class="instruction">or this</p>
 <p class="prayer">I was glad when they said to me, “Let us go to the house of the Lord!”</p>
 <p class="reference">Psalm 122:1</p>
@@ -181,6 +209,7 @@ Philippians 1:2</p>
         <div class="person">Reader</div><div class="utterance">A Reading from <% readings.morning.1 %>.</div>
     </div>
 </div>
+<div id="otReading" class="scripture" hidden></div>
 <p class="instruction">After each Lesson the Reader may say</p>
 <div class="dialog">
     <div class="dialog_line">
@@ -203,6 +232,7 @@ Philippians 1:2</p>
         <div class="person">Reader</div><div class="utterance">A Reading from <% readings.morning.2 %>.</div>
     </div>
 </div>
+<div id="ntReading" class="scripture" hidden></div>
 <p class="instruction">After each Lesson the Reader may say</p>
 <div class="dialog">
     <div class="dialog_line">

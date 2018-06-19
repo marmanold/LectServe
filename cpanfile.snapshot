@@ -913,6 +913,19 @@ DISTRIBUTIONS
       Mac::SystemDirectory 0.04
       POSIX 0
       perl 5.005003
+  File-Listing-6.04
+    pathname: G/GA/GAAS/File-Listing-6.04.tar.gz
+    provides:
+      File::Listing 6.04
+      File::Listing::apache 6.04
+      File::Listing::dosftp 6.04
+      File::Listing::netware 6.04
+      File::Listing::unix 6.04
+      File::Listing::vms 6.04
+    requirements:
+      ExtUtils::MakeMaker 0
+      HTTP::Date 6
+      perl 5.006002
   File-Remove-1.57
     pathname: S/SH/SHLOMIF/File-Remove-1.57.tar.gz
     provides:
@@ -1030,6 +1043,38 @@ DISTRIBUTIONS
       File::Temp 0.14
       HTTP::Headers 0
       IO::File 1.14
+  HTTP-Cookies-6.04
+    pathname: O/OA/OALDERS/HTTP-Cookies-6.04.tar.gz
+    provides:
+      HTTP::Cookies 6.04
+      HTTP::Cookies::Microsoft 6.04
+      HTTP::Cookies::Netscape 6.04
+    requirements:
+      Carp 0
+      ExtUtils::MakeMaker 0
+      HTTP::Date 6
+      HTTP::Headers::Util 6
+      HTTP::Request 0
+      Time::Local 0
+      locale 0
+      perl 5.008001
+      strict 0
+      vars 0
+  HTTP-Daemon-6.01
+    pathname: G/GA/GAAS/HTTP-Daemon-6.01.tar.gz
+    provides:
+      HTTP::Daemon 6.01
+      HTTP::Daemon::ClientConn 6.01
+    requirements:
+      ExtUtils::MakeMaker 0
+      HTTP::Date 6
+      HTTP::Request 6
+      HTTP::Response 6
+      HTTP::Status 6
+      IO::Socket 0
+      LWP::MediaTypes 6
+      Sys::Hostname 0
+      perl 5.008001
   HTTP-Date-6.02
     pathname: G/GA/GAAS/HTTP-Date-6.02.tar.gz
     provides:
@@ -1113,6 +1158,14 @@ DISTRIBUTIONS
       Scalar::Util 0
       Test::Deep 0
       Test::More 0.88
+      perl 5.008001
+  HTTP-Negotiate-6.01
+    pathname: G/GA/GAAS/HTTP-Negotiate-6.01.tar.gz
+    provides:
+      HTTP::Negotiate 6.01
+    requirements:
+      ExtUtils::MakeMaker 0
+      HTTP::Headers 6
       perl 5.008001
   HTTP-Parser-XS-0.17
     pathname: K/KA/KAZUHO/HTTP-Parser-XS-0.17.tar.gz
@@ -1239,6 +1292,18 @@ DISTRIBUTIONS
     requirements:
       ExtUtils::MakeMaker 0
       perl 5.006002
+  LWP-Protocol-https-6.07
+    pathname: O/OA/OALDERS/LWP-Protocol-https-6.07.tar.gz
+    provides:
+      LWP::Protocol::https 6.07
+      LWP::Protocol::https::Socket 6.07
+    requirements:
+      ExtUtils::MakeMaker 0
+      IO::Socket::SSL 1.54
+      LWP::UserAgent 6.06
+      Mozilla::CA 20110101
+      Net::HTTPS 6
+      perl 5.008001
   Lingua-EN-Inflect-1.903
     pathname: D/DC/DCONWAY/Lingua-EN-Inflect-1.903.tar.gz
     provides:
@@ -1988,6 +2053,33 @@ DISTRIBUTIONS
       Moose::Util::MetaRole 0
       namespace::autoclean 0
       strict 0
+      warnings 0
+  Mozilla-CA-20180117
+    pathname: A/AB/ABH/Mozilla-CA-20180117.tar.gz
+    provides:
+      Mozilla::CA 20180117
+    requirements:
+      ExtUtils::MakeMaker 0
+      Test 0
+      perl 5.006
+  Net-HTTP-6.18
+    pathname: O/OA/OALDERS/Net-HTTP-6.18.tar.gz
+    provides:
+      Net::HTTP 6.18
+      Net::HTTP::Methods 6.18
+      Net::HTTP::NB 6.18
+      Net::HTTPS 6.18
+    requirements:
+      Carp 0
+      Compress::Raw::Zlib 0
+      ExtUtils::MakeMaker 0
+      IO::Socket::INET 0
+      IO::Uncompress::Gunzip 0
+      URI 0
+      base 0
+      perl 5.006002
+      strict 0
+      vars 0
       warnings 0
   Net-SSLeay-1.85
     pathname: M/MI/MIKEM/Net-SSLeay-1.85.tar.gz
@@ -2897,6 +2989,17 @@ DISTRIBUTIONS
     requirements:
       Pod::Simple 3.00
       Test::More 0
+  REST-Client-273
+    pathname: K/KK/KKANE/REST-Client-273.tar.gz
+    provides:
+      REST::Client 273
+    requirements:
+      ExtUtils::MakeMaker 6.42
+      LWP::Protocol::https 0
+      LWP::UserAgent 0
+      Test::More 0.8
+      URI 0
+      perl 5.008
   Readonly-2.05
     pathname: S/SA/SANKO/Readonly-2.05.tar.gz
     provides:
@@ -3837,6 +3940,18 @@ DISTRIBUTIONS
       ExtUtils::CBuilder 0
       Module::Build 0.4005
       perl 5.008001
+  WWW-RobotRules-6.02
+    pathname: G/GA/GAAS/WWW-RobotRules-6.02.tar.gz
+    provides:
+      WWW::RobotRules 6.02
+      WWW::RobotRules::AnyDBM_File 6.00
+      WWW::RobotRules::InCore 6.02
+    requirements:
+      AnyDBM_File 0
+      ExtUtils::MakeMaker 0
+      Fcntl 0
+      URI 1.10
+      perl 5.008001
   XML-LibXML-2.0132
     pathname: S/SH/SHLOMIF/XML-LibXML-2.0132.tar.gz
     provides:
@@ -3956,6 +4071,68 @@ DISTRIBUTIONS
     requirements:
       ExtUtils::MakeMaker 0
       perl 5.008001
+  libwww-perl-6.34
+    pathname: E/ET/ETHER/libwww-perl-6.34.tar.gz
+    provides:
+      LWP 6.34
+      LWP::Authen::Basic 6.34
+      LWP::Authen::Digest 6.34
+      LWP::Authen::Ntlm 6.34
+      LWP::ConnCache 6.34
+      LWP::Debug 6.34
+      LWP::Debug::TraceHTTP 6.34
+      LWP::DebugFile 6.34
+      LWP::MemberMixin 6.34
+      LWP::Protocol 6.34
+      LWP::Protocol::cpan 6.34
+      LWP::Protocol::data 6.34
+      LWP::Protocol::file 6.34
+      LWP::Protocol::ftp 6.34
+      LWP::Protocol::gopher 6.34
+      LWP::Protocol::http 6.34
+      LWP::Protocol::loopback 6.34
+      LWP::Protocol::mailto 6.34
+      LWP::Protocol::nntp 6.34
+      LWP::Protocol::nogo 6.34
+      LWP::RobotUA 6.34
+      LWP::Simple 6.34
+      LWP::UserAgent 6.34
+      libwww::perl undef
+    requirements:
+      CPAN::Meta::Requirements 2.120620
+      Digest::MD5 0
+      Encode 2.12
+      Encode::Locale 0
+      ExtUtils::MakeMaker 0
+      File::Copy 0
+      File::Listing 6
+      Getopt::Long 0
+      HTML::Entities 0
+      HTML::HeadParser 0
+      HTTP::Cookies 6
+      HTTP::Daemon 6
+      HTTP::Date 6
+      HTTP::Negotiate 6
+      HTTP::Request 6
+      HTTP::Request::Common 6
+      HTTP::Response 6
+      HTTP::Status 6
+      IO::Select 0
+      IO::Socket 0
+      LWP::MediaTypes 6
+      MIME::Base64 2.1
+      Module::Metadata 0
+      Net::FTP 2.58
+      Net::HTTP 6.07
+      Scalar::Util 0
+      Try::Tiny 0
+      URI 1.10
+      URI::Escape 0
+      WWW::RobotRules 6
+      base 0
+      perl 5.008001
+      strict 0
+      warnings 0
   namespace-autoclean-0.28
     pathname: E/ET/ETHER/namespace-autoclean-0.28.tar.gz
     provides:

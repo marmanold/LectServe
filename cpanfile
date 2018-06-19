@@ -14,10 +14,12 @@ requires "Try::Catch" => "1.1.0";
 requires "Module::Version" => "0.12";
 requires "Starman" => "0.4014";
 requires "Try::Tiny::Tiny" => "0.001";
-requires "Date::Advent" => "1.20180418";
-requires "Date::Lectionary::Time" => "1.20180418";
-requires "Date::Lectionary" => "1.20180418";
-requires "Date::Lectionary::Daily" => "1.20180418";
+requires "Date::Advent" => "1.20180423";
+requires "Date::Lectionary::Time" => "1.20180422.1";
+requires "Date::Lectionary" => "1.20180423";
+requires "Date::Lectionary::Daily" => "1.20180423";
+requires "REST::Client" => "88";
+requires "Text::Trim" => "1.02";
 
 recommends "YAML"             => "0";
 recommends "URL::Encode::XS"  => "0";

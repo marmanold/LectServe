@@ -7,6 +7,8 @@ use Dancer2::Plugin::HTTP::Caching;
 
 use Carp;
 use Try::Catch;
+use REST::Client;
+use Text::Trim;
 
 use Time::Piece;
 use Time::Seconds;
@@ -16,7 +18,7 @@ use Date::Lectionary::Daily;
 
 use Module::Version qw(get_version);
 
-our $VERSION = '1.20180422';
+our $VERSION = '1.20180619';
 
 hook before => sub {
     http_cache_max_age 3600;
@@ -60,6 +62,15 @@ get '/sunday' => sub {
 
     send_as
         JSON => getSundayLectionary( $nextSunday, query_parameters->get('lect') ),
+        { content_type => 'application/json; charset=UTF-8' };
+};
+
+post '/reading' => sub {
+    my $readings = getReading( body_parameters->get('query') );
+    info body_parameters->get('query');
+
+    send_as
+        JSON => $readings,
         { content_type => 'application/json; charset=UTF-8' };
 };
 
@@ -163,6 +174,47 @@ get '/stats' => sub {
 get '/api' => sub {
     send_as html => template 'api.tt';
 };
+
+#Method to retrieve scripture text from the ESV API
+sub getReading {
+    my $readingString = shift;
+
+    my $parsedCitation = parseCitation($readingString);
+
+    my $client = REST::Client->new(
+        {   host    => 'https://api.esv.org',
+            timeout => 10
+        }
+    );
+
+    my $response = $client->GET(
+        '/v3/passage/html/?q=' . $parsedCitation . '&wrapping-div=true&inline-styles=true&include-passage-references=false&include-chapter-numbers=false&include-verse-number=false&include-footnotes=false&include-footnote-body=false&include-headings=false&include-subheadings=false&include-surrounding-chapters-below=false&include-audio-link=false',
+        {   Accept        => "application/json",
+            Authorization => "Token 6b6576cd1f91f7bb79df4824c08891a558e47647"
+        }
+    );
+
+    return decode_json($response->responseContent());
+}
+
+sub parseCitation {
+    my $rawCitation = shift;
+
+    my $parsedCitation = $rawCitation;
+    $parsedCitation =~ s/(\(|\))//g;
+
+    my @parsedArr   = $parsedCitation =~ m/^\d?\s?[a-z]{3,20}/gi;
+    my $parsedBook  = $parsedArr[0];
+    my @citationArr = split( ';', $parsedCitation );
+
+    my @cleanCitationArr;
+    foreach my $citation (@citationArr) {
+        $citation =~ s/\d?\s?[a-z]{3,20}//gi;
+        push( @cleanCitationArr, $parsedBook . ' ' . trim($citation) );
+    }
+
+    return join( ',', @cleanCitationArr );
+}
 
 #Helper Methods used in resolving routes
 sub getAllLectionary {

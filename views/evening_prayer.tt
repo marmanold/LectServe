@@ -1,3 +1,31 @@
+<script type="text/javascript">
+    $(document).ready(function() {
+        $.ajax({
+            "crossDomain":true, 
+            "url": "/reading", 
+            "method": "POST", 
+            "data": {"query":"<% readings.evening.1 %>"}
+        }).done(function(data, status) {
+            $(data.passages).each(function(index, item) {
+                $("#otReading").append(item);
+            });
+            $("#otReading").show();
+        });
+
+        $.ajax({
+            "crossDomain":true, 
+            "url": "/reading", 
+            "method": "POST", 
+            "data": {"query":"<% readings.evening.2 %>"}
+        }).done(function(data, status) {
+            $(data.passages).each(function(index, item) {
+                $("#ntReading").append(item);
+            });
+            $("#ntReading").show();
+        });
+    });
+</script>
+
 <h1>Daily Evening Prayer</h1>
 <h2>The Anglican Church in North America</h2>
 <p class="instruction">The Officiant may begin Evening Prayer by reading an <a href="#opening_sentences">opening sentence of Scripture</a>. One of the following, or a sentence from among those provided at the end of the Office, is customary.</p>
@@ -102,6 +130,7 @@
         <div class="person">Reader</div><div class="utterance">A Reading from <% readings.evening.1 %>.</div>
     </div>
 </div>
+<div id="otReading" class="scripture" hidden></div>
 <p class="instruction">After each Lesson the Reader may say</p>
 <div class="dialog">
     <div class="dialog_line">
@@ -124,6 +153,7 @@
         <div class="person">Reader</div><div class="utterance">A Reading from <% readings.evening.2 %>.</div>
     </div>
 </div>
+<div id="ntReading" class="scripture" hidden></div>
 <p class="instruction">After each Lesson the Reader may say</p>
 <div class="dialog">
     <div class="dialog_line">

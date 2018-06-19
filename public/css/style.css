@@ -300,6 +300,12 @@ a:active {
 	color: red;
 }
 
+.scripture {
+    background: #e6e6e6;
+    border-radius: 25px;
+    padding: 1%;
+}
+
 @media only screen and (max-width: 870px) {
 	.flex-column {
 	    width: 100%;
