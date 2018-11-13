@@ -4,7 +4,7 @@
             "crossDomain":true, 
             "url": "/reading", 
             "method": "POST", 
-            "data": {"query":"<% readings.morning.1 %>"}
+            "data": {"query":"<% readings.morning.first %>"}
         }).done(function(data, status) {
             $(data.passages).each(function(index, item) {
                 $("#otReading").append(item);
@@ -16,7 +16,7 @@
             "crossDomain":true, 
             "url": "/reading", 
             "method": "POST", 
-            "data": {"query":"<% readings.morning.2 %>"}
+            "data": {"query":"<% readings.morning.second %>"}
         }).done(function(data, status) {
             $(data.passages).each(function(index, item) {
                 $("#ntReading").append(item);
@@ -206,7 +206,7 @@
 <h4>Lesson 1</h4>
 <div class="dialog">
     <div class="dialog_line">
-        <div class="person">Reader</div><div class="utterance">A Reading from <% readings.morning.1 %>.</div>
+        <div class="person">Reader</div><div class="utterance">A Reading from <% readings.morning.first %>.</div>
     </div>
 </div>
 <div id="otReading" class="scripture" hidden></div>
@@ -229,7 +229,7 @@
 <h4>Lesson 2</h4>
 <div class="dialog">
     <div class="dialog_line">
-        <div class="person">Reader</div><div class="utterance">A Reading from <% readings.morning.2 %>.</div>
+        <div class="person">Reader</div><div class="utterance">A Reading from <% readings.morning.second %>.</div>
     </div>
 </div>
 <div id="ntReading" class="scripture" hidden></div>

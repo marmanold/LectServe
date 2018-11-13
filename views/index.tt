@@ -21,14 +21,14 @@
 	
 		<h4><a href="/html/morning_prayer/<% daily.date %>">Morning Prayer</a></h4>
 		<ul>
-		  <li><% daily.readings.morning.1 %></li>
-		  <li><% daily.readings.morning.2 %></li>
+		  <li><% daily.readings.morning.first %></li>
+		  <li><% daily.readings.morning.second %></li>
 		</ul>
 
 		<h4><a href="/html/evening_prayer/<% daily.date %>">Evening Prayer</a></h4>
 		<ul>
-		  <li><% daily.readings.evening.1 %></li>
-		  <li><% daily.readings.evening.2 %></li>
+		  <li><% daily.readings.evening.first %></li>
+		  <li><% daily.readings.evening.second %></li>
 		</ul>
 	</div>
 	<div class="flex-column right-column">

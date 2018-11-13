@@ -18,7 +18,7 @@ use Date::Lectionary::Daily;
 
 use Module::Version qw(get_version);
 
-our $VERSION = '1.20180619';
+our $VERSION = '1.20181113';
 
 hook before => sub {
     http_cache_max_age 3600;
@@ -39,6 +39,25 @@ get '/home/:day' => sub {
     my $lectionary = getAllLectionary( $date, 'acna', 'acna-sec' );
 
     send_as html => template 'index.tt', $lectionary;
+};
+
+#App Endpoints
+get '/app/v1/daily/:day' => sub {
+    my $day = route_parameters->get('day');
+    my $date = Time::Piece->strptime( "$day", "%Y-%m-%d" );
+
+    send_as
+        JSON => getDailyLectionary( $date, query_parameters->get('dailyLect') ),
+        { content_type => 'application/json; charset=UTF-8' };
+};
+
+get '/app/v1/sunday/:day' => sub {
+    my $day = route_parameters->get('day');
+    my $date = Time::Piece->strptime( "$day", "%Y-%m-%d" );
+
+    send_as
+        JSON => getSundayLectionary( $date, query_parameters->get('lect') ),
+        { content_type => 'application/json; charset=UTF-8' };
 };
 
 #JSON Endpoints
@@ -294,13 +313,24 @@ sub getDailyLectionary {
         $lectionary = Date::Lectionary::Daily->new( 'date' => $day );
     }
 
+    my $readings = {
+        morning => {
+            first => $lectionary->readings->{morning}->{1}, 
+            second => $lectionary->readings->{morning}->{2}, 
+        }, 
+        evening => {
+            first => $lectionary->readings->{evening}->{1}, 
+            second => $lectionary->readings->{evening}->{2}, 
+        }
+    };
+
     return {
         date        => $day->date,
         day         => $day->fullday,
         date_pretty => $day->day_of_month . '. ' . $day->fullmonth . ' ' . $day->year,
         lectionary  => $lectionary->lectionary,
         week        => $lectionary->week,
-        readings    => $lectionary->readings,
+        readings    => $readings,
         tomorrow    => nextDay($day),
         yesterday   => prevDay($day)
     };

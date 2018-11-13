@@ -10,14 +10,14 @@
         <% END %>
 <h4><a href="/html/morning_prayer/<% date %>">Morning Prayer</a></h4>
 <ul>
-  <li><% readings.morning.1 %></li>
-  <li><% readings.morning.2 %></li>
+  <li><% readings.morning.first %></li>
+  <li><% readings.morning.second %></li>
 </ul>
 
 <h4><a href="/html/evening_prayer/<% date %>">Evening Prayer</a></h4>
 <ul>
-  <li><% readings.evening.1 %></li>
-  <li><% readings.evening.2 %></li>
+  <li><% readings.evening.first %></li>
+  <li><% readings.evening.second %></li>
 </ul>
 <p>Change Lectionary: <a href="<% request.uri.remove('\?dailyLect=acna-sec|\?dailyLect=acna-xian') %>?dailyLect=acna-sec">ACNA Civil</a> or <a href="<% request.uri.remove('\?dailyLect=acna-sec|\?dailyLect=acna-xian') %>?dailyLect=acna-xian">ACNA Liturgical</a></p>
 <div class="pagination">
