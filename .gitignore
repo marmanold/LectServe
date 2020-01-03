@@ -5,3 +5,4 @@ local/*
 .DS_Store
 .carton
 logs/*
+.vstags
