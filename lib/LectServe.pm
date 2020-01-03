@@ -18,7 +18,7 @@ use Date::Lectionary::Daily;
 
 use Module::Version qw(get_version);
 
-our $VERSION = '1.20181113';
+our $VERSION = '1.20200102';
 
 hook before => sub {
     http_cache_max_age 3600;
@@ -207,7 +207,7 @@ sub getReading {
     );
 
     my $response = $client->GET(
-        '/v3/passage/html/?q=' . $parsedCitation . '&wrapping-div=true&inline-styles=true&include-passage-references=false&include-chapter-numbers=false&include-verse-number=false&include-footnotes=false&include-footnote-body=false&include-headings=false&include-subheadings=false&include-surrounding-chapters-below=false&include-audio-link=false',
+        '/v3/passage/html/?q=' . $parsedCitation . '&wrapping-div=true&inline-styles=true&include-passage-references=true&include-chapter-numbers=false&include-verse-number=false&include-footnotes=false&include-footnote-body=false&include-headings=false&include-subheadings=false&include-surrounding-chapters-below=false&include-audio-link=true',
         {   Accept        => "application/json",
             Authorization => "Token 6b6576cd1f91f7bb79df4824c08891a558e47647"
         }
@@ -315,12 +315,12 @@ sub getDailyLectionary {
 
     my $readings = {
         morning => {
-            first => $lectionary->readings->{morning}->{1}, 
-            second => $lectionary->readings->{morning}->{2}, 
-        }, 
+            first => $lectionary->readings->{morning}->{1},
+            second => $lectionary->readings->{morning}->{2},
+        },
         evening => {
-            first => $lectionary->readings->{evening}->{1}, 
-            second => $lectionary->readings->{evening}->{2}, 
+            first => $lectionary->readings->{evening}->{1},
+            second => $lectionary->readings->{evening}->{2},
         }
     };
 
