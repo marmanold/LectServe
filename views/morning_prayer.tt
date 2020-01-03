@@ -1,9 +1,9 @@
 <script type="text/javascript">
     $(document).ready(function() {
         $.ajax({
-            "crossDomain":true, 
-            "url": "/reading", 
-            "method": "POST", 
+            "crossDomain":true,
+            "url": "/reading",
+            "method": "POST",
             "data": {"query":"<% readings.morning.first %>"}
         }).done(function(data, status) {
             $(data.passages).each(function(index, item) {
@@ -13,9 +13,9 @@
         });
 
         $.ajax({
-            "crossDomain":true, 
-            "url": "/reading", 
-            "method": "POST", 
+            "crossDomain":true,
+            "url": "/reading",
+            "method": "POST",
             "data": {"query":"<% readings.morning.second %>"}
         }).done(function(data, status) {
             $(data.passages).each(function(index, item) {
@@ -27,8 +27,9 @@
 </script>
 
 <h1>Daily Morning Prayer</h1>
-<h2>The Anglican Church in North America</h2>
-<p class="instruction">The Officiant may begin Morning Prayer by reading an <a href="#opening_sentences">opening sentence of Scripture</a>. One of the following, or a sentence from among those provided at the end of the Office is customary.</p>
+<h3>According to the use of the The Anglican Church in North America</h3>
+
+<p class="instruction">The Officiant may begin Morning Prayer by reading… One of the following…</p>
 
 <p class="prayer">Grace to you and peace from God our Father and the Lord Jesus Christ.</p>
 <p class="reference">Philippians 1:2</p>
@@ -42,8 +43,7 @@
 <h3>Confession of Sin</h3>
 <p class="instruction">The Officiant says to the People</p>
 <p class="prayer">Dearly beloved, the Scriptures teach us to acknowledge our many sins and offenses, not concealing them from our heavenly Father, but confessing them with humble and obedient hearts that we may obtain forgiveness by his infinite goodness and mercy. We ought at all times humbly to acknowledge our sins before Almighty God, but especially when we come together in his presence to give thanks for the great benefits we have received at his hands, to declare his most worthy praise, to hear his holy Word, and to ask, for ourselves and others, those things necessary for our life and our salvation. Therefore, come with me to the throne of heavenly grace.</p>
-<p class="instruction">or this</p>
-<p class="prayer">Let us humbly confess our sins to Almighty God.</p>
+
 <p class="instruction">Silence is kept. All kneeling the Officiant and People say</p>
 <div class="poetic">
     <p class="line">Almighty and most merciful Father,</p>
@@ -64,8 +64,7 @@
 </div>
 <p class="instruction">The Priest alone stands and says</p>
 <p class="prayer">Almighty God, the Father of our Lord Jesus Christ, desires not the death of sinners, but that they may turn from their wickedness and live. He has empowered and commanded his ministers to pronounce to his people, being penitent, the absolution and remission of their sins. He pardons all who truly repent and genuinely believe his holy Gospel. For this reason, we beseech him to grant us true repentance and his Holy Spirit, that our present deeds may please him, the rest of our lives may be pure and holy, and that at the last we may come to his eternal joy; through Jesus Christ our Lord. Amen.</p>
-<p class="instruction">or this</p>
-<p class="prayer">The Almighty and merciful Lord grant you absolution and remission of all your sins, true repentance, amendment of life, and the grace and consolation of his Holy Spirit. Amen.</p>
+
 <p class="instruction">A deacon or layperson remains kneeling and prays</p>
 <p class="prayer">Grant your faithful people, merciful Lord, pardon and peace; that we may be cleansed from all our sins, and serve you with a quiet mind; through Jesus Christ our Lord. Amen.</p>
 
@@ -97,32 +96,12 @@
         <div class="person">People</div><div class="utterance">The Lord’s name be praised.</div>
     </div>
 </div>
-<p class="instruction">Alternative forms of the “Glory be” and “Praise the Lord” are found in <a href="#add_dir">Additional Directions</a>.</p>
 <p class="instruction">Then follows the Venite. Alternatively, the Jubilate may be used.</p>
 <p class="instruction">These antiphons may be sung or said before and after the Invitatory Psalm.</p>
-<h4>Advent</h4>
-<p class="prayer">Our King and Savior now draws near: O come, let us adore him.</p>
-<h4>Christmas</h4>
-<p class="prayer">Alleluia, to us a child is born: O come, let us adore him. Alleluia.</p>
-<h4>Epiphany through the Baptism of Christ and the Transfiguration</h4>
-<p class="prayer">The Lord has shown forth his glory: O come, let us adore him.</p>
-<h4>Lent</h4>
-<p class="prayer">The Lord is full of compassion and mercy: O come, let us adore him.</p>
-<h4>Easter until Ascension</h4>
-<p class="prayer">Alleluia. The Lord is risen indeed: O come, let us adore him. Alleluia.</p>
-<h4>Ascension until Pentecost</h4>
-<p class="prayer">Alleluia. Christ the Lord has ascended into heaven: O come, let us adore him. Alleluia.</p>
-<h4>Day of Pentecost</h4>
-<p class="prayer">Alleluia. The Spirit of the Lord renews the face of the earth: O come, let us adore him. Alleluia.</p>
-<h4>Trinity Sunday</h4>
-<p class="prayer">Father, Son, and Holy Spirit, one God: O come, let us adore him.</p>
-<h4>On All Saints and other major saints’ days</h4>
-<p class="prayer">The Lord is glorious in his saints: O come, let us adore him.</p>
-<h4>For use at any time</h4>
 <p class="prayer">The earth is the Lord's for he made it: O Come let us adore him.</p>
-<h4>Or this</h4>
+<p class="instruction">or this</p>
 <p class="prayer">Worship the Lord in the beauty of holiness: O Come let us adore him.</p>
-<h4>Or this</h4>
+<p class="instruction">or this</p>
 <p class="prayer">The mercy of the Lord is everlasting: O Come let us adore him.</p>
 <h3>Venite <em>O Come</em></h3>
 <div class="poetic">
@@ -195,7 +174,7 @@
 <h3>The Psalm or Psalms Appointed</h3>
 <p class="instruction">At the end of the Psalms is sung or said</p>
 <div class="poetic">
-    <p class="line">Glory to the Father, and to the Son, and to the Holy Spirit;</p>
+    <p class="line">Glory be to the Father, and to the Son, and to the Holy Spirit;</p>
     <p class="indented_line">as it was in the beginning, is now, and ever shall be,</p>
     <p class="indented_line">world without end. Amen.</p>
 </div>
@@ -210,29 +189,6 @@
     </div>
 </div>
 <div id="otReading" class="scripture" hidden></div>
-<p class="instruction">After each Lesson the Reader may say</p>
-<div class="dialog">
-    <div class="dialog_line">
-        <div class="person">Reader</div><div class="utterance">The Word of the Lord.</div>
-    </div>
-    <div class="dialog_line">
-        <div class="person">People</div><div class="utterance">Thanks be to God.</div>
-    </div>
-</div>
-<p class="instruction">Or the Reader may say</p>
-<div class="dialog">
-    <div class="dialog_line">
-        <div class="person">Reader</div><div class="utterance">Here ends the Reading.</div>
-    </div>
-</div>
-
-<h4>Lesson 2</h4>
-<div class="dialog">
-    <div class="dialog_line">
-        <div class="person">Reader</div><div class="utterance">A Reading from <% readings.morning.second %>.</div>
-    </div>
-</div>
-<div id="ntReading" class="scripture" hidden></div>
 <p class="instruction">After each Lesson the Reader may say</p>
 <div class="dialog">
     <div class="dialog_line">
@@ -310,6 +266,31 @@
     <p class="indented_line">we will praise you and highly exalt you for ever.</p>
 </div>
 
+<h4>Lesson 2</h4>
+<div class="dialog">
+    <div class="dialog_line">
+        <div class="person">Reader</div><div class="utterance">A Reading from <% readings.morning.second %>.</div>
+    </div>
+</div>
+<div id="ntReading" class="scripture" hidden></div>
+<p class="instruction">After each Lesson the Reader may say</p>
+<div class="dialog">
+    <div class="dialog_line">
+        <div class="person">Reader</div><div class="utterance">The Word of the Lord.</div>
+    </div>
+    <div class="dialog_line">
+        <div class="person">People</div><div class="utterance">Thanks be to God.</div>
+    </div>
+</div>
+<p class="instruction">Or the Reader may say</p>
+<div class="dialog">
+    <div class="dialog_line">
+        <div class="person">Reader</div><div class="utterance">Here ends the Reading.</div>
+    </div>
+</div>
+
+<p class="instruction">The following Canticle is normally sung or said after the lesson. The Officiant may also use a Canticle drawn from the 'Supplemental Canticles' or an appropriate song of praise.</p>
+
 <h3>Benedictus <em>The Song of Zechariah</em></h3>
 <div class="poetic">
     <p class="reference">Luke 1:68-79</p>
@@ -380,13 +361,13 @@
 <p class="instruction">The People kneel or stand.</p>
 <div class="dialog">
     <div class="dialog_line">
-        <div class="person">Officiant</div><div class="utterance">Lord, have mercy [upon us].</div>
+        <div class="person">Officiant</div><div class="utterance">Lord, have mercy upon us.</div>
     </div>
     <div class="dialog_line">
-        <div class="person">People</div><div class="utterance">Christ, have mercy [upon us].</div>
+        <div class="person">People</div><div class="utterance">Christ, have mercy upon us.</div>
     </div>
     <div class="dialog_line">
-        <div class="person">Officiant</div><div class="utterance">Lord, have mercy [upon us].</div>
+        <div class="person">Officiant</div><div class="utterance">Lord, have mercy upon us.</div>
     </div>
 </div>
 <p class="instruction">Officiant and People</p>
@@ -399,16 +380,6 @@
     <p class="line">And lead us not into temptation, but deliver us from evil.</p>
     <p class="line">For thine is the kingdom, and the power, and the glory,</p>
     <p class="indented_line">forever and ever. Amen.</p>
-</div>
-<p class="instruction">or this</p>
-<div class="poetic">
-    <p class="line">Our Father in heaven, hallowed be your Name.</p>
-    <p class="line">Your kingdom come, your will be done, on earth as it is in heaven.</p>
-    <p class="line">Give us today our daily bread.</p>
-    <p class="line">And forgive us our sins as we forgive those who sin against us.</p>
-    <p class="line">Save us from the time of trial, and deliver us from evil.</p>
-    <p class="line">For the kingdom, the power, and the glory are yours,</p>
-    <p class="indented_line">now and forever. Amen.</p>
 </div>
 
 <div class="dialog">
@@ -512,7 +483,7 @@
     <div class="dialog_line">
         <div class="person">Officiant</div><div class="utterance">Let us bless the Lord.</div>
     </div>
-    <div class="dialog_line">    
+    <div class="dialog_line">
         <div class="person">People</div><div class="utterance">Thanks be to God.</div>
     </div>
 </div>
@@ -527,77 +498,3 @@
 <p class="reference">Romans 15:13</p>
 <p class="prayer">Glory to God whose power, working in us, can do infinitely more than we can ask or imagine: Glory to him from generation to generation in the Church, and in Christ Jesus forever and ever. Amen.</p>
 <p class="reference">Ephesians 3:20-21</p>
-
-<hr/>
-
-<a name="opening_sentences"></a>
-<h3>Opening Sentences of Scripture</h3>
-<h4>Advent</h4>
-<p class="prayer">In the wilderness prepare the way of the Lord; make straight in the desert a highway for our God.</p>
-<p class="reference">Isaiah 40:3</p>
-
-<h4>Christmas</h4>
-<p class="prayer">Fear not, for behold, I bring you good news of a great joy that will be for all people. For unto you is born this day in the city of David a Savior, who is Christ the Lord.</p>
-<p class="reference">Luke 2:10-11</p>
-
-<h4>Epiphany</h4>
-<p class="prayer">For from the rising of the sun to its setting my name will be great among the nations, and in every place incense will be offered to my name, and a pure offering. For my name will be great among the nations, says the Lord of hosts.</p>
-<p class="reference">Malachi 1:11</p>
-
-<h4>Lent and other Penitential Occasions</h4>
-<p class="prayer">Repent, for the kingdom of heaven is at hand.</p>
-<p class="reference">Matthew 3:2</p>
-<p class="prayer">Hide your face from my sins, and blot out all my iniquities.</p>
-<p class="reference">Psalm 51:9</p>
-<p class="prayer">If anyone would come after me, let him deny himself and take up his cross and follow me.</p>
-<p class="reference">Mark 8:34</p>
-
-<h4>Holy Week</h4>
-<p class="prayer">Is it nothing to you, all you who pass by? Look and see if there is any sorrow like my sorrow, which was brought upon me, which the Lord inflicted on the day of his fierce anger.</p>
-<p class="reference">Lamentations 1:12</p>
-
-<h4>Easter</h4>
-<p class="prayer">If then you have been raised with Christ, seek the things that are above, where Christ is, seated at the right hand of God.</p>
-<p class="reference">Colossians 3:1</p>
-<p class="prayer">Alleluia. Christ is risen. The Lord is risen indeed. Alleluia.</p>
-<p class="reference">Mark 16:6 and Luke 24:34</p>
-
-<h4>Ascension</h4>
-<p class="prayer">Since then we have a great high priest who has passed through the heavens, Jesus, the Son of God, let us hold fast our confession. Let us then with confidence draw near to the throne of grace, that we may receive mercy and find grace to help in time of need.</p>
-<p class="reference">Hebrews 4:14, 16</p>
-
-<h4>Pentecost</h4>
-<p class="prayer">You will receive power when the Holy Spirit has come upon you, and you will be my witnesses in Jerusalem and in all Judea and Samaria, and to the end of the earth.</p>
-<p class="reference">Acts 1:8</p>
-
-<h4>Trinity Sunday</h4>
-<p class="prayer">Holy, holy, holy, is the Lord God Almighty, who was and is and is to come!</p>
-<p class="reference">Revelation 4:8</p>
-
-<h4>Days of Thanksgiving</h4>
-<p class="prayer">Honor the Lord with your wealth and with the firstfruits of all your produce; then your barns will be filled with plenty, and your vats will be bursting with wine.</p>
-<p class="reference">Proverbs 3:9-10</p>
-
-<h4>At any time</h4>
-<p class="prayer">The Lord is in his holy temple; let all the earth keep silence before him.</p>
-<p class="reference">Habakkuk 2:20</p>
-<p class="prayer">Send out your light and your truth; let them lead me; let them bring me to your holy hill and to your dwelling!</p>
-<p class="reference">Psalm 43:3</p>
-<p class="prayer">Thus says the One who is high and lifted up, who inhabits eternity, whose name is Holy: “I dwell in the high and holy place, and also with him who is of a contrite and lowly spirit, to revive the spirit of the lowly, and to revive the heart of the contrite.”</p>
-<p class="reference">Isaiah 57:15</p>
-<p class="prayer">The hour is coming, and is now here, when the true worshipers will worship the Father in spirit and truth, for the Father is seeking such people to worship him.</p>
-<p class="reference">John 4:23</p>
-
-<hr/>
-
-<a name="add_dir"></a>
-<h3>Additional Directions: Morning and Evening Prayer</h3>
-<p class="instruction">The Confession and Apostles’ Creed may be omitted, provided each is said at least once during the course of the day.</p>
-<p class="instruction">The Gloria Patri in the opening versicles may be said in unison. The following form of the Gloria Patri may alternately be used:</p>
-<div class="poetic">
-    <p class="line">Glory to the Father, and to the Son, and to the Holy Spirit:</p>
-    <p class="indented_line">As it was in the beginning, is now, and will be forever. Amen.</p>
-</div>
-<p class="instruction">The Officiant and People may join in saying “Alleluia” (except in Lent) as an alternative to the versicles “Praise the Lord. The Lord’s name be praised.”</p>
-<p class="instruction">If an offering is to be received, it is appropriate to do so during the hymn or anthem following the collects.</p>
-<p class="instruction">A sermon may be preached after the lessons, after the hymn or anthem following the collects, or after the conclusion of the Office.</p>

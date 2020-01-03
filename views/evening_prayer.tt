@@ -1,9 +1,9 @@
 <script type="text/javascript">
     $(document).ready(function() {
         $.ajax({
-            "crossDomain":true, 
-            "url": "/reading", 
-            "method": "POST", 
+            "crossDomain":true,
+            "url": "/reading",
+            "method": "POST",
             "data": {"query":"<% readings.evening.first %>"}
         }).done(function(data, status) {
             $(data.passages).each(function(index, item) {
@@ -13,9 +13,9 @@
         });
 
         $.ajax({
-            "crossDomain":true, 
-            "url": "/reading", 
-            "method": "POST", 
+            "crossDomain":true,
+            "url": "/reading",
+            "method": "POST",
             "data": {"query":"<% readings.evening.second %>"}
         }).done(function(data, status) {
             $(data.passages).each(function(index, item) {
@@ -27,8 +27,8 @@
 </script>
 
 <h1>Daily Evening Prayer</h1>
-<h2>The Anglican Church in North America</h2>
-<p class="instruction">The Officiant may begin Evening Prayer by reading an <a href="#opening_sentences">opening sentence of Scripture</a>. One of the following, or a sentence from among those provided at the end of the Office, is customary.</p>
+<h3>According to the use of the The Anglican Church in North America</h3>
+<p class="instruction">The Officiant may begin Evening Prayer by reading… One of the following…</p>
 <p class="prayer">Jesus spoke to them, saying, “I am the light of the world. Whoever follows me will not walk in darkness, but will have the light of life.”</p>
 <p class="reference">John 8:12</p>
 <p class="instruction">or this</p>
@@ -40,8 +40,7 @@
 <h3>Confession of Sin</h3>
 <p class="instruction">The Officiant says to the People</p>
 <p class="prayer">Dearly beloved, the Scriptures teach us to acknowledge our many sins and offenses, not concealing them from our heavenly Father, but confessing them with humble and obedient hearts that we may obtain forgiveness by his infinite goodness and mercy. We ought at all times humbly to acknowledge our sins before Almighty God, but especially when we come together in his presence to give thanks for the great benefits we have received at his hands, to declare his most worthy praise, to hear his holy Word, and to ask, for ourselves and others, those things necessary for our life and our salvation. Therefore, come with me to the throne of heavenly grace.</p>
-<p class="instruction">or this</p>
-<p class="prayer">Let us humbly confess our sins to Almighty God.</p>
+
 <p class="instruction">Silence is kept. All kneeling the Officiant and People say</p>
 <div class="poetic">
     <p class="line">Almighty and most merciful Father,</p>
@@ -64,8 +63,7 @@
 </div>
 <p class="instruction">The Priest alone stands and says</p>
 <p class="prayer">Almighty God, the Father of our Lord Jesus Christ, desires not the death of sinners, but that they may turn from their wickedness and live. He has empowered and commanded his ministers to pronounce to his people, being penitent, the absolution and remission of their sins. He pardons and absolves all who truly repent and genuinely believe his holy Gospel. For this reason, we beseech him to grant us true repentance and his Holy Spirit, that our present deeds may please him, the rest of our lives may be pure and holy, and that at the last we may come to his eternal joy; through Jesus Christ our Lord. Amen.</p>
-<p class="instruction">or this</p>
-<p class="prayer">The Almighty and merciful Lord grant you absolution and remission of all your sins, true repentance, amendment of life, and the grace and consolation of his Holy Spirit. Amen.</p>
+
 <p class="instruction">A deacon or layperson remains kneeling and prays</p>
 <p class="prayer">Grant your faithful people, merciful Lord, pardon and peace; that we may be cleansed from all our sins, and serve you with a quiet mind; through Jesus Christ our Lord. Amen.</p>
 
@@ -97,7 +95,7 @@
         <div class="person">People</div><div class="utterance">The Lord’s name be praised.</div>
     </div>
 </div>
-<p class="instruction">Alternative forms of the “Glory be” and “Praise the Lord” are found in <a href="#add_dir">Additional Directions.</a></p>
+
 <p class="instruction">The following or some other suitable hymn or Psalm may be sung or said.</p>
 <h3>Phos hilaron <em>O Gladsome Light</em></h3>
 <div class="poetic">
@@ -116,7 +114,7 @@
 <h3>The Psalm or Psalms Appointed</h3>
 <p class="instruction">At the end of the Psalms is sung or said</p>
 <div class="poetic">
-    <p class="line">Glory to the Father, and to the Son, and to the Holy Spirit;</p>
+    <p class="line">Glory be to the Father, and to the Son, and to the Holy Spirit;</p>
     <p class="indented_line">as it was in the beginning, is now, and ever shall be,</p>
     <p class="indented_line">world without end. Amen.</p>
 </div>
@@ -147,6 +145,34 @@
     </div>
 </div>
 
+<p class="instruction">The following Canticle is normally sung or said after the lesson. The Officiant may also use a Canticle drawn from the “Supplemental Canticles” or an appropriate song of praise.</p>
+
+<h3>Magnificat <em>The Song of Mary</em></h3>
+<div class="poetic">
+    <p class="reference">Luke 1:46-55</p>
+    <p class="line">My soul magnifies the Lord,</p>
+        <p class="indented_line">and my spirit rejoices in God my Savior.</p>
+    <p class="line">For he has regarded</p>
+        <p class="indented_line">the lowliness of his handmaiden.</p>
+    <p class="line">For behold, from now on,</p>
+        <p class="indented_line">all generations will call me blessed.</p>
+    <p class="line">For he that is mighty has magnified me,</p>
+        <p class="indented_line">and holy is his Name.</p>
+    <p class="line">And his mercy is on those who fear him,</p>
+        <p class="indented_line">throughout all generations.</p>
+    <p class="line">He has shown the strength of his arm;</p>
+        <p class="indented_line">he has scattered the proud in the imagination of their hearts.</p>
+    <p class="line">He has brought down the mighty from their thrones,</p>
+        <p class="indented_line">and has exalted the humble and meek.</p>
+    <p class="line">He has filled the hungry with good things,</p>
+        <p class="indented_line">and the rich he has sent empty away.</p>
+    <p class="line">He, remembering his mercy, has helped his servant Israel,</p>
+        <p class="indented_line">as he promised to our fathers, Abraham and his seed forever.</p>
+    <p class="line">Glory be to the Father, and to the Son, and to the Holy Spirit;</p>
+        <p class="indented_line">as it was in the beginning, is now, and ever shall be,</p>
+        <p class="indented_line">world without end. Amen.</p>
+</div>
+
 <h4>Lesson 2</h4>
 <div class="dialog">
     <div class="dialog_line">
@@ -170,34 +196,7 @@
     </div>
 </div>
 
-<p class="instruction">The following Canticles are normally sung or said after each of the lessons. The Officiant may also use a Canticle drawn from the “Supplemental Canticles” or an appropriate song of praise.</p>
-
-<h3>Magnificat <em>The Song of Mary</em></h3>
-<div class="poetic">
-    <p class="reference">Luke 1:46-55</p>
-    <p class="line">My soul magnifies the Lord,</p>
-        <p class="indented_line">and my spirit rejoices in God my Savior.</p>
-    <p class="line">For he has regarded</p>
-        <p class="indented_line">the lowliness of his handmaiden.</p>
-    <p class="line">For behold, from now on,</p>
-        <p class="indented_line">all generations will call me blessed.</p>
-    <p class="line">For he that is mighty has magnified me,</p> 
-        <p class="indented_line">and holy is his Name.</p>
-    <p class="line">And his mercy is on those who fear him,</p>
-        <p class="indented_line">throughout all generations.</p>
-    <p class="line">He has shown the strength of his arm;</p>
-        <p class="indented_line">he has scattered the proud in the imagination of their hearts.</p>
-    <p class="line">He has brought down the mighty from their thrones,</p>
-        <p class="indented_line">and has exalted the humble and meek.</p>
-    <p class="line">He has filled the hungry with good things,</p>
-        <p class="indented_line">and the rich he has sent empty away.</p>
-    <p class="line">He, remembering his mercy, has helped his servant Israel,</p>
-        <p class="indented_line">as he promised to our fathers, Abraham and his seed forever.</p>
-    <p class="line">Glory be to the Father, and to the Son, and to the Holy Spirit;</p>
-        <p class="indented_line">as it was in the beginning, is now, and ever shall be,</p>
-        <p class="indented_line">world without end. Amen.</p>
-</div>
-
+<p class="instruction">The following Canticle is normally sung or said after the lesson. The Officiant may also use a Canticle drawn from the “Supplemental Canticles” or an appropriate song of praise.</p>
 <h3>Nunc dimittis <em>The Song of Simeon</em></h3>
 <div class="poetic">
 <p class="reference">Luke 2:29-32</p>
@@ -248,13 +247,13 @@
     </div>
     <p class="instruction">The People kneel or stand.</p>
     <div class="dialog_line">
-        <div class="person">Officiant</div><div class="utterance">Lord, have mercy [upon us].</div>
+        <div class="person">Officiant</div><div class="utterance">Lord, have mercy upon us.</div>
     </div>
     <div class="dialog_line">
-        <div class="person">People</div><div class="utterance">Christ, have mercy [upon us].</div>
+        <div class="person">People</div><div class="utterance">Christ, have mercy upon us.</div>
     </div>
     <div class="dialog_line">
-        <div class="person">Officiant</div><div class="utterance">Lord, have mercy [upon us].</div>
+        <div class="person">Officiant</div><div class="utterance">Lord, have mercy upon us.</div>
     </div>
 </div>
 <p class="instruction">Officiant and People</p>
@@ -267,16 +266,6 @@
     <p class="line">And lead us not into temptation, but deliver us from evil.</p>
     <p class="line">For thine is the kingdom, and the power, and the glory,</p>
     <p class="indented_line">forever and ever. Amen.</p>
-</div>
-<p class="instruction">or this</p>
-<div class="poetic">
-    <p class="line">Our Father in heaven, hallowed be your Name.</p>
-    <p class="line">Your kingdom come, your will be done, on earth as it is in heaven.</p>
-    <p class="line">Give us today our daily bread.</p>
-    <p class="line">And forgive us our sins as we forgive those who sin against us.</p>
-    <p class="line">Save us from the time of trial, and deliver us from evil.</p>
-    <p class="line">For the kingdom, the power, and the glory are yours,</p>
-    <p class="indented_line">now and forever. Amen.</p>
 </div>
 
 <p class="instruction">Then follows one of these sets of Suffrages</p>
@@ -298,7 +287,7 @@
         <div class="person">Officiant</div><div class="utterance">Clothe your ministers with righteousness;</div>
     </div>
     <div class="dialog_line">
-        <div class="person">People</div><div class="utterance">And make your chosen people joyful.</div>
+        <div class="person">People</div><div class="utterance">And let your people sing with joy.</div>
     </div>
     <div class="dialog_line">
         <div class="person">Officiant</div><div class="utterance">O Lord, save your people;</div>
@@ -324,34 +313,6 @@
     <div class="dialog_line">
         <div class="person">People</div><div class="utterance">And take not your Holy Spirit from us.</div>
     </div>
-</div>
-<p class="instruction">or this</p>
-<div class="poetic">
-    <p class="line">That this evening may be holy, good, and peaceful,</p>
-    <p class="line"><em>We entreat you, O Lord.</em></p>
-</div>
-<div class="poetic">
-    <p class="line">That your holy angels may lead us in paths of peace and goodwill,</p>
-    <p class="line"><em>We entreat you, O Lord.</em></p>
-</div>
-<div class="poetic">
-    <p class="line">That we may be pardoned and forgiven for our sins and offenses,</p>
-    <p class="line"><em>We entreat you, O Lord.</em></p>
-</div>
-<div class="poetic">
-    <p class="line">That there may be peace in your Church and in the whole world,</p>
-    <p class="line"><em>We entreat you, O Lord.</em></p>
-</div>
-<div class="poetic">
-    <p class="line">That we may depart this life in your faith and fear,</p>
-    <p class="indented_line">and not be condemned before the great judgment seat of Christ,</p>
-    <p class="line"><em>We entreat you, O Lord.</em></p>
-</div>
-<div class="poetic">
-    <p class="line">That we may be bound together by your Holy Spirit</p>
-        <p class="indented_line">in the communion of [________ and] all your saints,</p>
-        <p class="indented_line">entrusting one another and all our life to Christ,</p>
-    <p class="line"><em>We entreat you, O Lord.</em></p>
 </div>
 
 <p class="instruction">The Officiant then prays one or more of the following collects, always beginning with the Collect of the Day (the prayer of the previous Sunday or of the Holy Day being observed). It is traditional to pray the Collects for Peace and Aid against Perils daily. Alternatively, one may pray the collects on a weekly rotation, using the suggestions in parentheses.</p>
@@ -409,7 +370,7 @@
     <div class="dialog_line">
         <div class="person">Officiant</div><div class="utterance">Let us bless the Lord.</div>
     </div>
-    <div class="dialog_line">    
+    <div class="dialog_line">
         <div class="person">People</div><div class="utterance">Thanks be to God.</div>
     </div>
 
@@ -422,73 +383,3 @@
 <p class="reference">Romans 15:13</p>
 <p class="prayer">Glory to God whose power, working in us, can do infinitely more than we can ask or imagine: Glory to him from generation to generation in the Church, and in Christ Jesus forever and ever. Amen.</p>
 <p class="reference">Ephesians 3:20-21</p>
-
-<hr/>
-
-<a name="opening_sentences"></a>
-<h3>Opening Sentences of Scripture</h3>
-<h4>Advent</h4>
-<p class="prayer">Therefore stay awake – for you do not know when the master of the house will come, in the evening, or at midnight, or when the cock crows, or in the morning – lest he come suddenly and find you asleep.</p>
-<p class="reference">Mark 13:35-36</p>
-
-<h4>Christmas</h4>
-<p class="prayer">Behold, the dwelling place of God is with man. He will dwell with them, and they will be his people, and God himself will be with them as their God.</p>
-<p class="reference">Revelation 21:3</p>
-
-<h4>Epiphany</h4>
-<p class="prayer">Nations shall come to your light, and kings to the brightness of your rising.</p>
-<p class="reference">Isaiah 60:3</p>
-
-<h4>Lent</h4>
-<p class="prayer">If we say we have no sin, we deceive ourselves, and the truth is not in us. If we confess our sins, he is faithful and just to forgive us our sins and to cleanse us from all unrighteousness.</p>
-<p class="reference">1 John 1:8-9</p>
-<p class="prayer">For I know my transgressions, and my sin is ever before me.</p>
-<p class="reference">Psalm 51:3</p>
-<p class="prayer">To the Lord our God belong mercy and forgiveness, for we have rebelled against him.</p>
-<p class="reference">Daniel 9:9</p>
-
-<h4>Holy Week</h4>
-<p class="prayer">All we like sheep have gone astray; we have turned every one to his own way; and the Lord has laid on him the iniquity of us all.
-<p class="reference">Isaiah 53:6
-
-<h4>Easter</h4>
-<p class="prayer">Thanks be to God, who gives us the victory through our Lord Jesus Christ.</p>
-<p class="reference">1 Corinthians 15:57</p>
-
-<h4>Ascension</h4>
-<p class="prayer">For Christ has entered, not into holy places made with hands, which are copies of the true things, but into heaven itself, now to appear in the presence of God on our behalf.</p>
-<p class="reference">Hebrews 9:24</p>
-
-<h4>Pentecost</h4>
-<p class="prayer">The Spirit and the Bride say, “Come.” And let the one who hears say, “Come.” And let the one who is thirsty come; let the one who desires take the water of life without price.</p>
-<p class="reference">Revelation 22:17</p>
-<p class="prayer">There is a river whose streams make glad the city of God, the holy habitation of the Most High.</p>
-<p class="reference">Psalm 46:4</p>
-
-<h4>Trinity Sunday</h4>
-<p class="prayer">Holy, holy, holy, is the Lord God of Hosts; the whole earth is full of his glory!</p>
-<p class="reference">Isaiah 6:3</p>
-
-<h4>Days of Thanksgiving</h4>
-<p class="prayer">The Lord by wisdom founded the earth; by understanding he established the heavens; by his knowledge the deeps broke open, and the clouds drop down the dew.</p>
-<p class="reference">Proverbs 3:19-20</p>
-
-<h4>At any time</h4>
-<p class="prayer">Worship the Lord in the beauty of holiness; let the whole earth tremble before him.</p>
-<p class="reference">Psalm 96:9</p>
-<p class="prayer">I will bless the Lord who gives me counsel; my heart teaches me, night after night. I have set the Lord always before me; because he is at my right hand, I shall not fall.</p>
-<p class="reference">Psalm 16:7-8</p>
-
-<hr/>
-
-<a name="add_dir"></a>
-<h3>Additional Directions: Morning and Evening Prayer</h3>
-<p class="instruction">The Confession and Apostles’ Creed may be omitted, provided each is said at least once during the course of the day.</p>
-<p class="instruction">The Gloria Patri in the opening versicles may be said in unison. The following form of the Gloria Patri may alternately be used:</p>
-<div class="poetic">
-    <p class="line">Glory to the Father, and to the Son, and to the Holy Spirit:</p>
-    <p class="indented_line">As it was in the beginning, is now, and will be forever. Amen.</p>
-</div>
-<p class="instruction">The Officiant and People may join in saying “Alleluia” (except in Lent) as an alternative to the versicles “Praise the Lord. The Lord’s name be praised.”</p>
-<p class="instruction">If an offering is to be received, it is appropriate to do so during the hymn or anthem following the collects.</p>
-<p class="instruction">A sermon may be preached after the lessons, after the hymn or anthem following the collects, or after the conclusion of the Office.</p>
