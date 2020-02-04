@@ -16,7 +16,8 @@ requires "Starman", "0.4015";
 requires "Try::Tiny::Tiny", "0.002";
 requires "Date::Advent", "1.20180423";
 requires "Date::Lectionary::Time", "1.20180422.1";
-requires "Date::Lectionary", "1.20200203";
+requires "Date::Lectionary", "1.20200203",
+    url => 'https://www.cpan.org/authors/id/M/MA/MARMANOLD/Date-Lectionary-v1.20200203.tar.gz';
 requires "Date::Lectionary::Daily", "1.20200102";
 requires "REST::Client", "273";
 requires "Text::Trim", "1.03";
