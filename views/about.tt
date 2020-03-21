@@ -1,8 +1,8 @@
 <h2>Welcome to LectServe &alpha;lpha!</h2>
-<p>LectServe is an early version of a tool I'm providing to the Church to quickly find lectionary readings for a given day.</p>
+<p>LectServe is a tool I'm providing to the Church to quickly find lectionary readings for a given day.</p>
+<p>For an example of how to use the API to automatically pull down the readings each week into a program like <a href="https://getdrafts.com">Drafts 5</a> for weekly sermon prep, please view this <a href="https://www.marmanold.com/tech/drafts-5-sermon-prep-with-lectserve/">guide on my blog</a>.</p>
 <p>The <a href="https://metacpan.org/pod/Date::Lectionary">backend</a> supports both the Revised Common Lectionary and the ACNA lectionary for Sundays and Red-Letter days.  I'm defaulting to the ACNA lectionary because I'm Anglican, but you can use the RCL if you would like.</p>
 <p>The daily lectionary <a href="https://metacpan.org/pod/Date::Lectionary::Daily">backend</a> currently only supports the ACNA lectionary, but more are planned.</p>
-<p><strong>Nota bene:</strong> This software is shared in alpha quality.  That's <em>before</em> beta!  API endpoints and JSON payloads <em>will</em> change and things <em>will</em> shift around unexpectedly.</p>
 <h3>API Usage</h3>
 <p>All endpoints return JSON.  Optionally, the argument <tt>?lect=acna</tt> or <tt>?lect=rcl</tt> can be given to each endpoint to specify the lectionary you wish to use for Sundays and Red-Letter days.  <tt>/today</tt> and <tt>/date</tt> can take the argument <tt>dailyLect=?</tt> with the values <tt>acna-sec</tt> or <tt>acna-xian</tt> respectively for the current ACNA daily lectionary based on the civil calendar or the previous daily lectionary based on the liturgical calendar.  The default lectionaries are the ACNA Sunday and Daily (Civil-based).</p>
 <dl>
@@ -28,5 +28,6 @@
 <p>Updates about issues, downtime, new features, etc. will be shared on our <a href="https://www.twitter.com/lectserve/">Twitter account</a>.</p>
 <h3>/ect</h3>
 <p>More information about me, Michael Arnold, can be found on my <a href="https://www.marmanold.com">website</a>, <a href="https://www.twitter.com/marmanold/">Twitter</a>, and on <a href ="https://www.github.com/marmanold/">GitHub</a>.</p>
-<p>A huge thanks and much gratitude to my lovely wife, Jennifer and my beautiful children, Rosemary &amp; Oliver, for letting me spend some of my free time working on this project!</p>
+<p>If you or your church have technical needs, Michael does <a href="https://arnold.how">consulting & development work</a>.  He is available for hire at competitive rates and specializes in helping churches, non-profits, and small businesses.</p>
+<p>A huge thanks and much gratitude to my lovely wife, Jennifer and my beautiful children, Rosemary, Oliver, &amp; Virginia, for letting me spend some of my free time working on this project!</p>
 <p>Above all, <strong>Soli Deo Gloria!</strong></p>
