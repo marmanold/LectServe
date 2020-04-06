@@ -26,7 +26,7 @@
 <h3>Issues</h3>
 <p>This API and all the supporting infrastructure is supported and maintained by me in my free time.  Please log issues for the lectionary content or day determination logic to the <a href="https://github.com/marmanold/Date-Lectionary/issues">Date::Lectionary</a> or <a href="https://github.com/marmanold/Date-Lectionary-Daily/issues">Date::Lectionary::Daily</a> projects on GitHub</a>.  Issues for this API and website can be logged to the <a href="https://github.com/marmanold/LectServe/issues">LectServe project</a>, also on GitHub.</p>
 <p>Updates about issues, downtime, new features, etc. will be shared on our <a href="https://www.twitter.com/lectserve/">Twitter account</a>.</p>
-<h3>/ect</h3>
+<h3>/etc</h3>
 <p>More information about me, Michael Arnold, can be found on my <a href="https://www.marmanold.com">website</a>, <a href="https://www.twitter.com/marmanold/">Twitter</a>, and on <a href ="https://www.github.com/marmanold/">GitHub</a>.</p>
 <p>A huge thanks and much gratitude to my lovely wife, Jennifer and my beautiful children, Rosemary &amp; Oliver, for letting me spend some of my free time working on this project!</p>
 <p>Above all, <strong>Soli Deo Gloria!</strong></p>
