@@ -3,7 +3,7 @@
 ## VERSION 1.20201221 ##
 
 export PERL5OPT=-MTry::Tiny::Tiny
-git pull --rebase --prune
+git reset --hard origin/master
 carton install
 echo "Stopping old version..."
 kill -1 `cat $HOME/lectserve.pid`
