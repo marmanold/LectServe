@@ -1,6 +1,0 @@
-sudo yum install openssl-devel
-\curl -L https://install.perlbrew.pl | bash
-perlbrew install stable --thread --notest --switch
-perlbrew clean
-cpanm Carton Try::Tiny::Tiny
-#install nginx

@@ -14,7 +14,7 @@
     <dd>Returns the lectionary payload for the given date.  Date is given in four-digit year [yyyy], two-digit month [mm], and two digit day [dd] annotation with dashes between units.  Christmas Day in 2016 would be given as <tt>/date/2016-12-25</tt>, for example.</dd>
 </dl>
 <h3>Technical Information</h3>
-<p>LectServe is hosted on an Amazon EC2 instance and driven by Perl.  The engine driving this site and the API is the wonderful <a href="http://perldancer.org/">Dancer2</a> framework and the <a href="https://metacpan.org/pod/distribution/Starman/script/starman">Starman</a> high-performance web server.</p>
+<p>LectServe is hosted on <a href="https://www.linode.com/?r=84b48ef104307807358d2f462888420460a91476">Linode</a> and driven by Perl.  The engine driving this site and the API is the wonderful <a href="http://perldancer.org/">Dancer2</a> framework and the <a href="https://metacpan.org/pod/distribution/Starman/script/starman">Starman</a> high-performance web server.</p>
 <p>Behind the scenes all the hard work of finding our place in the lectionary is handled by the <a href="https://metacpan.org/pod/Date::Lectionary">Date::Lectionary</a> &amp; <a href="https://metacpan.org/pod/Date::Lectionary::Daily">Date::Lectionary::Daily</a> modules and three helper modules <a href="https://metacpan.org/pod/Date::Advent">Date::Advent</a>, <a href="https://metacpan.org/pod/Date::Easter">Date::Easter</a>, and <a href="https://metacpan.org/pod/Date::Lectionary::Time">Date::Lectionary::Time</a>.</p>
 <h4>Verison Information</h4>
 <ul>

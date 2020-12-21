@@ -1,14 +1,10 @@
 #!/bin/bash
 
-## VERSION 1.20180421 ##
+## VERSION 1.20201221 ##
 
 export PERL5OPT=-MTry::Tiny::Tiny
-cd $HOME/LectServe && git reset --hard HEAD && git clean -f -d && git pull
-cd $HOME/statsLiteClient && git reset --hard HEAD && git clean -f -d && git pull
-cd $HOME && cp statsLiteClient/build/stats-lite-client.bundle.js LectServe/public/javascripts
-cd $HOME/LectServe && sudo cp nginx.conf /etc/nginx
-sudo service nginx reload 
-cd $HOME/LectServe && carton install --deployment
+git pull --rebase --depth 1
+carton install
 echo "Stopping old version..."
 eval "pkill -f starman"
 echo "Starting new LectServe version..."
