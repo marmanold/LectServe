@@ -3,13 +3,13 @@
 ## VERSION 1.20201221 ##
 
 export PERL5OPT=-MTry::Tiny::Tiny
-git pull --rebase --depth 1
+git pull --rebase --depth 1 --prune
 carton install
 echo "Stopping old version..."
-eval "pkill -f starman"
+kill -1 $HOME/lectserve.pid
 echo "Starting new LectServe version..."
 cd $HOME/LectServe
-nohup carton exec starman --port 5000 --preload-app $HOME/LectServe/bin/app.psgi > /dev/null 2>&1 &
+carton exec starman --port 5000 $HOME/LectServe/bin/app.psgi --daemonize --pid $HOME/lectserve.pid
 echo "LectServe is now running."
 
 exit 0
