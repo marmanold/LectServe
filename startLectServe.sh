@@ -3,6 +3,7 @@
 ## VERSION 1.20201221 ##
 
 export PERL5OPT=-MTry::Tiny::Tiny
+git fetch origin
 git reset --hard origin/master
 carton install
 echo "Stopping old version..."
