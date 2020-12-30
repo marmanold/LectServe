@@ -84,10 +84,6 @@ body {
 	padding-top: 1em;
 }
 
-.pagination {
-	
-}
-
 .pagination a:link {
 	text-decoration: none;
 	color: black;
@@ -270,6 +266,27 @@ body {
 }
 
 .menu a:active {
+	text-decoration: none;
+	color:red;
+}
+
+/*Scripture Citation Links*/
+.bible a:link {
+	text-decoration: none;
+	color:black;
+}
+
+.bible a:visited {
+	text-decoration: none;
+	color:black;
+}
+
+.bible a:hover {
+	text-decoration: none;
+	color:gray;
+}
+
+.bible a:active {
 	text-decoration: none;
 	color:red;
 }
