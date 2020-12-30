@@ -4,11 +4,11 @@
 <% IF services.first.readings.size > 0 %>
   <% FOREACH service IN services %>
       <h4>Service: <% service.name %><% IF service.alt %>, <em><% service.alt %></em><% END %></h4>
-      <ol>
+      <ol><div class="bible">
       <% FOREACH reading IN service.readings %>
-          <li><% reading %></li>
+          <li><a href="https://www.biblegateway.com/passage/?search=<% reading | uri %>&version=RSVCE"><% reading %></a></li>
       <% END %>
-      </ol>
+      </div></ol>
   <% END %>
 <p>Change Lectionary: <a href="<% request.uri.remove('\?lect=acna|\?lect=rcl') %>?lect=acna">ACNA</a> or <a href="<% request.uri.remove('\?lect=acna|\?lect=rcl') %>?lect=rcl">RCL</a></p>
 <% ELSE %>

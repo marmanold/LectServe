@@ -21,14 +21,18 @@
 	
 		<h4><a href="/html/morning_prayer/<% daily.date %>">Morning Prayer</a></h4>
 		<ul>
-		  <li><% daily.readings.morning.first %></li>
-		  <li><% daily.readings.morning.second %></li>
+			<div class="bible">
+				<li><a href="https://www.biblegateway.com/passage/?search=<% daily.readings.morning.first | uri %>&version=RSVCE"><% daily.readings.morning.first %></a></li>
+				<li><a href="https://www.biblegateway.com/passage/?search=<% daily.readings.morning.second | uri %>&version=RSVCE"><% daily.readings.morning.second %></a></li>
+		  	</div>
 		</ul>
 
 		<h4><a href="/html/evening_prayer/<% daily.date %>">Evening Prayer</a></h4>
 		<ul>
-		  <li><% daily.readings.evening.first %></li>
-		  <li><% daily.readings.evening.second %></li>
+		  <div class="bible">
+				<li><a href="https://www.biblegateway.com/passage/?search=<% daily.readings.evening.first | uri %>&version=RSVCE"><% daily.readings.evening.first %></a></li>
+				<li><a href="https://www.biblegateway.com/passage/?search=<% daily.readings.evening.second | uri %>&version=RSVCE"><% daily.readings.evening.second %></a></li>
+		  	</div>
 		</ul>
 	</div>
 	<div class="flex-column right-column">
@@ -37,22 +41,22 @@
 			<p><em>Year <% red_letter.year %>, <% red_letter.lectionary FILTER upper %> Lectionary</em></p>
 			  <% FOREACH service IN red_letter.services %>
 			      <h4><% service.name %><% IF service.alt %>, <em><% service.alt %></em><% END %></h4>
-			      <ul>
+			      <ul><div class="bible">
 			      <% FOREACH reading IN service.readings %>
-			          <li><% reading %></li>
+			          <li><a href="https://www.biblegateway.com/passage/?search=<% reading | uri %>&version=RSVCE"><% reading %></a></li>
 			      <% END %>
-			      </ul>
+			      </div></ul>
 			  <% END %>
 		<% END %>
 			<h3><a href="/html/sunday/<% sunday.date %>">Sunday Readings</a></h3>
 			<p><em>Year <% sunday.year %>, <% sunday.lectionary FILTER upper %> Lectionary</em></p>
 			  <% FOREACH service IN sunday.services %>
 			      <h4><% service.name %><% IF service.alt %>, <em><% service.alt %></em><% END %></h4>
-			      <ul>
+			      <ul><div class="bible">
 			      <% FOREACH reading IN service.readings %>
-			          <li><% reading %></li>
+			          <li><a href="https://www.biblegateway.com/passage/?search=<% reading | uri %>&version=RSVCE"><% reading %></a></li>
 			      <% END %>
-			      </ul>
+			      </div></ul>
 			  <% END %>
 
 	</div>
