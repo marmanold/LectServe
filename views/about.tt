@@ -7,7 +7,7 @@
 <p>All endpoints return JSON.  Optionally, the argument <tt>?lect=acna</tt> or <tt>?lect=rcl</tt> can be given to each endpoint to specify the lectionary you wish to use for Sundays and Red-Letter days.  <tt>/today</tt> and <tt>/date</tt> can take the argument <tt>dailyLect=?</tt> with the values <tt>acna-sec</tt> or <tt>acna-xian</tt> respectively for the current ACNA daily lectionary based on the civil calendar or the previous daily lectionary based on the liturgical calendar.  The default lectionaries are the ACNA Sunday and Daily (Civil-based).</p>
 <dl>
     <dt><a href="/today">/today</a></dt>
-    <dd>Returns the lectionary payload for today's date.  "Today" is relative to the server LectServe is running on.  Presently, the server is sitting in Virginia, but I'm not sure if it's running on EST or GMT.</dd>
+    <dd>Returns the lectionary payload for today's date.  "Today" is relative to the US Central Time Zone.</dd>
     <dt><a href="/sunday">/sunday</a></dt>
     <dd>Returns the Sunday-only lectionary payload for the upcoming Sunday relative to "today".</dd>
     <dt><a href="/date/2016-12-25">/date/yyyy-mm-dd</a></dt>

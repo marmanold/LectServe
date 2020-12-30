@@ -10,14 +10,18 @@
         <% END %>
 <h4><a href="/html/morning_prayer/<% date %>">Morning Prayer</a></h4>
 <ul>
-  <li><% readings.morning.first %></li>
-  <li><% readings.morning.second %></li>
+  <div class="bible">
+				<li><a href="https://www.biblegateway.com/passage/?search=<% readings.morning.first.parseCitation | url %>&version=RSVCE"><% readings.morning.first %></a></li>
+				<li><a href="https://www.biblegateway.com/passage/?search=<% readings.morning.second.parseCitation | url %>&version=RSVCE"><% readings.morning.second %></a></li>
+		  	</div>
 </ul>
 
 <h4><a href="/html/evening_prayer/<% date %>">Evening Prayer</a></h4>
 <ul>
-  <li><% readings.evening.first %></li>
-  <li><% readings.evening.second %></li>
+  <div class="bible">
+				<li><a href="https://www.biblegateway.com/passage/?search=<% readings.evening.first.parseCitation | url %>&version=RSVCE"><% readings.evening.first %></a></li>
+				<li><a href="https://www.biblegateway.com/passage/?search=<% readings.evening.second.parseCitation | url %>&version=RSVCE"><% readings.evening.second %></a></li>
+		  	</div>
 </ul>
 <p>Change Lectionary: <a href="<% request.uri.remove('\?dailyLect=acna-sec|\?dailyLect=acna-xian') %>?dailyLect=acna-sec">ACNA Civil</a> or <a href="<% request.uri.remove('\?dailyLect=acna-sec|\?dailyLect=acna-xian') %>?dailyLect=acna-xian">ACNA Liturgical</a></p>
 <div class="pagination">

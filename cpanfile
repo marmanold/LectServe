@@ -18,6 +18,8 @@ requires "Date::Lectionary", "1.20200203";
 requires "Date::Lectionary::Daily", "1.20200102";
 requires "REST::Client", "273";
 requires "Text::Trim", "1.03";
+requires "Calendar::Simple", "2.0.0";
+requires "Exporter", "5.74";
 
 recommends "YAML"            , "0";
 recommends "URL::Encode::XS" , "0";

@@ -35,7 +35,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:description" content="Your daily lectionary readings…" />
     <meta property="og:site_name" content="LectServe &alpha;" />
-    <meta property="og:url" content="http://www.lectserve.com<% request.uri %>" />
+    <meta property="og:url" content="https://www.lectserve.com<% request.uri %>" />
     <meta property="og:image" content="/images/lectserve_og_image.jpg" />
     <meta property="og:image:url" content="/images/lectserve_og_image.jpg" />
     <meta property="og:image:type" content="image/jpeg" />
@@ -44,22 +44,23 @@
     <!-- Twitter Card Metadata-->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:description" content="Your daily lectionary readings…" />
-    <meta name="twitter:url" content="http://www.lectserve.com<% request.uri %>" />
+    <meta name="twitter:url" content="https://www.lectserve.com<% request.uri %>" />
     <meta name="twitter:image" content="/images/lectserve_og_image.jpg" />
     <meta name="twitter:creator" content="@lectserve" />
 </head>
 
 <body>
+    <a href="/html/about" title="Learn more about LectServe..."><img class="search-icon" src="/images/ios-help.svg" alt="About LectServe" /></a>
     <h1 class="banner"><a href="/" title="Return home...">LectServe &alpha;</a></h1>
     <div class="menu">
         <a href="/html/today"><img class="menu-icon" src="/images/ios-calendar-outline.svg" alt="Calendar"/>Daily Lectionary</a>
         <a href="/html/sunday"><img class="menu-icon" src="/images/ios-bookmarks.svg" alt="Open Book"/>Sunday Lectionary</a>
-        <a href="/html/about"><img class="menu-icon" src="/images/ios-help.svg" alt="Question Mark"/>About LectServe</a>
+        <a href="/calendar"><img class="menu-icon" src="/images/apps-sharp.svg" alt="Calendar"/>Calendar</a>
     </div>
     <div class="miniMenu">
         <a href="/html/today" title="Today's Readings"><img class="miniIcon" src="/images/ios-calendar-outline.svg" alt="Calendar"/></a>
         <a href="/html/sunday" title="Sunday's Readings"><img class="miniIcon" src="/images/ios-bookmarks.svg" alt="Open Book"/></a>
-        <a href="/html/about" title="About LectServe"><img class="miniIcon" src="/images/ios-help.svg" alt="Question Mark"/></a>
+        <a href="/calendar" title="Calendar"><img class="miniIcon" src="/images/apps-sharp.svg" alt="Calendar"/></a>
     </div>
     <hr/>
 
@@ -76,9 +77,9 @@
         </span>
         <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
             <meta itemprop="name" content="LectServe.com"/>
-            <meta itemprop="url" content="http://www.lectserve.com"/>
+            <meta itemprop="url" content="https://www.lectserve.com"/>
             <div itemprop="logo" itemscope itemtype="https://www.schema.org/ImageObject">
-              <meta itemprop="url" content="http://www.lectserve.com/favicon-32x32.png">
+              <meta itemprop="url" content="https://www.lectserve.com/favicon-32x32.png">
             </div>
         </span>
     
