@@ -163,10 +163,6 @@ body {
 	text-indent: 2em;
 }
 
-.dialog {
-
-}
-
 .dialog_line {
 	display: -webkit-flex;
     display: flex;
@@ -290,6 +286,80 @@ body {
 	text-decoration: none;
 	color:red;
 }
+
+/*Calendar Formatting*/
+.calendar table {
+	display:block;
+	overflow-x: auto;
+	white-space: nowrap;
+
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+
+.calendar td {
+	overflow: hidden;
+	white-space: normal;
+	text-overflow: ellipsis;
+	vertical-align: baseline;
+	border: 1px solid black;
+}
+
+.day {
+	color: grey;
+	text-align: right;
+}
+
+.name {
+	text-align: left;
+	font-size: small;
+}
+
+.cal-bible {
+	color: orange;
+	text-align: left;
+	font-size: xx-small;
+}
+
+.calendar thead th:nth-child(1) {
+	width: 14%;
+	min-width: 114px;
+}
+  
+.calendar thead th:nth-child(2) {
+	width: 14%;
+	min-width: 114px;
+}
+
+.calendar thead th:nth-child(3) {
+	width: 14%;
+	min-width: 114px;
+}
+
+.calendar thead th:nth-child(4) {
+	width: 14%;
+	min-width: 114px;
+}
+
+.calendar thead th:nth-child(5) {
+	width: 14%;
+	min-width: 114px;
+}
+
+.calendar thead th:nth-child(6) {
+	width: 14%;
+	min-width: 114px;
+}
+
+.calendar thead th:nth-child(7) {
+	width: 14%;
+	min-width: 114px;
+}
+
+th, td {
+	padding: 5px;
+}
+
 
 /*Menu used for mobile and smaller screened devices*/
 .miniMenu {

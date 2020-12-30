@@ -6,3 +6,4 @@ local/*
 .carton
 logs/*
 .vstags
+cpanfile.snapshot

@@ -6,7 +6,7 @@
       <h4>Service: <% service.name %><% IF service.alt %>, <em><% service.alt %></em><% END %></h4>
       <ol><div class="bible">
       <% FOREACH reading IN service.readings %>
-          <li><a href="https://www.biblegateway.com/passage/?search=<% reading | uri %>&version=RSVCE"><% reading %></a></li>
+          <li><a href="https://www.biblegateway.com/passage/?search=<% reading.parseCitation | url %>&version=RSVCE"><% reading %></a></li>
       <% END %>
       </div></ol>
   <% END %>

@@ -22,16 +22,16 @@
 		<h4><a href="/html/morning_prayer/<% daily.date %>">Morning Prayer</a></h4>
 		<ul>
 			<div class="bible">
-				<li><a href="https://www.biblegateway.com/passage/?search=<% daily.readings.morning.first | uri %>&version=RSVCE"><% daily.readings.morning.first %></a></li>
-				<li><a href="https://www.biblegateway.com/passage/?search=<% daily.readings.morning.second | uri %>&version=RSVCE"><% daily.readings.morning.second %></a></li>
+				<li><a href="https://www.biblegateway.com/passage/?search=<% daily.readings.morning.first.parseCitation | url %>&version=RSVCE"><% daily.readings.morning.first %></a></li>
+				<li><a href="https://www.biblegateway.com/passage/?search=<% daily.readings.morning.second.parseCitation | url %>&version=RSVCE"><% daily.readings.morning.second %></a></li>
 		  	</div>
 		</ul>
 
 		<h4><a href="/html/evening_prayer/<% daily.date %>">Evening Prayer</a></h4>
 		<ul>
 		  <div class="bible">
-				<li><a href="https://www.biblegateway.com/passage/?search=<% daily.readings.evening.first | uri %>&version=RSVCE"><% daily.readings.evening.first %></a></li>
-				<li><a href="https://www.biblegateway.com/passage/?search=<% daily.readings.evening.second | uri %>&version=RSVCE"><% daily.readings.evening.second %></a></li>
+				<li><a href="https://www.biblegateway.com/passage/?search=<% daily.readings.evening.first.parseCitation | url %>&version=RSVCE"><% daily.readings.evening.first %></a></li>
+				<li><a href="https://www.biblegateway.com/passage/?search=<% daily.readings.evening.second.parseCitation | url %>&version=RSVCE"><% daily.readings.evening.second %></a></li>
 		  	</div>
 		</ul>
 	</div>
@@ -43,7 +43,7 @@
 			      <h4><% service.name %><% IF service.alt %>, <em><% service.alt %></em><% END %></h4>
 			      <ul><div class="bible">
 			      <% FOREACH reading IN service.readings %>
-			          <li><a href="https://www.biblegateway.com/passage/?search=<% reading | uri %>&version=RSVCE"><% reading %></a></li>
+			          <li><a href="https://www.biblegateway.com/passage/?search=<% reading.parseCitation | url %>&version=RSVCE"><% reading %></a></li>
 			      <% END %>
 			      </div></ul>
 			  <% END %>
@@ -54,7 +54,7 @@
 			      <h4><% service.name %><% IF service.alt %>, <em><% service.alt %></em><% END %></h4>
 			      <ul><div class="bible">
 			      <% FOREACH reading IN service.readings %>
-			          <li><a href="https://www.biblegateway.com/passage/?search=<% reading | uri %>&version=RSVCE"><% reading %></a></li>
+			          <li><a href="https://www.biblegateway.com/passage/?search=<% reading.parseCitation | url %>&version=RSVCE"><% reading %></a></li>
 			      <% END %>
 			      </div></ul>
 			  <% END %>

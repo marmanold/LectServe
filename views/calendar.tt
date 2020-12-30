@@ -1,0 +1,45 @@
+<h2>
+  <% month %>
+    <% year %>
+</h2>
+
+<div class="calendar">
+  <table>
+    <thead>
+      <tr>
+        <% FOREACH day=days %>
+          <th>
+            <% day %>
+          </th>
+          <% END %>
+      </tr>
+    </thead>
+    <% FOREACH row=rows %>
+      <tr>
+        <% FOREACH col=row %>
+          <td>
+            <table style="border:none;"><tr>
+            <td class="day" style="border:none;"><% col.day || '&nbsp;' %></td></tr>
+              <% FOREACH service=col.lectionary.services %>
+                <% IF col.lectionary.type !='noLect' %>
+                  <tr><td class="name" style="border:none;"><a class="name" href="/html/sunday/<% col.lectionary.date %>"><% service.name || '&nbsp;' %></a></td></tr>
+                    <tr><td class="cal-bible" style="border:none;">
+                      <% FOREACH reading IN service.readings %>
+                          <% reading %> — 
+                        <% END %>
+                    </td></tr>
+                    <% END %>
+                      <% END %>
+              </tr></table>
+          </td>
+          <% END %>
+      </tr>
+      <% END %>
+  </table>
+</div>
+<div class="pagination">
+  <a class="previous" href="/calendar/<% prevMonth.year %>-<% prevMonth.month %>-01"
+    title="View last month's readings...">&lt;--Previous</a>
+  <a class="next" href="/calendar/<% nextMonth.year %>-<% nextMonth.month %>-01"
+    title="View next month's readings...">Next--&gt;</a>
+</div>
