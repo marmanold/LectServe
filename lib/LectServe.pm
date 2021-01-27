@@ -5,6 +5,11 @@ use v5.22;
 use Dancer2;
 use Dancer2::Plugin::HTTP::Caching;
 
+use Carp;
+use Try::Catch;
+use REST::Client;
+use Text::Trim;
+
 use Time::Piece;
 use Time::Seconds;
 use Date::Lectionary::Time qw(nextSunday prevSunday);
@@ -13,10 +18,10 @@ use Module::Version qw(get_version);
 use Template::Stash;
 
 use LectServe::Helpers
-  qw(getAllLectionary getDailyLectionary getSundayLectionary getReading parseCitation cleanToday nextDay prevDay prevMonth nextMonth);
+  qw(getAllLectionary getDailyLectionary getSundayLectionary parseCitation cleanToday nextDay prevDay prevMonth nextMonth);
 use LectServe::Calendar qw(getCalendar);
 
-our $VERSION = '1.20201229';
+our $VERSION = '1.20210127';
 
 $Template::Stash::SCALAR_OPS->{ parseCitation } = sub {
     return parseCitation(shift);
@@ -237,5 +242,31 @@ get '/html/about' => sub {
 get '/api' => sub {
     send_as html => template 'api.tt';
 };
+
+#Method to retrieve scripture text from the ESV API
+sub getReading {
+    my $readingString = shift;
+
+    my $parsedCitation = parseCitation($readingString);
+
+    my $client = REST::Client->new(
+        {
+            host    => 'https://api.esv.org',
+            timeout => 10
+        }
+    );
+
+    my $response = $client->GET(
+        '/v3/passage/html/?q='
+          . $parsedCitation
+          . '&wrapping-div=true&inline-styles=true&include-passage-references=true&include-chapter-numbers=false&include-verse-number=false&include-footnotes=false&include-footnote-body=false&include-headings=false&include-subheadings=false&include-surrounding-chapters-below=false&include-audio-link=true',
+        {
+            Accept        => "application/json",
+            Authorization => "Token 6b6576cd1f91f7bb79df4824c08891a558e47647"
+        }
+    );
+
+    return decode_json( $response->responseContent() );
+}
 
 1;

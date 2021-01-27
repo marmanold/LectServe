@@ -6,7 +6,6 @@ use warnings;
 
 use Carp;
 use Try::Catch;
-use REST::Client;
 use Text::Trim;
 
 use Time::Piece;
@@ -17,35 +16,9 @@ use Date::Lectionary::Daily;
 
 use Exporter 'import';
 our @EXPORT_OK =
-  qw(getAllLectionary getDailyLectionary getSundayLectionary getReading parseCitation cleanToday nextDay prevDay prevMonth nextMonth);
+  qw(getAllLectionary getDailyLectionary getSundayLectionary parseCitation cleanToday nextDay prevDay prevMonth nextMonth);
 
-our $VERSION = '1.20201229';
-
-#Method to retrieve scripture text from the ESV API
-sub getReading {
-    my $readingString = shift;
-
-    my $parsedCitation = parseCitation($readingString);
-
-    my $client = REST::Client->new(
-        {
-            host    => 'https://api.esv.org',
-            timeout => 10
-        }
-    );
-
-    my $response = $client->GET(
-        '/v3/passage/html/?q='
-          . $parsedCitation
-          . '&wrapping-div=true&inline-styles=true&include-passage-references=true&include-chapter-numbers=false&include-verse-number=false&include-footnotes=false&include-footnote-body=false&include-headings=false&include-subheadings=false&include-surrounding-chapters-below=false&include-audio-link=true',
-        {
-            Accept        => "application/json",
-            Authorization => "Token 6b6576cd1f91f7bb79df4824c08891a558e47647"
-        }
-    );
-
-    return decode_json( $response->responseContent() );
-}
+our $VERSION = '1.20210127';
 
 sub parseCitation {
     my $rawCitation = shift;
