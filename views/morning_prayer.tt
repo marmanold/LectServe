@@ -28,17 +28,11 @@
 
 <h1>Daily Morning Prayer</h1>
 <h3>According to the use of the The Anglican Church in North America</h3>
-
-<p class="instruction">The Officiant may begin Morning Prayer by reading… One of the following…</p>
+<p class="reference">Simplified for daily lay usage. Please reference the BCP 2019 for full rubrics and options.</p>
+<p class="instruction">The Officiant may begin Morning Prayer by reading…</p>
 
 <p class="prayer">Grace to you and peace from God our Father and the Lord Jesus Christ.</p>
 <p class="reference">Philippians 1:2</p>
-<p class="instruction">or this</p>
-<p class="prayer">I was glad when they said to me, “Let us go to the house of the Lord!”</p>
-<p class="reference">Psalm 122:1</p>
-<p class="instruction">or this</p>
-<p class="prayer">Let the words of my mouth and the meditation of my heart be acceptable in your sight, O Lord, my rock and my redeemer.</p>
-<p class="reference">Psalm 19:14</p>
 
 <h3>Confession of Sin</h3>
 <p class="instruction">The Officiant says to the People</p>
@@ -62,8 +56,6 @@
     <p class="indented_line">that we may now live a godly, righteous, and sober life,</p>
     <p class="indented_line">to the glory of your holy Name. Amen.</p>
 </div>
-<p class="instruction">The Priest alone stands and says</p>
-<p class="prayer">Almighty God, the Father of our Lord Jesus Christ, desires not the death of sinners, but that they may turn from their wickedness and live. He has empowered and commanded his ministers to pronounce to his people, being penitent, the absolution and remission of their sins. He pardons all who truly repent and genuinely believe his holy Gospel. For this reason, we beseech him to grant us true repentance and his Holy Spirit, that our present deeds may please him, the rest of our lives may be pure and holy, and that at the last we may come to his eternal joy; through Jesus Christ our Lord. Amen.</p>
 
 <p class="instruction">A deacon or layperson remains kneeling and prays</p>
 <p class="prayer">Grant your faithful people, merciful Lord, pardon and peace; that we may be cleansed from all our sins, and serve you with a quiet mind; through Jesus Christ our Lord. Amen.</p>
@@ -96,13 +88,8 @@
         <div class="person">People</div><div class="utterance">The Lord’s name be praised.</div>
     </div>
 </div>
-<p class="instruction">Then follows the Venite. Alternatively, the Jubilate may be used.</p>
-<p class="instruction">These antiphons may be sung or said before and after the Invitatory Psalm.</p>
+<p class="instruction">Then follows the Venite.</p>
 <p class="prayer">The earth is the Lord's for he made it: O Come let us adore him.</p>
-<p class="instruction">or this</p>
-<p class="prayer">Worship the Lord in the beauty of holiness: O Come let us adore him.</p>
-<p class="instruction">or this</p>
-<p class="prayer">The mercy of the Lord is everlasting: O Come let us adore him.</p>
 <h3>Venite <em>O Come</em></h3>
 <div class="poetic">
     <p class="reference">Psalm 95:1-7; 8-11</p>
@@ -120,9 +107,6 @@
         <p class="indented_line">and kneel before the Lord our Maker.</p>
     <p class="line">For he is our God,</p>
         <p class="indented_line">and we are the people of his pasture, and the sheep of his hand.</p>
-</div>
-<p class="instruction">In Lent, and on other penitential occasions, the following verses are added.</p>
-<div class="poetic">
     <p class="line">Today, if you will hear his voice, harden not your hearts</p>
         <p class="indented_line">as in the provocation, and as in the day of temptation in the wilderness.</p>
     <p class="line">When your fathers tested me,</p>
@@ -132,43 +116,7 @@
     <p class="line">Of whom I swore in my wrath</p>
         <p class="indented_line">that they should not enter into my rest.</p>
 </div>
-<p class="instruction">or this</p>
 
-<h3>Jubilate <em>Be Joyful</em></h3>
-<div class="poetic">
-    <p class="reference">Psalm 100</p>
-    <p class="line">O be joyful in the LORD, all you lands;</p>
-        <p class="indented_line">serve the LORD with gladness, and come before his presence with a song.</p>
-    <p class="line">Be assured that the LORD he is God;</p>
-        <p class="indented_line">it is he who has made us, and not we ourselves;</p>
-        <p class="indented_line">we are his people, and the sheep of his pasture.</p>
-    <p class="line">O go your way into his gates with thanksgiving, and into his courts with praise;</p>
-        <p class="indented_line">be thankful unto him, and speak good of his Name.</p>
-    <p class="line">For the Lord is gracious, his mercy is everlasting,</p>
-        <p class="indented_line">and his truth endures from generation to generation.</p>
-</div>
-<p class="instruction">During the first week of Easter, the Pascha Nostrum is used in place of the Invitatory Psalm and may be used throughout Eastertide.</p>
-
-<h3>Pascha Nostrum <em>Christ our Passover</em></h3>
-<div class="poetic">
-    <p class="reference">1 Corinthians 5:7-8; Romans 6:9-11; 1 Corinthians 15:20-22</p>
-    <p class="line">Alleluia. Christ our Passover has been sacrificed for us;</p>
-    <p class="indented_line">therefore let us keep the feast,</p>
-    <p class="line">Not with the old leaven, the leaven of malice and evil,</p>
-    <p class="indented_line">but with the unleavened bread of sincerity and truth. Alleluia.</p>
-    <p class="line">Christ being raised from the dead will never die again;</p>
-    <p class="indented_line">death no longer has dominion over him.</p>
-    <p class="line">The death that he died, he died to sin, once for all;</p>
-    <p class="indented_line">but the life he lives, he lives to God.</p>
-    <p class="line">So also consider yourselves dead to sin,</p>
-    <p class="indented_line">and alive to God in Jesus Christ our Lord. Alleluia.</p>
-    <p class="line">Christ has been raised from the dead,</p>
-    <p class="indented_line">the first fruits of those who have fallen asleep.</p>
-    <p class="line">For since by a man came death,</p>
-    <p class="indented_line">by a man has come also the resurrection of the dead.</p>
-    <p class="line">For as in Adam all die,</p>
-    <p class="indented_line">so also in Christ shall all be made alive. Alleluia.</p>
-</div>
 <p class="instruction">Then follows</p>
 
 <h3>The Psalm or Psalms Appointed</h3>
@@ -205,7 +153,7 @@
     </div>
 </div>
 
-<p class="instruction">The following Canticles are normally sung or said after each of the lessons. The Officiant may also use a Canticle drawn from the 'Supplemental Canticles' or an appropriate song of praise.</p>
+<p class="instruction">The following Canticle [is] normally sung or said after […] the lesson…</p>
 
 <h3>Te Deum Laudamus <em>We Praise You, O God</em></h3>
 <div class="poetic">
@@ -247,24 +195,6 @@
     <p class="line">In you, Lord, is our hope,</p>
     <p class="indented_line">let us never be put to shame.</p>
 </div>
-<p class="instruction">During Lent the Benedictus es, Domine usually replaces the Te Deum. The Benedictus es, Domine may be used at other times as well.</p>
-
-<h3>Benedictus es, Domine <em>A Song of Praise</em></h3>
-<div class="poetic">
-    <p class="reference">Song of the Three Young Men, 29-34</p>
-    <p class="line">Glory to you, Lord God of our fathers;</p>
-    <p class="indented_line">you are worthy of praise; glory to you.</p>
-    <p class="line">Glory to you for the radiance of your holy Name;</p>
-    <p class="indented_line">we will praise you and highly exalt you for ever.</p>
-    <p class="line">Glory to you in the splendor of your temple;</p>
-    <p class="indented_line">on the throne of your majesty, glory to you.</p>
-    <p class="line">Glory to you, seated between the Cherubim;</p>
-    <p class="indented_line">we will praise you and highly exalt you for ever.</p>
-    <p class="line">Glory to you, beholding the depths;</p>
-    <p class="indented_line">in the high vault of heaven, glory to you.</p>
-    <p class="line">Glory to the Father, and to the Son, and to the Holy Spirit;</p>
-    <p class="indented_line">we will praise you and highly exalt you for ever.</p>
-</div>
 
 <h4>Lesson 2</h4>
 <div class="dialog">
@@ -289,7 +219,7 @@
     </div>
 </div>
 
-<p class="instruction">The following Canticle is normally sung or said after the lesson. The Officiant may also use a Canticle drawn from the 'Supplemental Canticles' or an appropriate song of praise.</p>
+<p class="instruction">The following Canticle is normally sung or said after the lesson.</p>
 
 <h3>Benedictus <em>The Song of Zechariah</em></h3>
 <div class="poetic">
@@ -427,27 +357,15 @@
     </div>
 </div>
 
-<p class="instruction">The Officiant then prays one or more of the following collects, always beginning with the Collect of the Day (the prayer of the previous Sunday or of the Holy Day being observed). It is traditional to pray the Collects for Peace and Grace daily. Alternatively, one may pray the collects on a weekly rotation, using the suggestions in parentheses.</p>
+<p class="instruction">The Officiant then prays one or more of the following collects, always beginning with the Collect of the Day (the prayer of the previous Sunday or of the Holy Day being observed).</p>
 
 <h3>The Collect of the Day</h3>
-<h4>A Collect for Strength to Await Christ’s Return (Sunday)</h4>
-<p class="prayer">O God our King, by the resurrection of your Son Jesus Christ on the first day of the week, you conquered sin, put death to flight, and gave us the hope of everlasting life: Redeem all our days by this victory; forgive our sins, banish our fears, make us bold to praise you and to do your will; and steel us to wait for the consummation of your kingdom on the last great Day; through the same Jesus Christ our Lord. Amen.</p>
-<h4>A Collect for the Renewal of Life (Monday)</h4>
-<p class="prayer">O God, the King eternal, whose light divides the day from the night and turns the shadow of death into the morning: Drive far from us all wrong desires, incline our hearts to keep your law, and guide our feet into the way of peace; that, having done your will with cheerfulness during the day, we may, when night comes, rejoice to give you thanks; through Jesus Christ our Lord. Amen.</p>
-<h4>A Collect for Peace (Tuesday)</h4>
+<h4>A Collect for Peace</h4>
 <p class="prayer">O God, the author of peace and lover of concord, to know you is eternal life and to serve you is perfect freedom: Defend us, your humble servants, in all assaults of our enemies; that we, surely trusting in your defense, may not fear the power of any adversaries, through the might of Jesus Christ our Lord. Amen.</p>
-<h4>A Collect for Grace (Wednesday)</h4>
+<h4>A Collect for Grace</h4>
 <p class="prayer">O Lord, our heavenly Father, almighty and everlasting God, you have brought us safely to the beginning of this day: Defend us by your mighty power, that we may not fall into sin nor run into any danger; and that guided by your Spirit, we may do what is righteous in your sight; through Jesus Christ our Lord. Amen.</p>
-<h4>A Collect for Guidance (Thursday)</h4>
-<p class="prayer">Heavenly Father, in you we live and move and have our being: We humbly pray you so to guide and govern us by your Holy Spirit, that in all the cares and occupations of our life we may not forget you, but may remember that we are ever walking in your sight; through Jesus Christ our Lord. Amen.</p>
-<h4>A Collect for Endurance (Friday)</h4>
-<p class="prayer">Almighty God, whose most dear Son went not up to joy but first he suffered pain, and entered not into glory before he was crucified: Mercifully grant that we, walking in the way of the cross, may find it none other than the way of life and peace; through Jesus Christ your Son our Lord. Amen.</p>
-<h4>A Collect for Sabbath Rest (Saturday)</h4>
-<p class="prayer">Almighty God, who after the creation of the world rested from all your works and sanctified a day of rest for all your creatures: Grant that we, putting away all earthly anxieties, may be duly prepared for the service of your sanctuary, and that our rest here upon earth may be a preparation for the eternal rest promised to your people in heaven; through Jesus Christ our Lord. Amen.</p>
 
-<p class="instruction">Unless The Great Litany or the Eucharist is to follow, one of the following prayers for mission is added.</p>
-<p class="prayer">Almighty and everlasting God, who alone works great marvels: Send down upon our clergy and the congregations committed to their charge the life-giving Spirit of your grace, shower them with the continual dew of your blessing, and ignite in them a zealous love of your Gospel, through Jesus Christ our Lord. Amen.</p>
-<p class="prayer">O God, you have made of one blood all the peoples of the earth, and sent your blessed Son to preach peace to those who are far off and to those who are near: Grant that people everywhere may seek after you and find you; bring the nations into your fold; pour out your Spirit upon all flesh; and hasten the coming of your kingdom; through Jesus Christ our Lord. Amen.</p>
+<h4>A Collect for Missions</h4>
 <p class="prayer">Lord Jesus Christ, you stretched out your arms of love on the hard wood of the cross that everyone might come within the reach of your saving embrace: So clothe us in your Spirit that we, reaching forth our hands in love, may bring those who do not know you to the knowledge and love of you; for the honor of your Name. Amen.</p>
 <p class="instruction">The Officiant may invite the People to offer intercessions and thanksgivings.</p>
 <p class="instruction">A hymn or anthem may be sung.</p>
@@ -488,13 +406,6 @@
     </div>
 </div>
 
-<p class="instruction">From Easter Day through the Day of Pentecost “Alleluia, alleluia” may be added to the preceding versicle and response.</p>
-<p class="instruction">The Officiant may invite the People to join in one of the Graces.</p>
 <p class="instruction">Officiant</p>
-
 <p class="prayer">The grace of our Lord Jesus Christ, and the love of God, and the fellowship of the Holy Spirit, be with us all evermore. Amen.</p>
 <p class="reference">2 Corinthians 13:14</p>
-<p class="prayer">May the God of hope fill us with all joy and peace in believing through the power of the Holy Spirit. Amen.</p>
-<p class="reference">Romans 15:13</p>
-<p class="prayer">Glory to God whose power, working in us, can do infinitely more than we can ask or imagine: Glory to him from generation to generation in the Church, and in Christ Jesus forever and ever. Amen.</p>
-<p class="reference">Ephesians 3:20-21</p>

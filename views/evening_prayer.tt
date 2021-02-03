@@ -28,15 +28,10 @@
 
 <h1>Daily Evening Prayer</h1>
 <h3>According to the use of the The Anglican Church in North America</h3>
-<p class="instruction">The Officiant may begin Evening Prayer by reading… One of the following…</p>
+<p class="reference">Simplified for daily lay usage. Please reference the BCP 2019 for full rubrics and options.</p>
+<p class="instruction">The Officiant may begin Evening Prayer by reading…</p>
 <p class="prayer">Jesus spoke to them, saying, “I am the light of the world. Whoever follows me will not walk in darkness, but will have the light of life.”</p>
 <p class="reference">John 8:12</p>
-<p class="instruction">or this</p>
-<p class="prayer">O Lord, I love the habitation of your house and the place where your glory dwells.</p>
-<p class="reference">Psalm 26:8</p>
-<p class="instruction">or this</p>
-<p class="prayer">Let my prayer be set forth in your sight as incense, the lifting up of my hands as the evening sacrifice.</p>
-<p class="reference">Psalm 141:2</p>
 <h3>Confession of Sin</h3>
 <p class="instruction">The Officiant says to the People</p>
 <p class="prayer">Dearly beloved, the Scriptures teach us to acknowledge our many sins and offenses, not concealing them from our heavenly Father, but confessing them with humble and obedient hearts that we may obtain forgiveness by his infinite goodness and mercy. We ought at all times humbly to acknowledge our sins before Almighty God, but especially when we come together in his presence to give thanks for the great benefits we have received at his hands, to declare his most worthy praise, to hear his holy Word, and to ask, for ourselves and others, those things necessary for our life and our salvation. Therefore, come with me to the throne of heavenly grace.</p>
@@ -61,8 +56,6 @@
     <p class="indented_line">that we may now live a godly, righteous, and sober life,</p>
     <p class="indented_line">to the glory of your holy Name. Amen.</p>
 </div>
-<p class="instruction">The Priest alone stands and says</p>
-<p class="prayer">Almighty God, the Father of our Lord Jesus Christ, desires not the death of sinners, but that they may turn from their wickedness and live. He has empowered and commanded his ministers to pronounce to his people, being penitent, the absolution and remission of their sins. He pardons and absolves all who truly repent and genuinely believe his holy Gospel. For this reason, we beseech him to grant us true repentance and his Holy Spirit, that our present deeds may please him, the rest of our lives may be pure and holy, and that at the last we may come to his eternal joy; through Jesus Christ our Lord. Amen.</p>
 
 <p class="instruction">A deacon or layperson remains kneeling and prays</p>
 <p class="prayer">Grant your faithful people, merciful Lord, pardon and peace; that we may be cleansed from all our sins, and serve you with a quiet mind; through Jesus Christ our Lord. Amen.</p>
@@ -96,7 +89,7 @@
     </div>
 </div>
 
-<p class="instruction">The following or some other suitable hymn or Psalm may be sung or said.</p>
+<p class="instruction">The following […] may be sung or said.</p>
 <h3>Phos hilaron <em>O Gladsome Light</em></h3>
 <div class="poetic">
     <p class="line">O gladsome light,</p>
@@ -145,7 +138,7 @@
     </div>
 </div>
 
-<p class="instruction">The following Canticle is normally sung or said after the lesson. The Officiant may also use a Canticle drawn from the “Supplemental Canticles” or an appropriate song of praise.</p>
+<p class="instruction">The following Canticle is normally sung or said after the lesson.</p>
 
 <h3>Magnificat <em>The Song of Mary</em></h3>
 <div class="poetic">
@@ -196,7 +189,7 @@
     </div>
 </div>
 
-<p class="instruction">The following Canticle is normally sung or said after the lesson. The Officiant may also use a Canticle drawn from the “Supplemental Canticles” or an appropriate song of praise.</p>
+<p class="instruction">The following Canticle is normally sung or said after the lesson.</p>
 <h3>Nunc dimittis <em>The Song of Simeon</em></h3>
 <div class="poetic">
 <p class="reference">Luke 2:29-32</p>
@@ -268,7 +261,7 @@
     <p class="indented_line">forever and ever. Amen.</p>
 </div>
 
-<p class="instruction">Then follows one of these sets of Suffrages</p>
+<p class="instruction">Then follows … these sets of Suffrages</p>
 
 <div class="dialog">
     <div class="dialog_line">
@@ -315,27 +308,15 @@
     </div>
 </div>
 
-<p class="instruction">The Officiant then prays one or more of the following collects, always beginning with the Collect of the Day (the prayer of the previous Sunday or of the Holy Day being observed). It is traditional to pray the Collects for Peace and Aid against Perils daily. Alternatively, one may pray the collects on a weekly rotation, using the suggestions in parentheses.</p>
+<p class="instruction">The Officiant then prays one or more of the following collects, always beginning with the Collect of the Day (the prayer of the previous Sunday or of the Holy Day being observed).</p>
 <h3>The Collect of the Day</h3>
-<h4>A Collect for Resurrection Hope (Sunday)</h4>
-<p class="prayer">Lord God, whose Son our Savior Jesus Christ triumphed over the powers of death and prepared for us our place in the new Jerusalem: Grant that we, who have this day given thanks for his resurrection, may praise you in that City of which he is the light, and where he lives and reigns forever and ever. Amen.</p>
-<h4>A Collect for Peace (Monday)</h4>
+<h4>A Collect for Peace</h4>
 <p class="prayer">O God, the source of all holy desires, all good counsels, and all just works: Give to your servants that peace which the world cannot give, that our hearts may be set to obey your commandments, and that we, being defended from the fear of our enemies, may pass our time in rest and quietness, through the merits of Jesus Christ our Savior. Amen.</p>
-<h4>A Collect for Aid against Perils (Tuesday)</h4>
+<h4>A Collect for Aid against Perils</h4>
 <p class="prayer">Lighten our darkness, we beseech you, O Lord; and by your great mercy defend us from all perils and dangers of this night; for the love of your only Son, our Savior Jesus Christ. Amen.</p>
-<h4>A Collect for Protection (Wednesday)</h4>
-<p class="prayer">O God, the life of all who live, the light of the faithful, the strength of those who labor, and the repose of the dead: We thank you for the blessings of the day that is past, and humbly ask for your protection through the coming night. Bring us in safety to the morning hours; through him who died and rose again for us, your Son our Savior Jesus Christ. Amen.</p>
-<h4>A Collect for the Presence of Christ (Thursday)</h4>
-<p class="prayer">Lord Jesus, stay with us, for evening is at hand and the day is past; be our companion in the way, kindle our hearts, and awaken hope, that we may know you as you are revealed in Scripture and the breaking of bread. Grant this for the sake of your love. Amen.</p>
-<h4>A Collect for Faith (Friday)</h4>
-<p class="prayer">Lord Jesus Christ, by your death you took away the sting of death: Grant to us your servants so to follow in faith where you have led the way, that we may at length fall asleep peacefully in you and wake up in your likeness; for your tender mercies’ sake. Amen.</p>
-<h4>A Collect for the Eve of Worship (Saturday)</h4>
-<p class="prayer">O God, the source of eternal light: Shed forth your unending day upon us who watch for you, that our lips may praise you, our lives may bless you, and our worship on the morrow give you glory; through Jesus Christ our Lord. Amen.</p>
 
-<p class="instruction">Unless the Eucharist is to follow, one of the following prayers for mission is added.</p>
-<p class="prayer">O God and Father of all, whom the whole heavens adore: Let the whole earth also worship you, all nations obey you, all tongues confess and bless you, and men, women and children everywhere love you and serve you in peace; through Jesus Christ our Lord. Amen.</p>
+<p class="instruction">Unless the Eucharist is to follow, …the following prayer for mission is added.</p>
 <p class="prayer">Keep watch, dear Lord, with those who work, or watch, or weep this night, and give your angels charge over those who sleep. Tend the sick, Lord Christ; give rest to the weary, bless the dying, soothe the suffering, pity the afflicted, shield the joyous; and all for your love’s sake. Amen.</p>
-<p class="prayer">O God, you manifest in your servants the signs of your presence: Send forth upon us the Spirit of love, that in companionship with one another your abounding grace may increase among us; through Jesus Christ our Lord. Amen.</p>
 <p class="instruction">The Officiant may invite the People to offer intercessions and thanksgivings.</p>
 <p class="instruction">A hymn or anthem may be sung.</p>
 <p class="instruction">Before the close of the Office one or both of the following prayers may be used.</p>
@@ -374,12 +355,7 @@
         <div class="person">People</div><div class="utterance">Thanks be to God.</div>
     </div>
 
-<p class="instruction">From Easter Day through the Day of Pentecost “Alleluia, alleluia” may be added to the preceding versicle and response.</p>
 <p class="instruction">The Officiant says one of these concluding sentences (and the People may be invited to join)</p>
 
 <p class="prayer">The grace of our Lord Jesus Christ, and the love of God, and the fellowship of the Holy Spirit, be with us all evermore. Amen.</p>
 <p class="reference">2 Corinthians 13:14</p>
-<p class="prayer">May the God of hope fill us with all joy and peace in believing through the power of the Holy Spirit. Amen.</p>
-<p class="reference">Romans 15:13</p>
-<p class="prayer">Glory to God whose power, working in us, can do infinitely more than we can ask or imagine: Glory to him from generation to generation in the Church, and in Christ Jesus forever and ever. Amen.</p>
-<p class="reference">Ephesians 3:20-21</p>
