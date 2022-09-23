@@ -3,7 +3,7 @@ requires "Dancer2::Plugin::HTTP::Caching", "0.01";
 requires "Time::Piece", "1.3401";
 requires "Time::Seconds", "1.3401";
 requires "Template", "3.101";
-requires "Template::Plugin::Date", "3.101";
+requires "Template::Plugin::Date", "3.100";
 requires "Plack", "1.0050";
 requires "Plack::Middleware::Deflater", "0.12";
 requires "Plack::Middleware::CrossOrigin", "0.014";
