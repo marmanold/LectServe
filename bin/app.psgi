@@ -11,6 +11,5 @@ use Plack::Builder;
 
 builder {
 	enable 'Deflater';
-	enable 'CrossOrigin', origins => '*';
 	dance;
 }
